@@ -1,838 +1,1479 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LegalDecode | Legal Counsel & Representation</title>
+<title>LegalDecode | Advocates & Legal Counsel | Lucknow</title>
 
-    <meta name="description"
-          content="LegalDecode - Professional legal counsel, representation and strategic legal advice.">
+<meta name="description" content="LegalDecode is a Lucknow-based legal practice providing professional legal representation and advisory services before the High Court, District Courts, DRT, CAT, SAT and other forums.">
 
-    <!-- Our design file -->
-    <link rel="stylesheet" href="style.css">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f8fa;
+    color:#172033;
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:#071426;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,0.18);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#d6b36a;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    font-size:14px;
+    font-weight:600;
+    color:#ffffff;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#d6b36a;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(rgba(7,20,38,0.92),rgba(7,20,38,0.95)),
+    radial-gradient(circle at top right,#263c5d,#071426);
+    color:white;
+    padding:110px 0 100px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero-label{
+    color:#d6b36a;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#d6b36a;
+}
+
+.hero p{
+    color:#d9e0ea;
+    font-size:19px;
+    max-width:720px;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:4px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#d6b36a;
+    color:#071426;
+}
+
+.btn-primary:hover{
+    background:#e6c886;
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid #d6b36a;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:#d6b36a;
+    color:#071426;
+}
+
+/* SECTION */
+
+section{
+    padding:85px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-heading .small{
+    color:#b18b45;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.section-heading h2{
+    font-family:Georgia,serif;
+    font-size:40px;
+    color:#071426;
+    margin:10px 0 15px;
+}
+
+.section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#687386;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-box{
+    background:white;
+    padding:40px;
+    border-left:4px solid #d6b36a;
+    box-shadow:0 10px 35px rgba(0,0,0,0.06);
+}
+
+.about-box h3{
+    font-family:Georgia,serif;
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.about-box p{
+    color:#5e6878;
+    margin-bottom:16px;
+}
+
+.about-points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:25px;
+}
+
+.point{
+    background:#f4f5f7;
+    padding:15px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* TEAM */
+
+.team{
+    background:#eef1f5;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.profile-card{
+    background:white;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,0.08);
+}
+
+.profile-photo{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+}
+
+.profile-content{
+    padding:32px;
+}
+
+.profile-content h3{
+    font-family:Georgia,serif;
+    font-size:28px;
+    color:#071426;
+    margin-bottom:4px;
+}
+
+.designation{
+    color:#b18b45;
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.profile-content p{
+    color:#606b7b;
+    margin-bottom:20px;
+}
+
+.experience{
+    display:inline-block;
+    background:#071426;
+    color:white;
+    padding:7px 14px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.profile-content ul{
+    padding-left:18px;
+    color:#4f5969;
+}
+
+.profile-content li{
+    margin-bottom:7px;
+}
+
+/* PRACTICE */
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.practice-card{
+    background:white;
+    padding:30px;
+    border-top:3px solid #d6b36a;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.practice-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+.practice-card .number{
+    color:#b18b45;
+    font-weight:800;
+    font-size:13px;
+}
+
+.practice-card h3{
+    font-family:Georgia,serif;
+    color:#071426;
+    margin:10px 0;
+    font-size:21px;
+}
+
+.practice-card p{
+    color:#687386;
+    font-size:14px;
+}
+
+/* FORUMS */
+
+.forums{
+    background:#071426;
+    color:white;
+}
+
+.forum-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.forum{
+    border:1px solid rgba(214,179,106,0.35);
+    padding:25px;
+    text-align:center;
+}
+
+.forum h3{
+    color:#d6b36a;
+    font-family:Georgia,serif;
+    margin-bottom:7px;
+}
+
+/* VISION */
+
+.vision{
+    background:white;
+}
+
+.vision-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.quote{
+    font-family:Georgia,serif;
+    font-size:28px;
+    line-height:1.6;
+    color:#172033;
+}
+
+/* PROCESS */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process-card{
+    text-align:center;
+    padding:30px 20px;
+    background:white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.process-number{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#071426;
+    color:#d6b36a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 18px;
+    font-weight:800;
+}
+
+.process-card h3{
+    font-family:Georgia,serif;
+    margin-bottom:10px;
+}
+
+.process-card p{
+    font-size:14px;
+    color:#687386;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#eef1f5;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+}
+
+.contact-info{
+    background:#071426;
+    color:white;
+    padding:40px;
+}
+
+.contact-info h3{
+    font-family:Georgia,serif;
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.contact-item{
+    margin-bottom:22px;
+}
+
+.contact-item strong{
+    display:block;
+    color:#d6b36a;
+    margin-bottom:4px;
+}
+
+.contact-item span,
+.contact-item a{
+    color:#e2e6ec;
+}
+
+.contact-form{
+    background:white;
+    padding:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #d9dde4;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#b18b45;
+}
+
+.form-group textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* CTA */
+
+.cta{
+    background:#d6b36a;
+    color:#071426;
+    text-align:center;
+}
+
+.cta h2{
+    font-family:Georgia,serif;
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#050d19;
+    color:#b8c0cc;
+    padding:45px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    gap:40px;
+    margin-bottom:35px;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:14px;
+    margin-bottom:7px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    padding-top:20px;
+    text-align:center;
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .about-grid,
+    .team-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .practice-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .forum-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:60px 0;
+    }
+
+    .hero{
+        padding:75px 0;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .practice-grid,
+    .process-grid,
+    .forum-grid{
+        grid-template-columns:1fr;
+    }
+
+    .profile-photo{
+        height:390px;
+    }
+
+    .about-points{
+        grid-template-columns:1fr;
+    }
+
+    .contact-info,
+    .contact-form,
+    .about-box{
+        padding:28px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+<!-- HEADER -->
 
-    <header class="navbar">
+<header>
+<div class="container navbar">
 
-        <div class="container nav-container">
+<a href="#home" class="logo">Legal<span>Decode</span></a>
 
-            <a href="#home" class="logo">
-                <span>Legal</span>Decode
-            </a>
+<nav class="nav-links">
+<a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+<a href="#team">OUR TEAM</a>
+<a href="#practice">PRACTICE AREAS</a>
+<a href="#process">OUR PROCESS</a>
+<a href="#contact">CONTACT</a>
+</nav>
 
-            <button class="menu-toggle" id="menuToggle">
-                ☰
-            </button>
+</div>
+</header>
 
-            <nav class="nav-menu" id="navMenu">
 
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#practice">Practice Areas</a>
-                <a href="#process">Our Process</a>
-                <a href="#contact">Contact</a>
+<!-- HERO -->
 
-                <a href="#contact" class="nav-button">
-                    Consultation
-                </a>
+<section class="hero" id="home">
 
-            </nav>
+<div class="container hero-content">
 
-        </div>
+<div class="hero-label">
+Legal Representation • Advisory • Litigation
+</div>
 
-    </header>
+<h1>
+Understanding Law.<br>
+<span>Protecting Your Rights.</span>
+</h1>
 
+<p>
+LegalDecode is a Lucknow-based legal practice committed to providing
+professional, practical and strategic legal assistance with a strong
+focus on effective representation and access to justice.
+</p>
 
-    <!-- =========================
-         HERO
-    ========================== -->
+<div class="buttons">
 
-    <main>
+<a href="#contact" class="btn btn-primary">
+Request Consultation
+</a>
 
-        <section class="hero" id="home">
+<a href="tel:+917007725481" class="btn btn-outline">
+Call +91 70077 25481
+</a>
 
-            <div class="hero-overlay"></div>
+</div>
 
-            <div class="container hero-content">
+</div>
 
-                <p class="eyebrow">
-                    LEGALDECODE • LEGAL COUNSEL & REPRESENTATION
-                </p>
+</section>
 
-                <h1>
-                    Understanding Law.<br>
-                    <span>Protecting Your Rights.</span>
-                </h1>
 
-                <p class="hero-text">
-                    Professional legal advice, strategic representation
-                    and client-focused solutions for important legal matters.
-                </p>
+<!-- ABOUT -->
 
-                <div class="hero-buttons">
+<section id="about">
 
-                    <a href="#contact" class="button button-primary">
-                        Book a Consultation
-                    </a>
+<div class="container">
 
-                    <a href="tel:+919999999999"
-                       class="button button-outline">
-                        Call Now
-                    </a>
+<div class="section-heading">
 
-                </div>
+<div class="small">About LegalDecode</div>
 
-            </div>
+<h2>Professional Legal Assistance</h2>
 
-        </section>
+<p>
+A dedicated legal practice based in Lucknow, providing representation
+and legal assistance across diverse areas of litigation.
+</p>
 
+</div>
 
-        <!-- =========================
-             INTRO
-        ========================== -->
 
-        <section class="intro section">
+<div class="about-grid">
 
-            <div class="container intro-grid">
+<div class="about-box">
 
-                <div>
+<h3>LegalDecode</h3>
 
-                    <p class="section-label">
-                        ABOUT LEGALDECODE
-                    </p>
+<p>
+LegalDecode is a Lucknow-based legal practice providing professional
+legal representation and advisory services to individuals, businesses
+and institutions.
+</p>
 
-                    <h2>
-                        Legal clarity for
-                        <span>important decisions.</span>
-                    </h2>
+<p>
+Our practice is built around careful legal assessment, strategic
+representation and a commitment to protecting the rights and legitimate
+interests of our clients.
+</p>
 
-                </div>
+<div class="about-points">
 
-                <div class="intro-text">
+<div class="point">Strategic Legal Advice</div>
+<div class="point">Effective Representation</div>
+<div class="point">Client-Focused Approach</div>
+<div class="point">Commitment to Justice</div>
 
-                    <p>
-                        LegalDecode is a professional legal practice
-                        focused on providing clear legal guidance,
-                        strategic advice and effective representation.
-                    </p>
+</div>
 
-                    <p>
-                        We believe that understanding the law is the
-                        first step towards protecting your rights and
-                        making informed decisions.
-                    </p>
+</div>
 
-                </div>
 
-            </div>
+<div>
 
-        </section>
+<h3 style="font-family:Georgia,serif;font-size:30px;margin-bottom:18px;">
+Our Approach
+</h3>
 
+<p style="color:#687386;margin-bottom:18px;">
+Every legal matter requires a clear understanding of the facts,
+applicable law and the client's objectives.
+</p>
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+<p style="color:#687386;margin-bottom:18px;">
+At LegalDecode, we aim to combine legal knowledge, practical strategy
+and diligent representation to assist our clients through every stage
+of their legal matter.
+</p>
 
-        <section class="about section" id="about">
+<p style="color:#687386;">
+Our focus remains on providing responsible legal assistance while
+working towards a fair and effective legal remedy.
+</p>
 
-            <div class="container about-grid">
+</div>
 
-                <div class="about-image">
+</div>
 
-                    <div class="image-placeholder">
+</div>
 
-                        <div class="scales-symbol">
-                            ⚖
-                        </div>
+</section>
 
-                        <p>
-                            Advocate / Founder<br>
-                            Photograph
-                        </p>
 
-                    </div>
+<!-- TEAM -->
 
-                </div>
+<section class="team" id="team">
 
+<div class="container">
 
-                <div class="about-content">
+<div class="section-heading">
 
-                    <p class="section-label">
-                        OUR APPROACH
-                    </p>
+<div class="small">Our Team</div>
 
-                    <h2>
-                        Law is complex.<br>
-                        <span>Our approach isn't.</span>
-                    </h2>
+<h2>Meet Our Advocates</h2>
 
-                    <p>
-                        Every legal matter requires careful analysis,
-                        preparation and a strategy suited to the
-                        individual circumstances of the client.
-                    </p>
+<p>
+LegalDecode is presently represented by two advocates practising
+from Lucknow with experience across diverse areas of litigation.
+</p>
 
-                    <p>
-                        At LegalDecode, we focus on understanding the
-                        facts, identifying the legal issues and developing
-                        a practical approach to representation.
-                    </p>
+</div>
 
-                    <div class="about-points">
 
-                        <div>
-                            <strong>01</strong>
-                            <span>Thorough Case Analysis</span>
-                        </div>
+<div class="team-grid">
 
-                        <div>
-                            <strong>02</strong>
-                            <span>Strategic Legal Advice</span>
-                        </div>
 
-                        <div>
-                            <strong>03</strong>
-                            <span>Confidential Communication</span>
-                        </div>
+<!-- AADESH -->
 
-                    </div>
+<div class="profile-card">
 
-                </div>
+<img
+src="aadesh-pandey.jpg"
+alt="Adv. Aadesh Pandey"
+class="profile-photo"
+>
 
-            </div>
+<div class="profile-content">
 
-        </section>
+<h3>Adv. Aadesh Pandey</h3>
 
+<div class="designation">
+Advocate | Lucknow
+</div>
 
-        <!-- =========================
-             PRACTICE AREAS
-        ========================== -->
+<div class="experience">
+4 YEARS OF PROFESSIONAL EXPERIENCE
+</div>
 
-        <section class="practice section" id="practice">
+<p>
+Adv. Aadesh Pandey is a Lucknow-based advocate practising before the
+High Court and District Courts, with experience in criminal litigation,
+banking and financial matters, SARFAESI proceedings, property disputes
+and family court matters.
+</p>
 
-            <div class="container">
+<ul>
 
-                <div class="section-heading">
+<li>Criminal Litigation</li>
 
-                    <p class="section-label">
-                        PRACTICE AREAS
-                    </p>
+<li>SARFAESI & Banking Matters</li>
 
-                    <h2>
-                        Legal services designed
-                        <span>around your needs.</span>
-                    </h2>
+<li>Property Disputes</li>
 
-                    <p>
-                        Professional assistance across a range of
-                        legal matters and disputes.
-                    </p>
+<li>Family Court Matters</li>
 
-                </div>
+<li>District Court Litigation</li>
 
+</ul>
 
-                <div class="practice-grid">
+<p style="margin-top:20px;">
+He also appears before forums including the Debt Recovery Tribunal
+(DRT), Central Administrative Tribunal (CAT), Securities Appellate
+Tribunal (SAT) and Armed Forces Tribunal.
+</p>
 
-                    <article class="practice-card">
-                        <span>01</span>
-                        <h3>Criminal Law</h3>
-                        <p>
-                            Legal advice and representation in criminal
-                            proceedings and related matters.
-                        </p>
-                    </article>
+</div>
 
+</div>
 
-                    <article class="practice-card">
-                        <span>02</span>
-                        <h3>Civil Litigation</h3>
-                        <p>
-                            Assistance with civil disputes, claims,
-                            proceedings and litigation strategy.
-                        </p>
-                    </article>
 
+<!-- VARTIKA -->
 
-                    <article class="practice-card">
-                        <span>03</span>
-                        <h3>Property Disputes</h3>
-                        <p>
-                            Legal assistance concerning property,
-                            possession, ownership and related disputes.
-                        </p>
-                    </article>
+<div class="profile-card">
 
+<img
+src="vartika-pandey.jpg"
+alt="Adv. Vartika Pandey"
+class="profile-photo"
+>
 
-                    <article class="practice-card">
-                        <span>04</span>
-                        <h3>Banking & Financial Laws</h3>
-                        <p>
-                            Legal support concerning banking,
-                            recovery and financial disputes.
-                        </p>
-                    </article>
+<div class="profile-content">
 
+<h3>Adv. Vartika Pandey</h3>
 
-                    <article class="practice-card">
-                        <span>05</span>
-                        <h3>Corporate & Commercial</h3>
-                        <p>
-                            Legal guidance for commercial transactions,
-                            business disputes and related matters.
-                        </p>
-                    </article>
+<div class="designation">
+Advocate | Lucknow
+</div>
 
+<div class="experience">
+4 YEARS OF PROFESSIONAL EXPERIENCE
+</div>
 
-                    <article class="practice-card">
-                        <span>06</span>
-                        <h3>Consumer Matters</h3>
-                        <p>
-                            Assistance in consumer disputes and
-                            related legal proceedings.
-                        </p>
-                    </article>
+<p>
+Adv. Vartika Pandey is a Lucknow-based advocate practising before the
+High Court and District Courts, with a focus on civil litigation and
+service matters.
+</p>
 
+<ul>
 
-                    <article class="practice-card">
-                        <span>07</span>
-                        <h3>Family & Matrimonial</h3>
-                        <p>
-                            Professional legal assistance in family
-                            and matrimonial matters.
-                        </p>
-                    </article>
+<li>Civil Litigation</li>
 
+<li>Service Matters</li>
 
-                    <article class="practice-card">
-                        <span>08</span>
-                        <h3>Service & Employment</h3>
-                        <p>
-                            Legal assistance relating to employment,
-                            service and workplace disputes.
-                        </p>
-                    </article>
+<li>High Court Litigation</li>
 
+<li>District Court Litigation</li>
 
-                    <article class="practice-card">
-                        <span>09</span>
-                        <h3>High Court Litigation</h3>
-                        <p>
-                            Professional assistance in matters before
-                            the High Court.
-                        </p>
-                    </article>
+<li>Civil Suits</li>
 
+</ul>
 
-                    <article class="practice-card">
-                        <span>10</span>
-                        <h3>District Court Litigation</h3>
-                        <p>
-                            Representation and legal assistance in
-                            district court proceedings.
-                        </p>
-                    </article>
+<p style="margin-top:20px;">
+She also has experience appearing before forums including the Central
+Administrative Tribunal (CAT), Securities Appellate Tribunal (SAT) and
+Armed Forces Tribunal.
+</p>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
-        </section>
 
+</div>
 
-        <!-- =========================
-             WHY CHOOSE US
-        ========================== -->
+</div>
 
-        <section class="why-us section">
+</section>
 
-            <div class="container">
 
-                <div class="section-heading">
+<!-- PRACTICE AREAS -->
 
-                    <p class="section-label">
-                        WHY LEGALDECODE
-                    </p>
+<section id="practice">
 
-                    <h2>
-                        A considered approach to
-                        <span>every legal matter.</span>
-                    </h2>
+<div class="container">
 
-                </div>
+<div class="section-heading">
 
+<div class="small">Practice Areas</div>
 
-                <div class="why-grid">
+<h2>Areas of Legal Practice</h2>
 
-                    <div class="why-item">
+<p>
+Our practice covers a range of litigation and legal matters before
+courts and specialised tribunals.
+</p>
 
-                        <div class="why-number">01</div>
+</div>
 
-                        <h3>Professional Representation</h3>
 
-                        <p>
-                            Focused and responsible representation
-                            throughout the legal process.
-                        </p>
+<div class="practice-grid">
 
-                    </div>
 
+<div class="practice-card">
+<div class="number">01</div>
+<h3>Criminal Law</h3>
+<p>
+Representation and legal assistance in criminal matters before
+appropriate courts and forums.
+</p>
+</div>
 
-                    <div class="why-item">
 
-                        <div class="why-number">02</div>
+<div class="practice-card">
+<div class="number">02</div>
+<h3>SARFAESI Matters</h3>
+<p>
+Legal representation and assistance relating to proceedings under
+the SARFAESI framework.
+</p>
+</div>
 
-                        <h3>Strategic Legal Advice</h3>
 
-                        <p>
-                            Legal issues are examined carefully before
-                            developing an appropriate strategy.
-                        </p>
+<div class="practice-card">
+<div class="number">03</div>
+<h3>Banking & Financial Laws</h3>
+<p>
+Legal assistance and representation in banking and financial
+disputes and related proceedings.
+</p>
+</div>
 
-                    </div>
 
+<div class="practice-card">
+<div class="number">04</div>
+<h3>Property Disputes</h3>
+<p>
+Representation in property-related disputes, civil proceedings and
+other connected legal matters.
+</p>
+</div>
 
-                    <div class="why-item">
 
-                        <div class="why-number">03</div>
+<div class="practice-card">
+<div class="number">05</div>
+<h3>Family Court Matters</h3>
+<p>
+Legal representation in family and matrimonial matters before
+appropriate courts.
+</p>
+</div>
 
-                        <h3>Confidentiality</h3>
 
-                        <p>
-                            Client communication and sensitive legal
-                            information are treated with appropriate care.
-                        </p>
+<div class="practice-card">
+<div class="number">06</div>
+<h3>Civil Litigation</h3>
+<p>
+Representation in civil suits, disputes and related proceedings
+before competent courts.
+</p>
+</div>
 
-                    </div>
 
+<div class="practice-card">
+<div class="number">07</div>
+<h3>Service Matters</h3>
+<p>
+Representation and legal assistance in service-related disputes
+and proceedings.
+</p>
+</div>
 
-                    <div class="why-item">
 
-                        <div class="why-number">04</div>
+<div class="practice-card">
+<div class="number">08</div>
+<h3>High Court Litigation</h3>
+<p>
+Professional representation before the Lucknow Bench of the
+Allahabad High Court.
+</p>
+</div>
 
-                        <h3>Clear Communication</h3>
 
-                        <p>
-                            Complex legal issues are explained in a
-                            clear and understandable manner.
-                        </p>
+<div class="practice-card">
+<div class="number">09</div>
+<h3>District Court Litigation</h3>
+<p>
+Representation in civil, criminal and other proceedings before
+District Courts.
+</p>
+</div>
 
-                    </div>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
-        </section>
+</section>
 
 
-        <!-- =========================
-             OUR PROCESS
-        ========================== -->
+<!-- FORUMS -->
 
-        <section class="process section" id="process">
+<section class="forums">
 
-            <div class="container">
+<div class="container">
 
-                <div class="section-heading">
+<div class="section-heading">
 
-                    <p class="section-label">
-                        OUR PROCESS
-                    </p>
+<div class="small" style="color:#d6b36a;">
+Courts & Forums
+</div>
 
-                    <h2>
-                        From consultation to
-                        <span>legal strategy.</span>
-                    </h2>
+<h2 style="color:white;">
+Representation Before Various Forums
+</h2>
 
-                </div>
+<p style="color:#c5ccd7;">
+Our advocates appear before courts and specialised tribunals
+depending upon the nature of the matter.
+</p>
 
+</div>
 
-                <div class="process-grid">
 
-                    <div class="process-step">
+<div class="forum-grid">
 
-                        <span>01</span>
+<div class="forum">
+<h3>High Court</h3>
+<p>Lucknow Bench, Allahabad High Court</p>
+</div>
 
-                        <h3>Consultation</h3>
+<div class="forum">
+<h3>District Courts</h3>
+<p>Lucknow & relevant jurisdictions</p>
+</div>
 
-                        <p>
-                            Understand the facts, concerns and objectives.
-                        </p>
+<div class="forum">
+<h3>DRT</h3>
+<p>Debt Recovery Tribunal</p>
+</div>
 
-                    </div>
+<div class="forum">
+<h3>CAT</h3>
+<p>Central Administrative Tribunal</p>
+</div>
 
+<div class="forum">
+<h3>SAT</h3>
+<p>Securities Appellate Tribunal</p>
+</div>
 
-                    <div class="process-step">
+<div class="forum">
+<h3>AFT</h3>
+<p>Armed Forces Tribunal</p>
+</div>
 
-                        <span>02</span>
+</div>
 
-                        <h3>Case Assessment</h3>
+</div>
 
-                        <p>
-                            Identify the relevant legal issues and
-                            available options.
-                        </p>
+</section>
 
-                    </div>
 
+<!-- VISION -->
 
-                    <div class="process-step">
+<section class="vision">
 
-                        <span>03</span>
+<div class="container vision-box">
 
-                        <h3>Legal Strategy</h3>
+<div class="section-heading">
 
-                        <p>
-                            Develop an appropriate legal approach based
-                            on the circumstances.
-                        </p>
+<div class="small">Our Vision</div>
 
-                    </div>
+<h2>Justice at the Centre of Our Practice</h2>
 
+</div>
 
-                    <div class="process-step">
+<p class="quote">
+“Our objective is to provide practical, strategic and result-oriented
+legal assistance while keeping justice at the heart of every matter
+we undertake. We are committed to delivering dedicated legal
+representation to our clients and working towards making justice
+accessible to every individual.”
+</p>
 
-                        <span>04</span>
+</div>
 
-                        <h3>Representation</h3>
+</section>
 
-                        <p>
-                            Provide legal assistance and representation
-                            where engaged.
-                        </p>
 
-                    </div>
+<!-- PROCESS -->
 
-                </div>
+<section id="process">
 
-            </div>
+<div class="container">
 
-        </section>
+<div class="section-heading">
 
+<div class="small">Our Process</div>
 
-        <!-- =========================
-             ADVOCATE / FOUNDER
-        ========================== -->
+<h2>A Clear Approach to Every Matter</h2>
 
-        <section class="founder section">
+<p>
+We believe that effective legal representation begins with
+understanding the matter clearly.
+</p>
 
-            <div class="container founder-grid">
+</div>
 
-                <div class="founder-content">
 
-                    <p class="section-label">
-                        ADVOCATE / FOUNDER
-                    </p>
+<div class="process-grid">
 
-                    <h2>
-                        Meet the legal professional
-                        <span>behind LegalDecode.</span>
-                    </h2>
+<div class="process-card">
 
-                    <p>
-                        This section will contain your professional
-                        profile, qualifications, experience, areas of
-                        practice and professional philosophy.
-                    </p>
+<div class="process-number">1</div>
 
-                    <div class="founder-details">
+<h3>Consultation</h3>
 
-                        <p>
-                            <strong>Name:</strong>
-                            Advocate Name
-                        </p>
+<p>
+Understanding the client's concerns, facts and objectives.
+</p>
 
-                        <p>
-                            <strong>Qualification:</strong>
-                            LL.B. / LL.M.
-                        </p>
+</div>
 
-                        <p>
-                            <strong>Practice:</strong>
-                            High Court & District Courts
-                        </p>
 
-                    </div>
+<div class="process-card">
 
-                </div>
+<div class="process-number">2</div>
 
+<h3>Case Assessment</h3>
 
-                <div class="founder-card">
+<p>
+Reviewing the relevant facts, documents and applicable legal issues.
+</p>
 
-                    <div class="founder-photo">
-                        <span>YOUR PHOTO</span>
-                    </div>
+</div>
 
-                    <h3>
-                        Advocate Name
-                    </h3>
 
-                    <p>
-                        Advocate
-                    </p>
+<div class="process-card">
 
-                </div>
+<div class="process-number">3</div>
 
-            </div>
+<h3>Legal Strategy</h3>
 
-        </section>
+<p>
+Developing an appropriate legal approach based on the matter.
+</p>
 
+</div>
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
 
-        <section class="contact section" id="contact">
+<div class="process-card">
 
-            <div class="container contact-grid">
+<div class="process-number">4</div>
 
-                <div class="contact-info">
+<h3>Representation</h3>
 
-                    <p class="section-label">
-                        CONTACT LEGALDECODE
-                    </p>
+<p>
+Diligent representation before the appropriate court or forum.
+</p>
 
-                    <h2>
-                        Let's discuss your
-                        <span>legal matter.</span>
-                    </h2>
+</div>
 
-                    <p>
-                        Contact us to schedule a consultation or to
-                        discuss your legal requirements.
-                    </p>
+</div>
 
+</div>
 
-                    <div class="contact-details">
+</section>
 
-                        <div>
-                            <strong>Phone</strong>
 
-                            <a href="tel:+919999999999">
-                                +91 99999 99999
-                            </a>
-                        </div>
+<!-- CONTACT -->
 
+<section class="contact" id="contact">
 
-                        <div>
-                            <strong>WhatsApp</strong>
+<div class="container">
 
-                            <a href="https://wa.me/919999999999">
-                                Chat on WhatsApp
-                            </a>
-                        </div>
+<div class="section-heading">
 
+<div class="small">Contact LegalDecode</div>
 
-                        <div>
-                            <strong>Email</strong>
+<h2>Request a Consultation</h2>
 
-                            <a href="mailto:contact@legaldecode.in">
-                                contact@legaldecode.in
-                            </a>
-                        </div>
+<p>
+For legal consultation or representation, contact us using the
+details below.
+</p>
 
+</div>
 
-                        <div>
-                            <strong>Office</strong>
 
-                            <p>
-                                Your Office Address,<br>
-                                Lucknow, Uttar Pradesh, India
-                            </p>
-                        </div>
+<div class="contact-grid">
 
-                    </div>
 
-                </div>
+<div class="contact-info">
 
+<h3>LegalDecode</h3>
 
-                <div class="contact-form-wrapper">
+<div class="contact-item">
 
-                    <form id="contactForm">
+<strong>Office Address</strong>
 
-                        <div class="form-group">
+<span>
+E3/243, Vinay Khand-3,<br>
+Gomti Nagar,<br>
+Lucknow, Uttar Pradesh - 226010
+</span>
 
-                            <label for="name">
-                                Your Name
-                            </label>
+</div>
 
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Enter your name"
-                                required
-                            >
 
-                        </div>
+<div class="contact-item">
 
+<strong>Phone</strong>
 
-                        <div class="form-group">
+<a href="tel:+917007725481">
++91 70077 25481
+</a>
 
-                            <label for="phone">
-                                Phone Number
-                            </label>
+</div>
 
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="Enter your phone number"
-                                required
-                            >
 
-                        </div>
+<div class="contact-item">
 
+<strong>WhatsApp</strong>
 
-                        <div class="form-group">
+<a href="https://wa.me/917007725481" target="_blank">
+Chat on WhatsApp
+</a>
 
-                            <label for="email">
-                                Email
-                            </label>
+</div>
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Enter your email"
-                            >
 
-                        </div>
+<div class="contact-item">
 
+<strong>Email</strong>
 
-                        <div class="form-group">
+<a href="mailto:avlegalaxis@gmail.com">
+avlegalaxis@gmail.com
+</a>
 
-                            <label for="message">
-                                Briefly describe your matter
-                            </label>
+</div>
 
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="5"
-                                placeholder="Tell us briefly about your legal matter"
-                                required
-                            ></textarea>
 
-                        </div>
+<div class="contact-item">
 
+<strong>Office Hours</strong>
 
-                        <button
-                            type="submit"
-                            class="button button-primary form-button">
-                            Request Consultation
-                        </button>
+<span>
+Monday – Saturday<br>
+10:00 AM – 6:00 PM
+</span>
 
-                    </form>
+</div>
 
-                </div>
+</div>
 
-            </div>
 
-        </section>
+<div class="contact-form">
 
+<form onsubmit="sendWhatsApp(); return false;">
 
-        <!-- =========================
-             DISCLAIMER
-        ========================== -->
+<div class="form-group">
 
-        <section class="disclaimer">
+<label>Your Name</label>
 
-            <div class="container">
+<input
+type="text"
+id="clientName"
+placeholder="Enter your name"
+required
+>
 
-                <p>
-                    <strong>Disclaimer:</strong>
-                    The information provided on this website is for
-                    general informational purposes only and should not
-                    be treated as legal advice. Visiting this website
-                    or communicating through it does not create an
-                    advocate-client relationship. No representation is
-                    made regarding the outcome of any particular matter.
-                    Legal advice should be obtained based on the specific
-                    facts and circumstances of each case.
-                </p>
+</div>
 
-            </div>
 
-        </section>
+<div class="form-group">
 
-    </main>
+<label>Phone Number</label>
 
+<input
+type="tel"
+id="clientPhone"
+placeholder="Enter your phone number"
+required
+>
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+</div>
 
-    <footer class="footer">
 
-        <div class="container footer-grid">
+<div class="form-group">
 
-            <div>
+<label>Email</label>
 
-                <a href="#home" class="logo footer-logo">
-                    <span>Legal</span>Decode
-                </a>
+<input
+type="email"
+id="clientEmail"
+placeholder="Enter your email"
+>
 
-                <p>
-                    Legal Counsel • Representation • Strategy
-                </p>
+</div>
 
-            </div>
 
+<div class="form-group">
 
-            <div>
+<label>Briefly Describe Your Matter</label>
 
-                <h4>Quick Links</h4>
+<textarea
+id="clientMatter"
+placeholder="Briefly describe your legal matter..."
+required
+></textarea>
 
-                <a href="#about">About</a>
-                <a href="#practice">Practice Areas</a>
-                <a href="#process">Our Process</a>
-                <a href="#contact">Contact</a>
+</div>
 
-            </div>
 
+<button
+type="submit"
+class="btn btn-primary"
+style="border:0;cursor:pointer;width:100%;"
+>
+Request Consultation
+</button>
 
-            <div>
+</form>
 
-                <h4>Contact</h4>
+</div>
 
-                <a href="tel:+919999999999">
-                    +91 99999 99999
-                </a>
+</div>
 
-                <a href="mailto:contact@legaldecode.in">
-                    contact@legaldecode.in
-                </a>
+</div>
 
-            </div>
+</section>
 
-        </div>
 
+<!-- CTA -->
 
-        <div class="footer-bottom">
+<section class="cta">
 
-            <div class="container">
+<div class="container">
 
-                <p>
-                    © 2026 LegalDecode. All rights reserved.
-                </p>
+<h2>Need Legal Assistance?</h2>
 
-            </div>
+<p>
+Speak with LegalDecode regarding your legal matter.
+</p>
 
-        </div>
+<a
+href="https://wa.me/917007725481"
+target="_blank"
+class="btn"
+style="background:#071426;color:white;"
+>
+Chat on WhatsApp
+</a>
 
-    </footer>
+</div>
 
+</section>
 
-    <!-- JavaScript file -->
-    <script src="script.js"></script>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>LegalDecode</h3>
+
+<p>
+Professional legal assistance and representation from Lucknow.
+</p>
+
+<p>
+Adv. Aadesh Pandey & Adv. Vartika Pandey
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Practice</h3>
+
+<p>Criminal Law</p>
+<p>Civil Litigation</p>
+<p>Banking & SARFAESI</p>
+<p>Property Disputes</p>
+<p>Service Matters</p>
+
+</div>
+
+
+<div>
+
+<h3>Contact</h3>
+
+<p>Lucknow, Uttar Pradesh</p>
+<p>+91 70077 25481</p>
+<p>avlegalaxis@gmail.com</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 LegalDecode. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+function sendWhatsApp(){
+
+    const name =
+    document.getElementById("clientName").value;
+
+    const phone =
+    document.getElementById("clientPhone").value;
+
+    const email =
+    document.getElementById("clientEmail").value;
+
+    const matter =
+    document.getElementById("clientMatter").value;
+
+    const message =
+    "LegalDecode Consultation Request%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Email: " + encodeURIComponent(email) + "%0A" +
+    "Matter: " + encodeURIComponent(matter);
+
+    window.open(
+        "https://wa.me/917007725481?text=" + message,
+        "_blank"
+    );
+}
+
+</script>
 
 </body>
 </html>
