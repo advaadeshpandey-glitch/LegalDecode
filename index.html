@@ -623,6 +623,149 @@ footer p{
     }
 }
 
+/* PREMIUM HERO WITH ADVOCATE PROFILES */
+
+.hero-premium{
+    background:
+    linear-gradient(135deg,rgba(7,20,38,0.98),rgba(12,29,50,0.96));
+    color:white;
+    padding:85px 0 90px;
+}
+
+.hero-premium-grid{
+    display:grid;
+    grid-template-columns:220px minmax(0,1fr) 220px;
+    gap:35px;
+    align-items:center;
+}
+
+.hero-advocate{
+    text-align:center;
+}
+
+.hero-advocate-photo{
+    width:190px;
+    height:270px;
+    object-fit:contain;
+    object-position:center;
+    display:block;
+    margin:0 auto 18px;
+    background:#ffffff;
+    border:1px solid rgba(214,179,106,0.55);
+    padding:6px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.30);
+}
+
+.hero-advocate-name{
+    font-family:Georgia,serif;
+    font-size:21px;
+    color:#ffffff;
+    margin-bottom:5px;
+}
+
+.hero-advocate-role{
+    color:#d6b36a;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+.hero-center{
+    text-align:center;
+    max-width:720px;
+    margin:auto;
+}
+
+.hero-center-label{
+    color:#d6b36a;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.hero-center h1{
+    font-family:Georgia,serif;
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:22px;
+}
+
+.hero-center h1 span{
+    color:#d6b36a;
+}
+
+.hero-center p{
+    color:#d9e0ea;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-center .buttons{
+    justify-content:center;
+}
+
+.hero-divider{
+    width:70px;
+    height:2px;
+    background:#d6b36a;
+    margin:0 auto 22px;
+}
+
+@media(max-width:1000px){
+    .hero-premium-grid{
+        grid-template-columns:170px minmax(0,1fr) 170px;
+        gap:20px;
+    }
+
+    .hero-advocate-photo{
+        width:150px;
+        height:220px;
+    }
+
+    .hero-center h1{
+        font-size:38px;
+    }
+}
+
+@media(max-width:700px){
+    .hero-premium{
+        padding:65px 0;
+    }
+
+    .hero-premium-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .hero-center{
+        order:1;
+    }
+
+    .hero-advocate:first-child{
+        order:2;
+    }
+
+    .hero-advocate:last-child{
+        order:3;
+    }
+
+    .hero-advocate-photo{
+        width:180px;
+        height:250px;
+    }
+
+    .hero-center h1{
+        font-size:36px;
+    }
+
+    .hero-center p{
+        font-size:16px;
+    }
+}
 </style>
 </head>
 
@@ -649,39 +792,90 @@ footer p{
 
 
 <!-- HERO -->
+<section class="hero-premium" id="home">
 
-<section class="hero" id="home">
+    <div class="container hero-premium-grid">
 
-<div class="container hero-content">
+        <!-- LEFT ADVOCATE -->
+        <div class="hero-advocate">
 
-<div class="hero-label">
-Legal Representation • Advisory • Litigation
-</div>
+            <img
+                src="aadesh-pandey.jpeg"
+                alt="Adv. Aadesh Pandey"
+                class="hero-advocate-photo"
+            >
 
-<h1>
-Understanding Law.<br>
-<span>Protecting Your Rights.</span>
-</h1>
+            <div class="hero-advocate-name">
+                Adv. Aadesh Pandey
+            </div>
 
-<p>
-LegalDecode is a Lucknow-based legal practice committed to providing
-professional, practical and strategic legal assistance with a strong
-focus on effective representation and access to justice.
-</p>
+            <div class="hero-advocate-role">
+                Advocate • Legal Counsel
+            </div>
 
-<div class="buttons">
+        </div>
 
-<a href="#contact" class="btn btn-primary">
-Request Consultation
-</a>
 
-<a href="tel:+917007725481" class="btn btn-outline">
-Call +91 70077 25481
-</a>
+        <!-- CENTRE CONTENT -->
+        <div class="hero-center">
 
-</div>
+            <div class="hero-center-label">
+                LEGAL COUNSEL • LITIGATION • ADVOCACY
+            </div>
 
-</div>
+            <div class="hero-divider"></div>
+
+            <h1>
+                Strategic Legal Counsel.<br>
+                <span>Diligent Representation.</span><br>
+                Committed to Justice.
+            </h1>
+
+            <p>
+                LegalDecode is a professionally managed law firm based in
+                Lucknow, Uttar Pradesh, providing legal counsel, litigation
+                services and professional representation across a diverse
+                spectrum of legal matters. Our approach combines legal
+                analysis, strategic preparation and diligent advocacy, with
+                close attention to the rights, interests and objectives of
+                our clients.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Request Consultation
+                </a>
+
+                <a href="tel:+917007725481" class="btn btn-outline">
+                    Call +91 70077 25481
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT ADVOCATE -->
+        <div class="hero-advocate">
+
+            <img
+                src="vartika-.jpeg"
+                alt="Adv. Vartika Pandey"
+                class="hero-advocate-photo"
+            >
+
+            <div class="hero-advocate-name">
+                Adv. Vartika Pandey
+            </div>
+
+            <div class="hero-advocate-role">
+                Advocate • Legal Counsel
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
