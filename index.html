@@ -285,12 +285,24 @@ section{
     margin-bottom:18px;
 }
 .profile-content h3{
-    font-family:Georgia,serif;
-    font-size:28px;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:27px;
+    font-weight:600;
+    letter-spacing:0.2px;
     color:#071426;
-    margin-bottom:4px;
+    margin:0 0 7px;
+    line-height:1.2;
+    position:relative;
 }
 
+.profile-content h3::after{
+    content:"";
+    display:block;
+    width:34px;
+    height:1px;
+    background:#c9a227;
+    margin-top:10px;
+}
 .designation{
     color:#b18b45;
     font-weight:700;
