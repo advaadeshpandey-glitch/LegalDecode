@@ -557,7 +557,7 @@ section{
 .process-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:20px;
+    gap:26px;
 }
 
 .process-card{
@@ -572,6 +572,12 @@ section{
         0 14px 35px rgba(11,35,64,0.08),
         inset 0 0 0 1px rgba(201,162,39,0.04);
     transition:transform 0.35s ease,box-shadow 0.35s ease;
+}
+.process-card:hover{
+    transform:translateY(-6px);
+    box-shadow:
+        0 20px 45px rgba(11,35,64,0.12),
+        0 0 0 1px rgba(201,162,39,0.12);
 }
 .process-number{
     width:45px;
