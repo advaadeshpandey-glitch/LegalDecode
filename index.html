@@ -6,7 +6,7 @@
 
 <title>LegalDecode | Advocates & Legal Counsel | Lucknow</title>
 
-<meta name="description" content="LegalDecode is a Lucknow-based legal practice providing professional legal representation and advisory services before the High Court, District Courts, DRT, DRAT,CAT, State Publice Services Tribunal and other forums.">
+<meta name="description" content="LegalDecode is a Lucknow-based legal practice providing professional legal representation and advisory services before the High Court, District Courts, DRT, DRAT,CAT, State Public Services Tribunal and other forums.">
 
 <style>
 
@@ -366,25 +366,108 @@ section{
     gap:22px;
 }
 
+/* ===== PREMIUM PRACTICE AREAS ===== */
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+    margin-top:35px;
+}
+
 .practice-card{
-    background:white;
-    padding:30px;
-    border-top:3px solid #d6b36a;
-    box-shadow:0 8px 25px rgba(0,0,0,0.05);
-    transition:0.3s;
+    position:relative;
+    background:linear-gradient(145deg,#ffffff 0%,#fbfaf7 100%);
+    padding:32px;
+    border:1px solid rgba(201,162,39,0.22);
+    border-top:3px solid #c9a227;
+    border-radius:4px;
+    box-shadow:
+        0 14px 35px rgba(11,35,64,0.08),
+        inset 0 0 0 1px rgba(201,162,39,0.04);
+    transition:transform 0.35s ease,box-shadow 0.35s ease;
 }
 
 .practice-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    transform:translateY(-6px);
+    box-shadow:
+        0 20px 45px rgba(11,35,64,0.13),
+        0 0 0 1px rgba(201,162,39,0.12);
 }
 
 .practice-card .number{
+    display:inline-block;
     color:#b18b45;
-    font-weight:800;
+    font-family:Arial,sans-serif;
     font-size:13px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    margin-bottom:14px;
 }
 
+.practice-card h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    line-height:1.3;
+    color:#071426;
+    margin:0 0 16px;
+}
+
+.practice-card p{
+    color:#606b7b;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+
+.practice-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:48px;
+    height:3px;
+    background:#c9a227;
+}
+
+.practice-card::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:55px;
+    height:1px;
+    background:rgba(201,162,39,0.45);
+}
+
+/* Mobile */
+@media(max-width:900px){
+    .practice-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+}
+
+@media(max-width:600px){
+    .practice-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .practice-card{
+        padding:26px;
+    }
+
+    .practice-card h3{
+        font-size:21px;
+    }
+
+    .practice-card p{
+        font-size:13.5px;
+        line-height:1.75;
+    }
+}
 .practice-card h3{
     font-family:Georgia,serif;
     color:#071426;
@@ -1075,7 +1158,7 @@ Adv. Aadesh Pandey is a Lucknow-based advocate engaged in litigation and legal a
 
 <p style="margin-top:20px;">
 He also appears before forums including the Debt Recovery Tribunal
-(DRT), Central Administrative Tribunal (CAT), State Publice Services Tribunal and Armed Forces Tribunal.
+(DRT), Central Administrative Tribunal (CAT), State Public Services Tribunal and Armed Forces Tribunal.
 </p>
 
 </div>
@@ -1125,7 +1208,7 @@ Adv. Vartika Pandey is a Lucknow-based advocate engaged in civil litigation and 
 
 <p style="margin-top:20px;">
 She also has experience appearing before forums including the Central
-Administrative Tribunal (CAT), State Publice Services Tribunal and
+Administrative Tribunal (CAT), State Public Services Tribunal and
 Armed Forces Tribunal.
 </p>
 
@@ -1228,7 +1311,7 @@ courts and specialised tribunals.
 <div class="number">01</div>
 <h3>Criminal Law</h3>
 <p>
-Navigating the intricacies of criminal jurisprudence demands not only sound legal acumen but also an unwavering commitment to protecting the fundamental rights of the accused at every stage of the proceedings. Our practice extends comprehensive representation across the entire criminal justice spectrum, from the preliminary stages of investigation to final adjudication before trial courts. We diligently pursue remedies such as regular and anticipatory bail applications, ensuring our clients' liberty is safeguarded against arbitrary detention. Our advocacy encompasses quashing petitions, discharge applications, and rigorous cross-examination strategies designed to expose evidentiary lacunae in the prosecution's case. We represent clients in matters ranging from cognizable offences to complex economic and cyber-related crimes, always adhering to the principles of natural justice and due process of law. Every brief is approached with exhaustive factual scrutiny and a nuanced understanding of evolving penal statutes and precedential jurisprudence. Our objective remains steadfast: to secure a fair trial and a just outcome for every individual who entrusts us with their defence, irrespective of the gravity of allegations levelled against them.
+Our criminal law practice encompasses criminal litigation and proceedings before the High Court and District Courts, including matters arising at different stages of the criminal process. We undertake meticulous examination of the factual matrix, statutory provisions, evidentiary aspects and applicable procedural law, followed by appropriate legal strategy and preparation. Our representation is founded upon precise legal drafting, cogent legal submissions and focused advocacy, with due regard to the rights and interests of the client throughout the proceedings.
 </p>
 </div>
 
@@ -1237,7 +1320,7 @@ Navigating the intricacies of criminal jurisprudence demands not only sound lega
 <div class="number">02</div>
 <h3>SARFAESI Matters</h3>
 <p>
-The Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, popularly known as SARFAESI, empowers financial institutions to recover non-performing assets without prolonged judicial intervention, yet its enforcement mechanisms frequently give rise to contentious disputes. Our firm renders specialised counsel to both secured creditors and borrowers navigating the labyrinthine provisions of this legislation. We assist clients in matters concerning possession notices, symbolic and physical possession proceedings, and grievances arising from the auction of secured assets. Our expertise extends to filing and defending securitisation applications before the Debts Recovery Tribunal, alongside appellate representation before the Debts Recovery Appellate Tribunal. We closely scrutinise the procedural compliance undertaken by secured creditors, ensuring that statutory safeguards afforded to borrowers are never circumvented. Whether contesting an unlawful auction or defending a legitimate recovery action, we bring rigorous financial and legal analysis to every engagement we undertake. Our approach consistently balances the imperative of expeditious debt recovery with the constitutional guarantee of due process.</p>
+Our SARFAESI practice focuses on legal proceedings arising under the Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002. We undertake careful examination of the underlying financial transaction, security documents, statutory notices and procedural compliance, and advise on appropriate legal remedies available under the applicable law. Representation is undertaken before the competent courts and tribunals with emphasis on precise pleadings, effective legal submissions and diligent conduct of proceedings.
 </div>
 
 
@@ -1245,7 +1328,7 @@ The Securitisation and Reconstruction of Financial Assets and Enforcement of Sec
 <div class="number">03</div>
 <h3>Banking & Financial Laws</h3>
 <p>
-The regulatory architecture governing banking and financial institutions in India is both intricate and perpetually evolving, necessitating specialised legal counsel for the effective resolution of disputes. Our practice encompasses a wide array of banking litigation, including recovery suits, loan default disputes, and matters pertaining to the dishonour of negotiable instruments under statutory provisions. We advise clients on regulatory compliance obligations imposed by the Reserve Bank of India and other financial regulatory authorities. Our team represents both lending institutions and borrowers in disputes involving loan restructuring, guarantee enforcement, and mortgage-related litigation. We further provide counsel on matters concerning financial fraud, forensic audits, and the consequential legal ramifications for the stakeholders involved. Representation before the Debts Recovery Tribunal, the National Company Law Tribunal, and civil courts forms an integral component of our banking litigation practice. Our overarching objective is to safeguard our clients' financial interests while ensuring scrupulous adherence to the statutory and regulatory frameworks governing the financial sector.</p>
+Our banking and financial law practice encompasses legal matters arising from banking transactions, financial arrangements, lending and recovery proceedings, and related disputes. We undertake careful examination of the contractual, statutory and regulatory aspects of each matter, including relevant financial documents and applicable legal provisions. Our approach emphasises appropriate legal remedies, precise drafting, effective legal submissions and diligent representation before the competent court or forum.
 </div>
 
 
@@ -1253,7 +1336,7 @@ The regulatory architecture governing banking and financial institutions in Indi
 <div class="number">04</div>
 <h3>Property Disputes</h3>
 <p>
-Property disputes often involve deeply layered questions of title, possession, and inheritance, requiring a thorough and methodical legal approach to safeguard our clients' proprietary interests. Our firm handles an extensive range of matters, including partition suits, declarations of title, specific performance of sale agreements, and injunctions against unlawful dispossession. We represent clients in disputes arising from ancestral property, adverse possession claims, and boundary demarcation controversies. Our expertise extends to matters governed by tenancy legislation, rent control statutes, and eviction proceedings before competent civil courts. We also assist clients in navigating disputes concerning cooperative housing societies, builder-buyer agreements, and compliance under real estate regulatory law. Every property matter is approached with exhaustive due diligence, including verification of title documents, encumbrance records, and revenue entries. Our litigation strategy is designed to secure not merely favourable interim relief, but an enduring and conclusive resolution of the underlying proprietary conflict.
+Our property dispute practice encompasses legal matters relating to ownership, title, possession, transfer and other disputes concerning immovable property. We undertake detailed examination of title documents, relevant records, contractual arrangements and applicable statutory provisions to assess the legal issues involved and available remedies. The matter is approached through careful legal research, precise drafting, appropriate procedural strategy and focused representation before the competent court or forum.
 </p>
 </div>
 
@@ -1262,15 +1345,15 @@ Property disputes often involve deeply layered questions of title, possession, a
 <div class="number">05</div>
 <h3>Family Court Matters</h3>
 <p>
-Matrimonial and family disputes are inherently sensitive in nature, demanding a compassionate yet legally rigorous approach to protect our clients' emotional and legal interests alike. Our practice encompasses representation in matters of divorce, judicial separation, restitution of conjugal rights, and maintenance proceedings under applicable personal and procedural law. We handle custody and guardianship disputes with particular sensitivity toward the welfare and best interests of the child involved. Our team provides counsel on matters relating to domestic violence, protection orders, and the equitable settlement of matrimonial property. We further assist clients with adoption proceedings, succession disputes, and matters arising under the Hindu Marriage Act, the Special Marriage Act, and other applicable personal statutes. Mediation and amicable settlement are prioritised wherever feasible, though we remain fully prepared to pursue vigorous litigation whenever reconciliation proves untenable. Our approach consistently balances legal precision with genuine empathy for the deeply human dimensions underlying every family dispute.</p>
+Our Family Court practice encompasses legal proceedings arising from matrimonial and family disputes, including matters concerning marital rights, matrimonial reliefs, maintenance, custody and other allied family-law proceedings. Each matter is examined with due regard to the factual circumstances, applicable statutory provisions and procedural requirements. We focus on appropriate legal remedies, careful drafting, effective legal submissions and sensitive yet diligent representation before the competent court.
 </div>
 
 
 <div class="practice-card">
 <div class="number">06</div>
-<h3>Civil Litigation</h3>
+<h3>Civil Matters</h3>
 <p>
-Civil litigation forms the bedrock of dispute resolution for a diverse array of commercial and personal grievances, demanding meticulous procedural compliance and persuasive advocacy. Our firm represents clients across a broad spectrum of civil suits, including breach of contract claims, recovery of money suits, and actions for specific performance. We provide comprehensive assistance with injunctive relief, both temporary and permanent, to protect our clients' legal rights pending final adjudication. Our expertise extends to drafting and filing plaints, written statements, and interlocutory applications with precision and strategic foresight. We represent clients before civil judges, additional district judges, and appellate forums, ensuring robust advocacy at every procedural juncture. Our approach involves rigorous evidence collection, witness examination, and the formulation of compelling legal arguments grounded in statute and precedent. We remain committed to pursuing efficient and cost-effective resolution, whether through negotiated settlement or full-fledged trial proceedings.</p>
+Our civil litigation matters encompasses a broad range of civil proceedings involving contractual, property, recovery, injunction and other civil disputes. We undertake careful examination of the pleadings, documentary evidence, contractual arrangements, applicable statutory provisions and relevant judicial precedents. Each matter is approached with appropriate procedural strategy, precise drafting, cogent legal submissions and focused representation before the competent court or forum.
 </div>
 
 
@@ -1278,23 +1361,7 @@ Civil litigation forms the bedrock of dispute resolution for a diverse array of 
 <div class="number">07</div>
 <h3>Service Matters</h3>
 <p>
-Service jurisprudence governs the intricate relationship between employees and employers, particularly within government departments and public sector undertakings, and frequently gives rise to disputes requiring specialised advocacy. Our firm represents clients in matters concerning wrongful termination, disciplinary proceedings, and the denial of promotional benefits. We provide counsel on issues pertaining to seniority disputes, pay scale anomalies, and pension-related grievances arising under applicable service rules. Our practice extends to representation before administrative tribunals, including the Central Administrative Tribunal and State Administrative Tribunals, alongside writ jurisdiction before the High Court. We assist both individual employees and institutional clients in navigating departmental inquiries and show-cause proceedings with procedural rigour. Our team meticulously examines service records, seniority lists, and relevant statutory rules to construct compelling representations on our clients' behalf. We strive to ensure that the principles of natural justice and procedural fairness are upheld throughout every stage of service-related litigation.</p>
-</div>
-
-
-<div class="practice-card">
-<div class="number">08</div>
-<h3>High Court Litigation</h3>
-<p>
-Our High Court litigation practice encompasses civil and criminal proceedings, writ matters, appeals, revisions, service-related litigation and other proceedings arising before the High Court. Each matter is approached through careful examination of the factual and legal issues, appropriate procedural strategy, thorough preparation and focused advocacy at the relevant stage of proceedings.
-</div>
-
-
-<div class="practice-card">
-<div class="number">09</div>
-<h3>District Court Litigation</h3>
-<p>
-District Courts serve as the primary forum for adjudicating the vast majority of civil and criminal disputes, making effective trial court representation indispensable to securing favourable outcomes. Our firm provides comprehensive advocacy before District and Sessions Judges, Additional District Judges, and subordinate civil and criminal courts. We handle matters spanning civil suits, criminal trials, matrimonial proceedings, and execution petitions with equal diligence and procedural precision. Our practice includes meticulous case preparation, encompassing documentary evidence compilation, witness examination, and persuasive legal argumentation. We represent both plaintiffs and defendants, ensuring balanced and zealous advocacy regardless of our client's position in the litigation. Our team maintains close engagement with clients throughout the litigation process, providing transparent updates and strategic counsel at every hearing. We approach District Court litigation with the same rigour and dedication accorded to matters before higher judicial forums, recognising that just outcomes begin at the trial court level.</p>
+Our service law practice encompasses legal matters arising from public employment and service-related disputes before the competent courts and tribunals. We undertake careful examination of service records, applicable service rules, statutory provisions, administrative decisions and relevant judicial precedents. Each matter is approached through appropriate legal remedies, precise drafting, thorough procedural preparation and focused representation, with due regard to the legal rights and interests of the client.
 </div>
 
 
@@ -1353,7 +1420,7 @@ depending upon the nature of the matter.
 
 <div class="forum">
 <h3>SPST</h3>
-<p>State Publice Services Tribunal</p>
+<p>State Public Services Tribunal</p>
 </div>
 
 <div class="forum">
