@@ -1,64 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
 
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>LegalDecode | Advocates & Legal Counsel | Lucknow</title>
 
-<meta name="description" content="LegalDecode is a Lucknow-based legal practice providing professional legal representation and advisory services before the High Court, District Courts, DRT, CAT, State Public Services Tribunal and Armed Forces Tribunal.">
+<meta name="description" content="LegalDecode is a Lucknow-based legal practice providing legal assistance, litigation services, legal counsel and representation before the High Court, District Courts, DRT, CAT, State Public Services Tribunal, Armed Forces Tribunal and other appropriate forums.">
 
-<meta name="keywords" content="LegalDecode, Advocates Lucknow, Legal Counsel Lucknow, Allahabad High Court Lucknow Bench, DRT, CAT, SPST, Armed Forces Tribunal, Criminal Law, Civil Litigation, SARFAESI, Property Disputes">
+<meta name="keywords" content="LegalDecode, Advocates Lucknow, Legal Counsel Lucknow, High Court Lucknow Bench, Civil Litigation, Criminal Law, SARFAESI, Banking Law, Property Disputes, Service Matters">
 
 <meta name="author" content="LegalDecode">
-
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="LegalDecode | Advocates & Legal Counsel">
-
-<meta property="og:description" content="Professional legal representation, litigation and advisory services from Lucknow.">
-
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 
 <style>
 
 /* =========================================================
-   LEGALDECODE
-   PREMIUM LEGAL WEBSITE
-   Luxury Law Firm × Editorial Legal Journal × Corporate Counsel
+   LEGALDECODE — PREMIUM RESPONSIVE LAW FIRM WEBSITE
+   Luxury Law Firm × Editorial Legal Journal
    ========================================================= */
 
 :root{
-    --navy:#101d31;
-    --navy-dark:#091321;
-    --navy-soft:#172943;
-
-    --ivory:#f8f5ee;
-    --cream:#eee8dc;
+    --navy:#071426;
+    --navy-2:#0d2039;
+    --navy-3:#132c4b;
+    --ivory:#f8f6f0;
+    --cream:#f2eee5;
     --white:#ffffff;
-
-    --gold:#b59a63;
-    --gold-light:#d0bb8a;
-
-    --text:#202631;
-    --muted:#68717d;
-    --line:#ddd6c9;
-
-    --shadow:0 18px 55px rgba(8,18,32,.10);
-
-    --serif:"Cormorant Garamond", Georgia, serif;
-    --sans:"Inter", Arial, sans-serif;
-
-    --max:1180px;
+    --gold:#c9a227;
+    --gold-light:#d6b36a;
+    --gold-soft:#ead9a6;
+    --text:#172033;
+    --muted:#657083;
+    --muted-light:#aeb7c5;
+    --border:rgba(7,20,38,.12);
+    --shadow:0 18px 50px rgba(7,20,38,.08);
+    --radius:4px;
+    --container:1220px;
 }
+
+/* =========================================================
+   RESET
+   ========================================================= */
 
 *{
     margin:0;
@@ -68,118 +51,124 @@
 }
 
 html{
-    scroll-behavior:smooth;
+    width:100%;
+    overflow-x:hidden;
 }
 
 body{
-    font-family:var(--sans);
-    color:var(--text);
-    background:var(--ivory);
-    line-height:1.7;
+    width:100%;
+    min-height:100vh;
     overflow-x:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--ivory);
+    color:var(--text);
+    line-height:1.7;
 }
 
 img{
     max-width:100%;
-    display:block;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
 }
 
 button,
 input,
 textarea,
 select{
-    font-family:inherit;
+    font:inherit;
 }
 
 button{
     cursor:pointer;
 }
 
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+ul{
+    padding-left:20px;
+}
+
 .container{
-    width:min(92%, var(--max));
-    margin:auto;
+    width:min(92%,var(--container));
+    margin:0 auto;
 }
 
-.section{
-    padding:100px 0;
-}
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
 
-.section-dark{
-    background:var(--navy);
-    color:#fff;
-}
-
-.section-heading{
-    max-width:760px;
-    margin:0 auto 55px;
-    text-align:center;
+.serif{
+    font-family:Georgia,"Times New Roman",serif;
 }
 
 .eyebrow{
-    display:inline-flex;
+    display:flex;
     align-items:center;
-    gap:10px;
+    justify-content:center;
+    gap:12px;
     color:var(--gold);
-    font-size:12px;
+    font-size:11px;
     font-weight:700;
-    letter-spacing:2.5px;
+    letter-spacing:3px;
     text-transform:uppercase;
-    margin-bottom:14px;
 }
 
 .eyebrow::before,
 .eyebrow::after{
     content:"";
-    width:28px;
+    width:35px;
     height:1px;
-    background:var(--gold);
+    background:currentColor;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:55px;
 }
 
 .section-heading h2{
-    font-family:var(--serif);
-    font-size:clamp(42px,5vw,62px);
-    line-height:1;
-    font-weight:600;
+    margin:12px 0 15px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(38px,4vw,58px);
+    line-height:1.12;
+    font-weight:500;
     color:var(--navy);
-    margin-bottom:18px;
-}
-
-.section-dark .section-heading h2{
-    color:#fff;
 }
 
 .section-heading p{
+    max-width:760px;
+    margin:0 auto;
     color:var(--muted);
-    font-size:15px;
+    font-size:16px;
+    line-height:1.8;
 }
 
-.section-dark .section-heading p{
-    color:#c9d0d9;
+.section-heading.light h2{
+    color:white;
 }
 
+.section-heading.light p{
+    color:#c9d1dc;
+}
 
 /* =========================================================
    HEADER
    ========================================================= */
 
 .site-header{
-    position:fixed;
+    position:sticky;
     top:0;
-    left:0;
-    width:100%;
     z-index:1000;
-    background:rgba(9,19,33,.96);
-    border-bottom:1px solid rgba(181,154,99,.25);
-    backdrop-filter:blur(14px);
+    background:rgba(7,20,38,.97);
+    color:white;
+    border-bottom:1px solid rgba(214,179,106,.18);
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
+    backdrop-filter:blur(12px);
 }
 
 .navbar{
-    min-height:78px;
+    min-height:82px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -190,322 +179,282 @@ button{
     display:flex;
     align-items:center;
     gap:12px;
+    flex-shrink:0;
 }
 
 .brand-mark{
-    width:42px;
-    height:42px;
-    border:1px solid var(--gold);
-    display:grid;
-    place-items:center;
+    width:48px;
+    height:48px;
+    border:1px solid rgba(214,179,106,.7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
     color:var(--gold-light);
-    font-family:var(--serif);
-    font-size:20px;
-    font-weight:700;
+    font-family:Georgia,serif;
+    font-size:16px;
+    letter-spacing:1px;
 }
 
 .brand-text strong{
     display:block;
-    color:#fff;
-    font-family:var(--serif);
-    font-size:27px;
+    font-family:Georgia,serif;
+    font-size:26px;
     line-height:1;
-    letter-spacing:.5px;
+    font-weight:600;
+    color:white;
 }
 
-.brand-text span{
+.brand-text small{
     display:block;
-    color:#bfc7d0;
+    margin-top:5px;
+    color:#8798ad;
     font-size:8px;
+    font-weight:700;
     letter-spacing:2px;
     text-transform:uppercase;
-    margin-top:4px;
 }
 
 .nav-links{
     display:flex;
     align-items:center;
-    gap:25px;
+    justify-content:flex-end;
+    gap:clamp(14px,1.7vw,27px);
 }
 
 .nav-links a{
     position:relative;
-    color:#e7ebef;
+    color:#e6ebf1;
     font-size:11px;
-    font-weight:600;
+    font-weight:700;
     letter-spacing:1px;
     text-transform:uppercase;
-    padding:8px 0;
+    white-space:nowrap;
+    padding:31px 0;
+    transition:.25s ease;
 }
 
 .nav-links a::after{
     content:"";
     position:absolute;
     left:0;
-    bottom:0;
-    width:0;
+    right:0;
+    bottom:22px;
     height:1px;
-    background:var(--gold);
-    transition:.3s;
+    background:var(--gold-light);
+    transform:scaleX(0);
+    transform-origin:center;
+    transition:.25s ease;
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after{
-    width:100%;
+.nav-links a:hover{
+    color:var(--gold-light);
+}
+
+.nav-links a:hover::after{
+    transform:scaleX(1);
 }
 
 .menu-toggle{
     display:none;
-    border:1px solid rgba(181,154,99,.5);
+    width:46px;
+    height:46px;
+    border:1px solid rgba(214,179,106,.5);
     background:transparent;
-    color:#fff;
-    width:44px;
-    height:40px;
-    font-size:21px;
+    color:white;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:5px;
 }
 
+.menu-toggle span{
+    width:21px;
+    height:1px;
+    background:var(--gold-light);
+    transition:.25s;
+}
+
+.mobile-menu{
+    display:none;
+}
 
 /* =========================================================
    HERO
    ========================================================= */
 
 .hero{
-    min-height:100vh;
-    padding-top:78px;
-    background:
-        linear-gradient(110deg,rgba(9,19,33,.98) 0%,rgba(16,29,49,.94) 52%,rgba(16,29,49,.78) 100%);
-    color:#fff;
-    display:flex;
-    align-items:center;
     position:relative;
     overflow:hidden;
+    background:
+        radial-gradient(circle at 20% 10%,rgba(33,65,101,.65),transparent 32%),
+        radial-gradient(circle at 85% 85%,rgba(31,58,91,.6),transparent 30%),
+        linear-gradient(135deg,#050e1c 0%,#091a30 50%,#071426 100%);
+    color:white;
+    padding:90px 0 95px;
 }
 
 .hero::before{
     content:"";
     position:absolute;
-    width:520px;
-    height:520px;
-    border:1px solid rgba(181,154,99,.13);
-    border-radius:50%;
-    right:-180px;
-    top:10%;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:330px;
-    height:330px;
-    border:1px solid rgba(181,154,99,.10);
-    border-radius:50%;
-    right:-90px;
-    top:23%;
+    inset:0;
+    pointer-events:none;
+    opacity:.16;
+    background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+    background-size:70px 70px;
 }
 
 .hero-grid{
     position:relative;
-    z-index:2;
+    z-index:1;
     display:grid;
-    grid-template-columns:1.02fr .98fr;
+    grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);
+    align-items:center;
     gap:70px;
-    align-items:center;
 }
 
-.hero-content{
-    max-width:620px;
+.hero-copy{
+    max-width:720px;
 }
 
-.hero-kicker{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.hero-copy .eyebrow{
+    justify-content:flex-start;
+    margin-bottom:24px;
+}
+
+.hero-copy h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(45px,5vw,72px);
+    line-height:1.08;
+    font-weight:500;
+    letter-spacing:-1.5px;
+    margin-bottom:25px;
+}
+
+.hero-copy h1 span{
     color:var(--gold-light);
-    font-size:11px;
-    font-weight:700;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:22px;
 }
 
-.hero-kicker span{
-    width:42px;
-    height:1px;
-    background:var(--gold);
-}
-
-.hero h1{
-    font-family:var(--serif);
-    font-size:clamp(58px,7vw,94px);
-    font-weight:600;
-    line-height:.88;
-    letter-spacing:-2px;
-    margin-bottom:27px;
-}
-
-.hero h1 em{
-    color:var(--gold-light);
-    font-style:normal;
-}
-
-.hero-lead{
-    color:#d7dde4;
+.hero-copy > p{
+    max-width:680px;
+    color:#d1d9e3;
     font-size:17px;
-    max-width:590px;
-    margin-bottom:28px;
-}
-
-.hero-maxim{
-    border-left:2px solid var(--gold);
-    padding:4px 0 4px 20px;
-    margin-bottom:35px;
-    max-width:530px;
-}
-
-.hero-maxim strong{
-    display:block;
-    font-family:var(--serif);
-    font-size:22px;
-    color:#fff;
-    font-style:italic;
-}
-
-.hero-maxim span{
-    display:block;
-    font-size:12px;
-    color:#adb7c2;
-    margin-top:2px;
+    line-height:1.85;
+    margin-bottom:32px;
 }
 
 .hero-actions{
     display:flex;
     flex-wrap:wrap;
     gap:13px;
+    margin-bottom:34px;
 }
 
 .btn{
-    min-height:48px;
-    padding:0 23px;
     display:inline-flex;
     align-items:center;
     justify-content:center;
+    min-height:50px;
+    padding:13px 25px;
     border:1px solid transparent;
+    border-radius:2px;
     font-size:11px;
-    font-weight:700;
-    letter-spacing:1.3px;
+    font-weight:800;
+    letter-spacing:1.5px;
     text-transform:uppercase;
-    transition:.3s;
+    transition:.3s ease;
 }
 
 .btn-gold{
-    background:var(--gold);
-    color:#101a29;
+    background:var(--gold-light);
+    color:var(--navy);
 }
 
 .btn-gold:hover{
-    background:var(--gold-light);
+    background:#e5c780;
     transform:translateY(-2px);
 }
 
 .btn-outline{
-    border-color:rgba(255,255,255,.35);
-    color:#fff;
+    border-color:rgba(214,179,106,.65);
+    color:white;
 }
 
 .btn-outline:hover{
-    border-color:var(--gold);
-    color:var(--gold-light);
+    background:var(--gold-light);
+    color:var(--navy);
 }
 
-.hero-visual{
-    position:relative;
+.hero-maxim{
+    border-left:1px solid rgba(214,179,106,.5);
+    padding-left:18px;
+    color:#aebdce;
+    font-family:Georgia,serif;
+    font-size:14px;
+    font-style:italic;
 }
 
 .hero-photo-frame{
     position:relative;
-    padding:15px;
-    border:1px solid rgba(181,154,99,.55);
+    width:100%;
+    padding:12px;
+    border:1px solid rgba(214,179,106,.45);
     background:rgba(255,255,255,.035);
+    box-shadow:0 25px 70px rgba(0,0,0,.35);
 }
 
 .hero-photo-frame::before{
     content:"";
     position:absolute;
-    inset:6px;
-    border:1px solid rgba(181,154,99,.18);
-    pointer-events:none;
+    top:0;
+    left:0;
+    width:70px;
+    height:2px;
+    background:var(--gold-light);
+}
+
+.hero-photo-frame::after{
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:70px;
+    height:2px;
+    background:var(--gold-light);
 }
 
 .hero-partner-image{
-    width:100%;
-    aspect-ratio:4/3;
-    object-fit:cover;
-    object-position:center;
-}
-
-.hero-caption{
-    background:#0b1728;
-    padding:18px 20px;
-    border-top:1px solid rgba(181,154,99,.3);
-}
-
-.hero-caption small{
-    color:var(--gold-light);
-    font-size:9px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-}
-
-.hero-caption h3{
-    font-family:var(--serif);
-    font-size:28px;
-    margin-top:2px;
-}
-
-.hero-caption p{
-    color:#aeb8c3;
-    font-size:12px;
-}
-
-
-/* =========================================================
-   TRUST STRIP
-   ========================================================= */
-
-.trust-strip{
-    background:#fff;
-    border-bottom:1px solid var(--line);
-}
-
-.trust-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-}
-
-.trust-item{
-    padding:25px 20px;
-    border-right:1px solid var(--line);
-    text-align:center;
-}
-
-.trust-item:last-child{
-    border-right:0;
-}
-
-.trust-item strong{
     display:block;
-    color:var(--navy);
-    font-family:var(--serif);
-    font-size:24px;
+    width:100%;
+    height:auto;
+    max-height:570px;
+    object-fit:contain;
+    object-position:center;
+    background:#111d2b;
 }
 
-.trust-item span{
-    color:var(--muted);
+.hero-photo-caption{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    padding:15px 4px 2px;
+}
+
+.hero-photo-caption strong{
+    font-family:Georgia,serif;
+    font-size:18px;
+    font-weight:500;
+}
+
+.hero-photo-caption span{
+    color:var(--gold-light);
     font-size:10px;
-    letter-spacing:1px;
+    font-weight:700;
+    letter-spacing:1.5px;
     text-transform:uppercase;
 }
-
 
 /* =========================================================
    ABOUT
@@ -518,809 +467,852 @@ button{
 .about-grid{
     display:grid;
     grid-template-columns:.85fr 1.15fr;
-    gap:75px;
-    align-items:center;
+    gap:65px;
+    align-items:start;
 }
 
-.about-quote{
+.about-intro{
     position:relative;
-    padding:45px 38px;
     background:var(--navy);
-    color:#fff;
-    box-shadow:var(--shadow);
+    color:white;
+    padding:48px;
+    min-height:390px;
+    overflow:hidden;
 }
 
-.about-quote::before{
-    content:"“";
+.about-intro::after{
+    content:"§";
     position:absolute;
-    top:8px;
-    left:20px;
-    font-family:var(--serif);
-    font-size:100px;
-    color:rgba(181,154,99,.3);
-    line-height:1;
+    right:25px;
+    bottom:-35px;
+    font-family:Georgia,serif;
+    font-size:180px;
+    color:rgba(214,179,106,.08);
 }
 
-.about-quote h3{
+.about-intro h3{
     position:relative;
-    font-family:var(--serif);
-    font-size:37px;
-    line-height:1.05;
+    z-index:1;
+    font-family:Georgia,serif;
+    font-size:34px;
     font-weight:500;
-}
-
-.about-quote p{
-    position:relative;
-    color:#bac3cd;
-    font-size:13px;
-    margin-top:20px;
-}
-
-.about-content h2{
-    font-family:var(--serif);
-    color:var(--navy);
-    font-size:50px;
-    line-height:1;
     margin-bottom:22px;
 }
 
+.about-intro p{
+    position:relative;
+    z-index:1;
+    color:#d2dae4;
+    line-height:1.85;
+}
+
+.about-intro .maxim{
+    position:relative;
+    z-index:1;
+    margin-top:35px;
+    padding-top:20px;
+    border-top:1px solid rgba(214,179,106,.3);
+    color:var(--gold-light);
+    font-family:Georgia,serif;
+    font-style:italic;
+    font-size:14px;
+}
+
+.about-content h3{
+    font-family:Georgia,serif;
+    font-size:32px;
+    font-weight:500;
+    margin-bottom:18px;
+}
+
 .about-content p{
-    color:#5f6873;
+    color:#5d6878;
+    margin-bottom:19px;
     font-size:15px;
-    margin-bottom:17px;
 }
 
 .about-points{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:13px;
-    margin-top:27px;
+    gap:12px;
+    margin-top:28px;
 }
 
 .about-point{
-    border-top:1px solid var(--line);
-    padding-top:13px;
-    font-size:12px;
-    font-weight:600;
+    padding:18px;
+    background:white;
+    border:1px solid var(--border);
+    border-left:2px solid var(--gold);
+    font-size:13px;
+    font-weight:700;
     color:var(--navy);
 }
-
 
 /* =========================================================
    TEAM
    ========================================================= */
 
 .team{
-    background:#fff;
+    background:#edf0f3;
+}
+
+.team-intro{
+    max-width:800px;
+    margin:0 auto 50px;
+    text-align:center;
+}
+
+.team-intro p{
+    color:var(--muted);
 }
 
 .team-group{
-    margin-bottom:70px;
+    margin-bottom:65px;
 }
 
 .team-group:last-child{
     margin-bottom:0;
 }
 
-.group-heading{
+.group-title{
     display:flex;
     align-items:center;
-    gap:20px;
-    margin-bottom:27px;
+    gap:18px;
+    margin-bottom:28px;
 }
 
-.group-heading h3{
-    font-family:var(--serif);
-    color:var(--navy);
-    font-size:35px;
-    font-weight:600;
+.group-title span{
+    color:var(--gold);
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
-.group-heading span{
+.group-title::after{
+    content:"";
     flex:1;
     height:1px;
-    background:var(--line);
-}
-
-.group-heading small{
-    color:var(--gold);
-    font-size:9px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
+    background:rgba(7,20,38,.13);
 }
 
 .team-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:26px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:28px;
 }
 
 .team-grid.associates{
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,minmax(0,1fr));
 }
 
-.team-card{
-    background:#faf8f3;
-    border:1px solid var(--line);
+.profile-card{
     position:relative;
-    transition:.35s;
     overflow:hidden;
-}
-
-.team-card:hover{
-    transform:translateY(-5px);
+    background:white;
+    border:1px solid rgba(7,20,38,.11);
     box-shadow:var(--shadow);
-    border-color:rgba(181,154,99,.6);
+    transition:.35s ease;
 }
 
-.team-card-top{
-    display:grid;
-    grid-template-columns:180px 1fr;
+.profile-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 65px rgba(7,20,38,.14);
 }
 
-.team-photo{
-    height:245px;
+.profile-photo-wrap{
+    position:relative;
+    background:#f2f0eb;
+    border-bottom:1px solid rgba(7,20,38,.08);
     overflow:hidden;
-    background:#e5e0d6;
 }
 
-.team-photo img{
+.profile-photo{
+    display:block;
     width:100%;
-    height:100%;
-    object-fit:cover;
+    height:400px;
+    object-fit:contain;
     object-position:center top;
-    transition:.5s;
 }
 
-.team-card:hover .team-photo img{
-    transform:scale(1.035);
-}
-
-.team-content{
-    padding:27px 25px;
-}
-
-.team-role{
-    color:var(--gold);
+.profile-role-tag{
+    position:absolute;
+    left:18px;
+    bottom:18px;
+    padding:8px 12px;
+    background:var(--navy);
+    color:var(--gold-light);
     font-size:9px;
-    font-weight:700;
-    letter-spacing:1.7px;
+    font-weight:800;
+    letter-spacing:1.8px;
     text-transform:uppercase;
-    margin-bottom:7px;
+    border-left:2px solid var(--gold-light);
 }
 
-.team-content h4{
-    font-family:var(--serif);
+.profile-content{
+    padding:30px;
+}
+
+.profile-content .mini-rule{
+    width:40px;
+    height:2px;
+    background:var(--gold);
+    margin-bottom:17px;
+}
+
+.profile-content h3{
+    font-family:Georgia,serif;
+    font-size:27px;
+    line-height:1.2;
+    font-weight:500;
     color:var(--navy);
-    font-size:31px;
-    line-height:1;
-    margin-bottom:11px;
+    margin-bottom:8px;
 }
 
-.team-content p{
-    color:#636c77;
+.profile-designation{
+    display:inline-block;
+    color:#8c711d;
+    background:rgba(201,162,39,.07);
+    border:1px solid rgba(201,162,39,.25);
+    padding:6px 10px;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.profile-content p{
+    color:#5f6876;
+    font-size:13.5px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.profile-content ul{
+    margin-bottom:22px;
+    color:#4f5968;
+    font-size:12.5px;
+    line-height:1.8;
+}
+
+.profile-content li{
+    margin-bottom:6px;
+}
+
+.profile-maxim{
+    padding:15px 0 0;
+    border-top:1px solid rgba(7,20,38,.1);
+    color:#8a7025;
+    font-family:Georgia,serif;
     font-size:12px;
-    line-height:1.7;
+    font-style:italic;
 }
 
-.team-content ul{
-    margin:15px 0 0 16px;
-    color:#4d5661;
-    font-size:11px;
-}
-
-.team-content li{
-    margin-bottom:4px;
-}
-
-.team-contact{
-    margin-top:18px;
-    padding-top:13px;
-    border-top:1px solid var(--line);
+.profile-actions{
+    margin-top:20px;
     display:flex;
     flex-wrap:wrap;
-    gap:8px;
+    gap:9px;
 }
 
-.team-contact a{
-    font-size:10px;
+.profile-actions a,
+.profile-actions button{
+    border:1px solid rgba(7,20,38,.15);
+    background:white;
     color:var(--navy);
-    font-weight:600;
-}
-
-.team-contact a:hover{
-    color:var(--gold);
-}
-
-.profile-link{
-    margin-top:15px;
-    display:inline-flex;
-    color:var(--gold);
-    font-size:10px;
-    font-weight:700;
+    padding:9px 12px;
+    font-size:9px;
+    font-weight:800;
     letter-spacing:1px;
     text-transform:uppercase;
 }
 
+.profile-actions a:hover,
+.profile-actions button:hover{
+    background:var(--navy);
+    color:white;
+}
 
 /* =========================================================
    PRACTICE AREAS
    ========================================================= */
 
 .practice{
-    background:var(--cream);
+    background:white;
 }
 
 .practice-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
 }
 
 .practice-card{
-    min-height:245px;
-    background:#fff;
-    border:1px solid #ddd5c7;
-    padding:30px 27px;
     position:relative;
-    transition:.35s;
-}
-
-.practice-card::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:0;
-    height:3px;
-    background:var(--gold);
-    transition:.35s;
+    min-height:285px;
+    padding:31px;
+    background:linear-gradient(145deg,#fff 0%,#fbf9f4 100%);
+    border:1px solid rgba(201,162,39,.22);
+    border-top:3px solid var(--gold);
+    box-shadow:0 12px 35px rgba(7,20,38,.06);
+    transition:.3s ease;
 }
 
 .practice-card:hover{
     transform:translateY(-5px);
-    box-shadow:var(--shadow);
-}
-
-.practice-card:hover::after{
-    width:100%;
+    box-shadow:0 22px 50px rgba(7,20,38,.1);
 }
 
 .practice-number{
-    font-family:var(--serif);
-    color:#d4c5a6;
-    font-size:22px;
+    color:#a88535;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:17px;
 }
 
 .practice-card h3{
-    font-family:var(--serif);
+    font-family:Georgia,serif;
+    font-size:24px;
+    line-height:1.25;
+    font-weight:500;
     color:var(--navy);
-    font-size:29px;
-    line-height:1.05;
-    margin:14px 0 12px;
+    margin-bottom:15px;
 }
 
 .practice-card p{
-    color:#68717c;
-    font-size:12px;
-    line-height:1.7;
+    color:#626d7c;
+    font-size:13.5px;
+    line-height:1.8;
 }
-
 
 /* =========================================================
    COURTS & FORUMS
    ========================================================= */
 
 .forums{
+    position:relative;
     background:var(--navy);
+    overflow:hidden;
+}
+
+.forums::before{
+    content:"LEX";
+    position:absolute;
+    right:-50px;
+    top:-50px;
+    font-family:Georgia,serif;
+    font-size:260px;
+    color:rgba(255,255,255,.025);
 }
 
 .forum-grid{
+    position:relative;
+    z-index:1;
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:1px;
-    background:rgba(181,154,99,.25);
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
 }
 
 .forum-card{
-    min-height:180px;
-    padding:30px;
-    background:var(--navy);
-    border:1px solid rgba(255,255,255,.05);
-    transition:.3s;
+    min-height:175px;
+    padding:30px 24px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(145deg,#fff,#f7f3e9);
+    border-top:2px solid var(--gold);
+    transition:.3s ease;
 }
 
 .forum-card:hover{
-    background:#15263f;
+    transform:translateY(-5px);
 }
 
-.forum-no{
+.forum-code{
     color:var(--gold);
-    font-family:var(--serif);
-    font-size:21px;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:12px;
 }
 
 .forum-card h3{
-    color:#fff;
-    font-family:var(--serif);
-    font-size:25px;
-    line-height:1.1;
-    margin:12px 0 8px;
+    color:var(--navy);
+    font-family:Georgia,serif;
+    font-size:20px;
+    line-height:1.3;
+    font-weight:500;
+    margin-bottom:9px;
 }
 
 .forum-card p{
-    color:#aeb8c3;
-    font-size:11px;
+    color:#556174;
+    font-size:12.5px;
 }
 
-
 /* =========================================================
-   PHILOSOPHY
+   VISION
    ========================================================= */
 
-.philosophy{
+.vision{
     background:var(--ivory);
 }
 
-.philosophy-inner{
-    max-width:930px;
+.vision-box{
+    max-width:960px;
     margin:auto;
     text-align:center;
 }
 
-.philosophy-inner .maxim{
-    font-family:var(--serif);
-    font-style:italic;
-    font-size:clamp(31px,4vw,52px);
+.vision-quote{
+    position:relative;
+    padding:30px 50px;
+    font-family:Georgia,serif;
+    font-size:clamp(23px,3vw,34px);
+    line-height:1.6;
     color:var(--navy);
-    line-height:1.1;
 }
 
-.philosophy-inner .meaning{
-    margin-top:17px;
-    color:var(--muted);
-    font-size:13px;
+.vision-quote::before{
+    content:"“";
+    position:absolute;
+    left:0;
+    top:-10px;
+    color:var(--gold);
+    font-size:90px;
+    line-height:1;
 }
 
-.philosophy-rule{
-    width:65px;
-    height:1px;
-    background:var(--gold);
-    margin:27px auto;
+.vision-maxim{
+    margin-top:24px;
+    color:#8c7225;
+    font-family:Georgia,serif;
+    font-style:italic;
+    font-size:14px;
 }
-
-.philosophy-inner p{
-    color:#626b76;
-    font-size:15px;
-    max-width:760px;
-    margin:auto;
-}
-
 
 /* =========================================================
    PROCESS
    ========================================================= */
 
 .process{
-    background:#fff;
+    background:white;
 }
 
-.process-line{
+.process-timeline{
     position:relative;
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:0;
 }
 
-.process-line::before{
+.process-timeline::before{
     content:"";
     position:absolute;
-    left:11%;
-    right:11%;
-    top:26px;
+    left:12%;
+    right:12%;
+    top:32px;
     height:1px;
-    background:var(--line);
+    background:rgba(201,162,39,.4);
 }
 
-.process-card{
+.process-item{
+    position:relative;
+    text-align:center;
+    padding:0 22px;
+}
+
+.process-number{
     position:relative;
     z-index:2;
-    text-align:center;
-}
-
-.process-icon{
-    width:53px;
-    height:53px;
-    margin:0 auto 22px;
+    width:64px;
+    height:64px;
+    margin:0 auto 24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     border:1px solid var(--gold);
-    background:#fff;
+    background:white;
     color:var(--navy);
-    display:grid;
-    place-items:center;
-    font-family:var(--serif);
-    font-size:22px;
+    font-family:Georgia,serif;
+    font-size:19px;
 }
 
-.process-card h3{
+.process-item h3{
+    font-family:Georgia,serif;
+    font-size:23px;
+    font-weight:500;
+    margin-bottom:11px;
     color:var(--navy);
-    font-family:var(--serif);
-    font-size:27px;
-    margin-bottom:9px;
 }
 
-.process-card p{
+.process-item p{
     color:var(--muted);
-    font-size:11px;
+    font-size:13px;
+    line-height:1.75;
 }
-
 
 /* =========================================================
    LEGAL KNOWLEDGE CENTRE
    ========================================================= */
 
 .knowledge{
-    background:var(--cream);
+    background:#f0eee8;
 }
 
-.knowledge-tabs{
+.knowledge-toolbar{
+    max-width:900px;
+    margin:0 auto 35px;
+}
+
+.knowledge-search{
+    width:100%;
+    min-height:54px;
+    padding:14px 18px;
+    border:1px solid rgba(7,20,38,.15);
+    background:white;
+    outline:none;
+    color:var(--navy);
+}
+
+.knowledge-search:focus{
+    border-color:var(--gold);
+}
+
+.knowledge-filters{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     gap:8px;
-    margin-bottom:25px;
+    margin-bottom:22px;
 }
 
-.knowledge-tab{
-    border:1px solid #d4ccbd;
-    background:#fff;
+.filter-btn{
+    border:1px solid rgba(7,20,38,.13);
+    background:white;
     color:var(--navy);
-    padding:10px 15px;
-    font-size:10px;
-    font-weight:700;
-    letter-spacing:.7px;
+    padding:10px 16px;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1px;
     text-transform:uppercase;
 }
 
-.knowledge-tab.active,
-.knowledge-tab:hover{
+.filter-btn.active,
+.filter-btn:hover{
     background:var(--navy);
-    color:#fff;
+    color:white;
     border-color:var(--navy);
-}
-
-.knowledge-search{
-    max-width:700px;
-    margin:0 auto 35px;
-    position:relative;
-}
-
-.knowledge-search input{
-    width:100%;
-    height:52px;
-    border:1px solid #d2cabc;
-    background:#fff;
-    padding:0 18px;
-    outline:none;
-}
-
-.knowledge-search input:focus{
-    border-color:var(--gold);
 }
 
 .knowledge-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
 }
 
 .knowledge-card{
-    background:#fff;
-    border:1px solid var(--line);
-    padding:26px;
+    position:relative;
+    background:white;
+    padding:30px;
+    min-height:220px;
+    border:1px solid rgba(7,20,38,.1);
+    transition:.3s ease;
 }
 
-.knowledge-card .tag{
-    color:var(--gold);
+.knowledge-card:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
+}
+
+.knowledge-type{
+    color:#a17d27;
     font-size:9px;
-    font-weight:700;
-    letter-spacing:1.5px;
+    font-weight:800;
+    letter-spacing:2px;
     text-transform:uppercase;
+    margin-bottom:14px;
 }
 
 .knowledge-card h3{
-    font-family:var(--serif);
+    font-family:Georgia,serif;
+    font-size:24px;
+    line-height:1.25;
+    font-weight:500;
     color:var(--navy);
-    font-size:27px;
-    line-height:1.1;
-    margin:10px 0;
+    margin-bottom:12px;
 }
 
 .knowledge-card p{
     color:var(--muted);
-    font-size:11px;
-    margin-bottom:15px;
+    font-size:13px;
+    line-height:1.75;
 }
 
-.text-link{
+.knowledge-link{
+    display:inline-block;
+    margin-top:20px;
     color:var(--navy);
-    font-size:10px;
-    font-weight:700;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1.5px;
     text-transform:uppercase;
-    letter-spacing:1px;
 }
 
-.text-link:hover{
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.faq{
+    background:white;
+}
+
+.faq-list{
+    max-width:950px;
+    margin:0 auto;
+    border-top:1px solid rgba(7,20,38,.14);
+}
+
+.faq-item{
+    border-bottom:1px solid rgba(7,20,38,.14);
+}
+
+.faq-question{
+    width:100%;
+    border:0;
+    background:white;
+    padding:22px 5px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    text-align:left;
+    color:var(--navy);
+    font-size:15px;
+    font-weight:700;
+}
+
+.faq-icon{
+    flex-shrink:0;
+    width:28px;
+    height:28px;
+    border:1px solid rgba(201,162,39,.5);
+    display:flex;
+    align-items:center;
+    justify-content:center;
     color:var(--gold);
+    font-size:18px;
+    font-weight:400;
 }
 
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+}
+
+.faq-answer p{
+    padding:0 45px 23px 5px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.8;
+}
 
 /* =========================================================
    AI SECTION
    ========================================================= */
 
 .ai-section{
-    background:var(--navy-dark);
-    color:#fff;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 10% 20%,rgba(39,81,126,.7),transparent 30%),
+        linear-gradient(135deg,#061224,#0b203b);
+    color:white;
 }
 
 .ai-box{
-    max-width:850px;
-    margin:auto;
-    border:1px solid rgba(181,154,99,.35);
-    background:#0e1d31;
-    padding:38px;
+    position:relative;
+    z-index:1;
+    max-width:950px;
+    margin:0 auto;
+    padding:45px;
+    border:1px solid rgba(214,179,106,.35);
+    background:rgba(255,255,255,.035);
 }
 
-.ai-title{
-    display:flex;
-    align-items:center;
-    gap:15px;
+.ai-label{
+    display:inline-block;
+    padding:7px 12px;
+    border:1px solid rgba(214,179,106,.55);
+    color:var(--gold-light);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.ai-box h3{
+    font-family:Georgia,serif;
+    font-size:clamp(30px,4vw,45px);
+    font-weight:500;
     margin-bottom:10px;
 }
 
-.ai-badge{
-    border:1px solid var(--gold);
-    color:var(--gold-light);
-    padding:6px 9px;
-    font-size:8px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-}
-
-.ai-title h3{
-    font-family:var(--serif);
-    font-size:35px;
-}
-
-.ai-box>p{
-    color:#adb7c2;
-    font-size:12px;
-    margin-bottom:23px;
+.ai-box > p{
+    color:#c4cfdd;
+    font-size:14px;
+    margin-bottom:28px;
 }
 
 .ai-options{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:9px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:10px;
 }
 
 .ai-option{
-    border:1px solid rgba(255,255,255,.14);
-    background:transparent;
-    color:#e4e8ed;
-    padding:13px;
+    min-height:48px;
+    border:1px solid rgba(214,179,106,.3);
+    background:rgba(255,255,255,.035);
+    color:white;
     font-size:10px;
-    transition:.3s;
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition:.25s;
 }
 
 .ai-option:hover{
-    border-color:var(--gold);
-    color:var(--gold-light);
+    background:var(--gold-light);
+    color:var(--navy);
 }
 
-.ai-response{
+.ai-result{
     display:none;
+    margin-top:25px;
+    padding:22px;
+    border-left:2px solid var(--gold-light);
+    background:rgba(0,0,0,.16);
+}
+
+.ai-result.show{
+    display:block;
+}
+
+.ai-result strong{
+    display:block;
+    font-family:Georgia,serif;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.ai-result p{
+    color:#cbd4df;
+    font-size:13px;
+}
+
+.ai-note{
     margin-top:20px;
-    padding:20px;
-    background:#091524;
-    border-left:2px solid var(--gold);
-    color:#d0d7df;
-    font-size:12px;
+    color:#8fa0b4;
+    font-size:10px;
+    line-height:1.7;
 }
-
-.ai-disclaimer{
-    margin-top:17px;
-    color:#818c99;
-    font-size:9px;
-}
-
 
 /* =========================================================
-   REVIEWS
+   CLIENT PERSPECTIVES
    ========================================================= */
 
 .reviews{
-    background:#fff;
+    background:#f1f0eb;
 }
 
-.review-layout{
+.review-grid{
     display:grid;
-    grid-template-columns:1fr 1.2fr;
-    gap:45px;
+    grid-template-columns:.8fr 1.2fr;
+    gap:30px;
     align-items:start;
 }
 
 .review-intro{
-    padding:30px;
     background:var(--navy);
-    color:#fff;
+    color:white;
+    padding:45px;
 }
 
 .review-intro h3{
-    font-family:var(--serif);
-    font-size:40px;
-    line-height:1;
-    margin-bottom:15px;
+    font-family:Georgia,serif;
+    font-size:35px;
+    line-height:1.25;
+    font-weight:500;
+    margin-bottom:17px;
 }
 
 .review-intro p{
-    color:#b8c1cb;
-    font-size:12px;
+    color:#c7d0dc;
+    font-size:14px;
+    line-height:1.8;
 }
 
 .review-intro .maxim{
+    margin-top:35px;
+    padding-top:20px;
+    border-top:1px solid rgba(214,179,106,.3);
     color:var(--gold-light);
-    font-family:var(--serif);
+    font-family:Georgia,serif;
     font-style:italic;
-    font-size:22px;
-    margin-top:28px;
 }
 
-.review-list{
-    display:grid;
-    gap:15px;
-}
-
-.review-card{
-    padding:22px;
-    border:1px solid var(--line);
-    background:#faf8f3;
-}
-
-.review-card strong{
-    color:var(--navy);
-    font-size:13px;
-}
-
-.review-card span{
-    display:block;
-    color:var(--gold);
-    font-size:9px;
-    margin:3px 0 8px;
-}
-
-.review-card p{
-    color:#68717b;
-    font-size:12px;
-}
-
-
-/* =========================================================
-   CONTACT
-   ========================================================= */
-
-.contact{
-    background:var(--cream);
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:.85fr 1.15fr;
-    gap:40px;
-}
-
-.contact-info{
-    background:var(--navy);
-    color:#fff;
-    padding:38px;
-}
-
-.contact-info h3{
-    font-family:var(--serif);
-    font-size:42px;
-    line-height:1;
-    margin-bottom:25px;
-}
-
-.contact-item{
-    border-top:1px solid rgba(255,255,255,.12);
-    padding:16px 0;
-}
-
-.contact-item small{
-    display:block;
-    color:var(--gold-light);
-    font-size:9px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-}
-
-.contact-item a,
-.contact-item span{
-    color:#e0e5ea;
-    font-size:12px;
-}
-
-.social-links{
-    display:flex;
-    gap:8px;
-    margin-top:22px;
-}
-
-.social-links a{
-    border:1px solid rgba(181,154,99,.45);
-    color:var(--gold-light);
-    padding:9px 12px;
-    font-size:9px;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-}
-
-.consultation-form{
-    background:#fff;
-    border:1px solid var(--line);
-    padding:38px;
-}
-
-.consultation-form h3{
-    font-family:var(--serif);
-    color:var(--navy);
-    font-size:39px;
-    line-height:1;
-    margin-bottom:10px;
-}
-
-.consultation-form>p{
-    color:var(--muted);
-    font-size:11px;
-    margin-bottom:24px;
+.review-form{
+    background:white;
+    padding:40px;
+    border:1px solid rgba(7,20,38,.1);
 }
 
 .form-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:14px;
+    gap:18px;
 }
 
 .form-group{
-    margin-bottom:14px;
+    margin-bottom:18px;
 }
 
 .form-group.full{
-    grid-column:1/-1;
+    grid-column:1 / -1;
 }
 
 .form-group label{
     display:block;
+    margin-bottom:7px;
     color:var(--navy);
-    font-size:9px;
-    font-weight:700;
-    letter-spacing:1px;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:1.2px;
     text-transform:uppercase;
-    margin-bottom:6px;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select{
     width:100%;
-    border:1px solid #d5cec1;
-    background:#fcfbf8;
-    padding:12px 13px;
-    font-size:12px;
+    min-height:48px;
+    padding:12px 14px;
+    border:1px solid #d8dce3;
+    background:#fcfcfb;
     outline:none;
+    color:var(--text);
+}
+
+.form-group textarea{
+    min-height:130px;
+    resize:vertical;
 }
 
 .form-group input:focus,
@@ -1329,179 +1321,285 @@ button{
     border-color:var(--gold);
 }
 
-.form-group textarea{
-    min-height:120px;
-    resize:vertical;
-}
-
 .form-note{
-    color:#7c838c;
-    font-size:9px;
-    margin-top:10px;
+    margin-top:13px;
+    color:#7b8491;
+    font-size:10px;
+    line-height:1.6;
 }
 
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact{
+    background:var(--ivory);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:30px;
+    align-items:stretch;
+}
+
+.contact-info{
+    position:relative;
+    overflow:hidden;
+    background:var(--navy);
+    color:white;
+    padding:45px;
+}
+
+.contact-info::after{
+    content:"§";
+    position:absolute;
+    right:-15px;
+    bottom:-55px;
+    font-family:Georgia,serif;
+    font-size:190px;
+    color:rgba(214,179,106,.06);
+}
+
+.contact-info h3{
+    position:relative;
+    z-index:1;
+    font-family:Georgia,serif;
+    font-size:37px;
+    font-weight:500;
+    margin-bottom:28px;
+}
+
+.contact-item{
+    position:relative;
+    z-index:1;
+    margin-bottom:23px;
+}
+
+.contact-item strong{
+    display:block;
+    color:var(--gold-light);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:5px;
+}
+
+.contact-item span,
+.contact-item a{
+    color:#d7dfe8;
+    font-size:13px;
+}
+
+.contact-item a:hover{
+    color:var(--gold-light);
+}
+
+.social-links{
+    position:relative;
+    z-index:1;
+    display:flex;
+    gap:9px;
+    margin-top:30px;
+}
+
+.social-links a{
+    padding:9px 12px;
+    border:1px solid rgba(214,179,106,.35);
+    color:#d9e0e8;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.social-links a:hover{
+    background:var(--gold-light);
+    color:var(--navy);
+}
+
+.consultation-form{
+    background:white;
+    padding:45px;
+    border:1px solid rgba(7,20,38,.1);
+    box-shadow:var(--shadow);
+}
+
+.consultation-form h3{
+    font-family:Georgia,serif;
+    font-size:34px;
+    font-weight:500;
+    color:var(--navy);
+    margin-bottom:7px;
+}
+
+.consultation-form > p{
+    color:var(--muted);
+    font-size:13px;
+    margin-bottom:28px;
+}
 
 /* =========================================================
    CTA
    ========================================================= */
 
-.final-cta{
-    background:var(--navy);
-    color:#fff;
+.cta{
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 50% -50%,rgba(214,179,106,.22),transparent 50%),
+        var(--navy);
+    color:white;
     text-align:center;
-    padding:80px 20px;
 }
 
-.final-cta h2{
-    font-family:var(--serif);
-    font-size:clamp(45px,6vw,70px);
-    line-height:.95;
-    margin-bottom:17px;
+.cta h2{
+    font-family:Georgia,serif;
+    font-size:clamp(38px,4vw,58px);
+    font-weight:500;
+    margin-bottom:13px;
 }
 
-.final-cta p{
-    color:#b9c2cc;
-    max-width:600px;
-    margin:0 auto 25px;
-    font-size:13px;
+.cta p{
+    color:#c5cfdb;
+    margin-bottom:27px;
 }
 
+.cta .maxim{
+    margin-top:23px;
+    color:#8fa0b4;
+    font-family:Georgia,serif;
+    font-style:italic;
+    font-size:12px;
+}
 
 /* =========================================================
    FOOTER
    ========================================================= */
 
-footer{
-    background:#07111e;
-    color:#fff;
-    border-top:1px solid rgba(181,154,99,.22);
+.footer{
+    background:#040c17;
+    color:#aeb8c5;
+    padding:60px 0 25px;
 }
 
-.footer-main{
-    padding:55px 0;
+.footer-grid{
     display:grid;
-    grid-template-columns:1.3fr 1fr 1fr;
-    gap:45px;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:50px;
+    margin-bottom:45px;
 }
 
-.footer-brand p{
-    color:#8f9aa7;
-    font-size:11px;
-    max-width:370px;
-    margin-top:14px;
+.footer-brand{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:17px;
 }
 
-.footer-col h4{
-    color:var(--gold-light);
-    font-size:10px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    margin-bottom:13px;
+.footer-brand .brand-mark{
+    flex-shrink:0;
 }
 
-.footer-col a,
-.footer-col span{
+.footer h3{
+    color:white;
+    font-family:Georgia,serif;
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:17px;
+}
+
+.footer p,
+.footer a{
+    font-size:12.5px;
+    line-height:1.8;
+}
+
+.footer a{
     display:block;
-    color:#9ba5b1;
-    font-size:11px;
-    margin-bottom:7px;
+    margin-bottom:5px;
 }
 
-.footer-col a:hover{
-    color:#fff;
+.footer a:hover{
+    color:var(--gold-light);
 }
 
 .footer-bottom{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:18px 0;
+    border-top:1px solid rgba(255,255,255,.09);
+    padding-top:20px;
     display:flex;
     justify-content:space-between;
     gap:20px;
-    color:#687482;
-    font-size:9px;
+    flex-wrap:wrap;
+    font-size:10px;
+    color:#748194;
 }
 
-
 /* =========================================================
-   PROFILE MODAL
+   MODAL
    ========================================================= */
 
 .modal{
     position:fixed;
     inset:0;
-    background:rgba(5,12,21,.82);
+    z-index:3000;
     display:none;
     align-items:center;
     justify-content:center;
     padding:20px;
-    z-index:2000;
+    background:rgba(2,8,16,.78);
+    backdrop-filter:blur(5px);
 }
 
-.modal.open{
+.modal.show{
     display:flex;
 }
 
 .modal-box{
-    width:min(850px,100%);
+    position:relative;
+    width:min(720px,100%);
     max-height:90vh;
     overflow:auto;
-    background:#fff;
-    position:relative;
-    padding:40px;
+    background:white;
+    padding:45px;
+    box-shadow:0 30px 100px rgba(0,0,0,.35);
 }
 
 .modal-close{
     position:absolute;
-    right:15px;
-    top:12px;
+    top:14px;
+    right:14px;
     width:36px;
     height:36px;
-    border:1px solid var(--line);
-    background:#fff;
+    border:1px solid rgba(7,20,38,.15);
+    background:white;
     color:var(--navy);
     font-size:20px;
 }
 
-.modal-grid{
-    display:grid;
-    grid-template-columns:200px 1fr;
-    gap:30px;
-}
-
-.modal-grid img{
-    width:100%;
-    aspect-ratio:3/4;
-    object-fit:cover;
-}
-
-.modal-box h2{
-    font-family:var(--serif);
+.modal-box h3{
+    font-family:Georgia,serif;
+    font-size:34px;
+    font-weight:500;
     color:var(--navy);
-    font-size:45px;
-    line-height:1;
+    margin-bottom:10px;
 }
 
-.modal-role{
-    color:var(--gold);
+.modal-designation{
+    color:#967625;
     font-size:10px;
-    font-weight:700;
-    letter-spacing:1px;
+    font-weight:800;
+    letter-spacing:1.3px;
     text-transform:uppercase;
-    margin:7px 0 17px;
+    margin-bottom:22px;
 }
 
 .modal-box p{
-    color:#636c77;
-    font-size:13px;
-    margin-bottom:15px;
+    color:#5e6878;
+    font-size:14px;
+    line-height:1.85;
 }
-
-.modal-box ul{
-    padding-left:18px;
-    color:#4d5661;
-    font-size:12px;
-}
-
 
 /* =========================================================
    BACK TO TOP
@@ -1509,22 +1607,28 @@ footer{
 
 .back-top{
     position:fixed;
-    right:20px;
-    bottom:20px;
-    width:43px;
-    height:43px;
-    background:var(--navy);
-    border:1px solid var(--gold);
-    color:var(--gold-light);
-    display:none;
-    place-items:center;
+    right:22px;
+    bottom:22px;
     z-index:900;
+    width:42px;
+    height:42px;
+    border:1px solid rgba(214,179,106,.55);
+    background:var(--navy);
+    color:var(--gold-light);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:.3s;
 }
 
 .back-top.show{
-    display:grid;
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
 }
-
 
 /* =========================================================
    REVEAL
@@ -1532,140 +1636,231 @@ footer{
 
 .reveal{
     opacity:0;
-    transform:translateY(25px);
-    transition:opacity .7s ease, transform .7s ease;
+    transform:translateY(22px);
+    transition:opacity .65s ease,transform .65s ease;
 }
 
 .reveal.visible{
     opacity:1;
-    transform:none;
+    transform:translateY(0);
 }
-
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE — LAPTOP
    ========================================================= */
 
-@media(max-width:1050px){
+@media(max-width:1150px){
 
     .nav-links{
-        gap:15px;
-    }
-
-    .hero-grid{
-        gap:40px;
-    }
-
-    .team-grid.associates{
-        grid-template-columns:1fr 1fr;
-    }
-
-}
-
-@media(max-width:900px){
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:78px;
-        left:0;
-        width:100%;
-        background:var(--navy-dark);
-        border-top:1px solid rgba(181,154,99,.2);
-        padding:18px 5%;
-        flex-direction:column;
-        align-items:flex-start;
-        gap:0;
-    }
-
-    .nav-links.open{
-        display:flex;
+        gap:14px;
     }
 
     .nav-links a{
-        width:100%;
-        padding:13px 0;
-        border-bottom:1px solid rgba(255,255,255,.07);
+        font-size:10px;
     }
 
-    .hero{
-        padding-top:115px;
-        padding-bottom:70px;
+    .hero-grid{
+        gap:45px;
     }
 
-    .hero-grid,
-    .about-grid,
-    .contact-grid,
-    .review-layout{
-        grid-template-columns:1fr;
+    .hero-copy h1{
+        font-size:52px;
     }
 
-    .hero-content{
-        max-width:none;
-    }
-
-    .hero-visual{
-        max-width:700px;
-        width:100%;
-        margin:auto;
-    }
-
-    .practice-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .forum-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .knowledge-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .process-line{
-        grid-template-columns:1fr 1fr;
-        row-gap:45px;
-    }
-
-    .process-line::before{
-        display:none;
-    }
-
-    .trust-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .trust-item:nth-child(2){
-        border-right:0;
+    .team-grid.associates{
+        grid-template-columns:repeat(2,minmax(0,1fr));
     }
 
 }
 
-@media(max-width:650px){
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
 
-    .section{
-        padding:72px 0;
+@media(max-width:900px){
+
+    .navbar{
+        min-height:72px;
     }
 
-    .hero h1{
-        font-size:58px;
+    .nav-links{
+        display:none;
     }
 
-    .hero-lead{
-        font-size:14px;
+    .menu-toggle{
+        display:flex;
+    }
+
+    .mobile-menu{
+        display:none;
+        border-top:1px solid rgba(214,179,106,.15);
+        background:#08172a;
+        padding:10px 0 18px;
+    }
+
+    .mobile-menu.open{
+        display:block;
+    }
+
+    .mobile-menu a{
+        display:block;
+        padding:13px 4%;
+        border-bottom:1px solid rgba(255,255,255,.06);
+        color:#e3e9ef;
+        font-size:11px;
+        font-weight:700;
+        letter-spacing:1.2px;
+        text-transform:uppercase;
+    }
+
+    .mobile-menu a:hover{
+        color:var(--gold-light);
+        background:rgba(255,255,255,.025);
+    }
+
+    .hero{
+        padding:70px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .hero-copy{
+        max-width:800px;
+    }
+
+    .hero-partner-image{
+        max-height:none;
+    }
+
+    .about-grid,
+    .review-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:28px;
+    }
+
+    .team-grid,
+    .team-grid.associates{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .practice-grid,
+    .knowledge-grid,
+    .forum-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .process-timeline{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:45px 15px;
+    }
+
+    .process-timeline::before{
+        display:none;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid > div:first-child{
+        grid-column:1 / -1;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media(max-width:600px){
+
+    .container{
+        width:min(91%,var(--container));
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .brand-mark{
+        width:42px;
+        height:42px;
+    }
+
+    .brand-text strong{
+        font-size:22px;
+    }
+
+    .brand-text small{
+        font-size:7px;
+        letter-spacing:1.5px;
+    }
+
+    .hero{
+        padding:58px 0 65px;
+    }
+
+    .hero-copy .eyebrow{
+        justify-content:flex-start;
+        font-size:9px;
+        letter-spacing:2px;
+    }
+
+    .hero-copy .eyebrow::before,
+    .hero-copy .eyebrow::after{
+        width:20px;
+    }
+
+    .hero-copy h1{
+        font-size:clamp(37px,10vw,45px);
+        letter-spacing:-.7px;
+    }
+
+    .hero-copy > p{
+        font-size:15px;
+        line-height:1.8;
     }
 
     .hero-actions{
         flex-direction:column;
-        align-items:stretch;
     }
 
-    .btn{
+    .hero-actions .btn{
         width:100%;
+    }
+
+    .hero-photo-frame{
+        padding:8px;
+    }
+
+    .hero-partner-image{
+        width:100%;
+        height:auto;
+        max-height:none;
+        object-fit:contain;
+    }
+
+    .hero-photo-caption{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:4px;
+    }
+
+    .about-intro,
+    .contact-info,
+    .review-intro,
+    .consultation-form,
+    .review-form,
+    .ai-box{
+        padding:28px;
+    }
+
+    .about-content h3{
+        font-size:29px;
     }
 
     .about-points{
@@ -1675,102 +1870,142 @@ footer{
     .team-grid,
     .team-grid.associates,
     .practice-grid,
-    .forum-grid,
-    .knowledge-grid{
+    .knowledge-grid,
+    .forum-grid{
         grid-template-columns:1fr;
     }
 
-    .team-card-top{
-        grid-template-columns:120px 1fr;
+    .profile-photo{
+        height:370px;
     }
 
-    .team-photo{
-        height:210px;
+    .profile-content{
+        padding:27px;
     }
 
-    .team-content{
-        padding:20px 16px;
-    }
-
-    .team-content h4{
+    .profile-content h3{
         font-size:25px;
     }
 
-    .group-heading{
-        align-items:flex-end;
+    .practice-card{
+        min-height:auto;
+        padding:27px;
     }
 
-    .group-heading h3{
-        font-size:29px;
-    }
-
-    .group-heading small{
-        display:none;
-    }
-
-    .process-line{
+    .process-timeline{
         grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .process-item{
+        padding:0 10px;
+    }
+
+    .knowledge-filters{
+        justify-content:flex-start;
+    }
+
+    .filter-btn{
+        flex:1 1 calc(50% - 8px);
     }
 
     .ai-options{
-        grid-template-columns:1fr;
+        grid-template-columns:1fr 1fr;
     }
 
     .form-grid{
         grid-template-columns:1fr;
+        gap:0;
     }
 
     .form-group.full{
         grid-column:auto;
     }
 
-    .consultation-form,
-    .contact-info,
-    .ai-box{
-        padding:25px 20px;
+    .review-intro h3{
+        font-size:30px;
     }
 
-    .footer-main{
+    .vision-quote{
+        padding:25px 10px 25px 35px;
+        font-size:22px;
+    }
+
+    .vision-quote::before{
+        font-size:65px;
+        left:-3px;
+    }
+
+    .footer-grid{
         grid-template-columns:1fr;
-        gap:30px;
+        gap:35px;
+    }
+
+    .footer-grid > div:first-child{
+        grid-column:auto;
     }
 
     .footer-bottom{
         flex-direction:column;
+        gap:8px;
     }
 
-    .modal-grid{
-        grid-template-columns:1fr;
+    .modal-box{
+        padding:32px 24px;
     }
 
-    .modal-grid img{
-        max-width:180px;
+    .modal-box h3{
+        font-size:29px;
+    }
+
+    .back-top{
+        right:15px;
+        bottom:15px;
     }
 
 }
 
-
 /* =========================================================
-   PRINT
+   VERY SMALL MOBILE
    ========================================================= */
 
-@media print{
+@media(max-width:380px){
 
-    .site-header,
-    .menu-toggle,
-    .hero-actions,
-    .back-top,
-    .final-cta,
-    footer{
-        display:none !important;
+    .brand-text strong{
+        font-size:20px;
     }
 
-    body{
-        background:#fff;
+    .hero-copy h1{
+        font-size:35px;
     }
 
-    .section{
-        padding:35px 0;
+    .ai-options{
+        grid-template-columns:1fr;
+    }
+
+    .profile-photo{
+        height:330px;
+    }
+
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+        scroll-behavior:auto !important;
+        transition:none !important;
+        animation:none !important;
+    }
+
+    .reveal{
+        opacity:1;
+        transform:none;
     }
 
 }
@@ -1778,9 +2013,7 @@ footer{
 </style>
 </head>
 
-
 <body>
-
 
 <!-- =======================================================
      HEADER
@@ -1796,86 +2029,82 @@ footer{
 
             <div class="brand-text">
                 <strong>LegalDecode</strong>
-                <span>Advocates & Legal Counsel</span>
+                <small>Advocates & Legal Counsel</small>
             </div>
 
         </a>
 
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
-            ☰
-        </button>
-
-
-        <nav class="nav-links" id="navLinks">
+        <nav class="nav-links">
 
             <a href="#home">Home</a>
-
             <a href="#about">About</a>
-
             <a href="#team">Our Team</a>
-
             <a href="#practice">Practice Areas</a>
-
             <a href="#forums">Courts & Forums</a>
-
             <a href="#process">Our Process</a>
-
             <a href="#knowledge">Legal Knowledge</a>
-
             <a href="#contact">Contact</a>
 
         </nav>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Our Team</a>
+        <a href="#practice">Practice Areas</a>
+        <a href="#forums">Courts & Forums</a>
+        <a href="#process">Our Process</a>
+        <a href="#knowledge">Legal Knowledge</a>
+        <a href="#contact">Contact</a>
 
     </div>
 
 </header>
 
 
-
 <!-- =======================================================
      HERO
      ======================================================= -->
-
-<main>
 
 <section class="hero" id="home">
 
     <div class="container hero-grid">
 
-        <div class="hero-content reveal">
+        <div class="hero-copy reveal">
 
-            <div class="hero-kicker">
-                <span></span>
-                LegalDecode
+            <div class="eyebrow">
+                Legal Counsel • Litigation • Advocacy
             </div>
 
             <h1>
-                Law.<br>
-                <em>Reason.</em><br>
-                Remedy.
+                Strategic Legal Counsel.
+                <span>Diligent Representation.</span>
+                Committed to Justice.
             </h1>
 
-            <p class="hero-lead">
-                A Lucknow-based legal practice focused on thoughtful
-                legal analysis, precise drafting, strategic preparation
-                and focused representation across litigation and legal
-                proceedings.
+            <p>
+                LegalDecode is a professionally managed law firm based in
+                Lucknow, Uttar Pradesh, providing legal counsel, litigation
+                services and professional representation across a diverse
+                spectrum of legal matters. Our approach combines legal
+                analysis, strategic preparation and diligent advocacy, with
+                close attention to the rights, interests and objectives of
+                our clients.
             </p>
-
-
-            <div class="hero-maxim">
-
-                <strong>
-                    Ubi Jus Ibi Remedium
-                </strong>
-
-                <span>
-                    Where there is a right, there is a remedy.
-                </span>
-
-            </div>
-
 
             <div class="hero-actions">
 
@@ -1883,35 +2112,44 @@ footer{
                     Request Consultation
                 </a>
 
-                <a href="#team" class="btn btn-outline">
-                    Meet Our Team
+                <a href="tel:+917007725481" class="btn btn-outline">
+                    Call +91 70077 25481
                 </a>
 
+            </div>
+
+            <div class="hero-maxim">
+                “Ubi Jus Ibi Remedium” — Where there is a right, there is a remedy.
             </div>
 
         </div>
 
 
-        <div class="hero-visual reveal">
+        <div class="reveal">
 
             <div class="hero-photo-frame">
 
+                <!-- IMPORTANT:
+                     Full partner photograph.
+                     object-fit: contain prevents cropping.
+                -->
+
                 <img
                     src="partner.jpeg"
-                    alt="LegalDecode Partners"
+                    alt="LegalDecode Partners - Adv. Aadesh Pandey and Adv. Vartika Pandey"
                     class="hero-partner-image"
                     loading="eager"
                 >
 
-                <div class="hero-caption">
+                <div class="hero-photo-caption">
 
-                    <small>LegalDecode</small>
-
-                    <h3>Partners in Practice</h3>
-
-                    <p>
+                    <strong>
                         Adv. Aadesh Pandey & Adv. Vartika Pandey
-                    </p>
+                    </strong>
+
+                    <span>
+                        Partners • Legal Counsel
+                    </span>
 
                 </div>
 
@@ -1922,113 +2160,100 @@ footer{
     </div>
 
 </section>
-
-
-
-<!-- =======================================================
-     TRUST STRIP
-     ======================================================= -->
-
-<section class="trust-strip">
-
-    <div class="container trust-grid">
-
-        <div class="trust-item">
-            <strong>High Court</strong>
-            <span>Lucknow Bench</span>
-        </div>
-
-        <div class="trust-item">
-            <strong>District Courts</strong>
-            <span>Relevant Jurisdictions</span>
-        </div>
-
-        <div class="trust-item">
-            <strong>Tribunals</strong>
-            <span>DRT · CAT · SPST · AFT</span>
-        </div>
-
-        <div class="trust-item">
-            <strong>Legal Counsel</strong>
-            <span>Litigation & Advisory</span>
-        </div>
-
-    </div>
-
-</section>
-
 
 
 <!-- =======================================================
      ABOUT
      ======================================================= -->
 
-<section class="section about" id="about">
+<section class="about" id="about">
 
-    <div class="container about-grid">
+    <div class="container">
 
-        <div class="about-quote reveal">
-
-            <h3>
-                Practical legal assistance,
-                grounded in law and reason.
-            </h3>
-
-            <p>
-                LegalDecode approaches each matter through
-                its facts, governing law, procedure and
-                strategic requirements.
-            </p>
-
-        </div>
-
-
-        <div class="about-content reveal">
+        <div class="section-heading reveal">
 
             <div class="eyebrow">
                 About LegalDecode
             </div>
 
-            <h2>
-                Law with clarity.
-                Advocacy with purpose.
-            </h2>
+            <h2>Professional Legal Assistance</h2>
 
             <p>
-                LegalDecode is represented by a team of advocates
-                practising from Lucknow, with professional experience
-                across diverse areas of litigation and legal practice.
-                Our team approaches each matter with careful legal
-                analysis, thorough preparation and focused advocacy,
-                keeping the specific facts, legal issues and objectives
-                of each matter in consideration.
+                A dedicated legal practice based in Lucknow, providing
+                representation and legal assistance across diverse areas
+                of litigation.
             </p>
 
-            <p>
-                The practice extends across criminal matters,
-                SARFAESI matters, banking and financial matters,
-                property disputes, family court matters, civil
-                litigation and service matters, along with proceedings
-                before the appropriate courts and tribunals.
-            </p>
+        </div>
 
 
-            <div class="about-points">
+        <div class="about-grid">
 
-                <div class="about-point">
-                    Careful Legal Analysis
+            <div class="about-intro reveal">
+
+                <h3>LegalDecode</h3>
+
+                <p>
+                    LegalDecode is a professionally managed law firm based
+                    in Lucknow, Uttar Pradesh, offering comprehensive legal
+                    assistance, litigation services and strategic legal
+                    counsel across a diverse spectrum of legal matters.
+                </p>
+
+                <div class="maxim">
+                    “Audi Alteram Partem” — Hear the other side.
                 </div>
 
-                <div class="about-point">
-                    Precise Drafting
-                </div>
+            </div>
 
-                <div class="about-point">
-                    Procedural Preparation
-                </div>
 
-                <div class="about-point">
-                    Focused Representation
+            <div class="about-content reveal">
+
+                <h3>Our Approach</h3>
+
+                <p>
+                    LegalDecode is committed to providing well-considered,
+                    practical and legally sound advice, with a strong
+                    emphasis on professional integrity, meticulous
+                    preparation and diligent representation.
+                </p>
+
+                <p>
+                    At LegalDecode, we recognise that every legal matter
+                    carries its own distinct factual, procedural and legal
+                    considerations. Our approach therefore begins with a
+                    thorough understanding of the matter, followed by
+                    careful legal research, assessment of available
+                    remedies and formulation of a considered legal strategy.
+                </p>
+
+                <p>
+                    Our objective is to provide clients with dependable
+                    legal guidance founded upon sound legal principles,
+                    careful preparation and responsible advocacy. We remain
+                    attentive to the evolving requirements of each matter
+                    and endeavour to maintain clear communication,
+                    procedural diligence and professional responsiveness.
+                </p>
+
+                <div class="about-points">
+
+                    <div class="about-point">
+                        Strategic Legal Advice
+                    </div>
+
+                    <div class="about-point">
+                        Effective Representation
+                    </div>
+
+                    <div class="about-point">
+                        Client-Focused Approach
+                    </div>
+
+                    <div class="about-point">
+                        Commitment to Justice
+                    </div>
+
                 </div>
 
             </div>
@@ -2040,43 +2265,39 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
      TEAM
      ======================================================= -->
 
-<section class="section team" id="team">
+<section class="team" id="team">
 
     <div class="container">
 
         <div class="section-heading reveal">
 
             <div class="eyebrow">
-                The Firm
+                Our Team
             </div>
 
-            <h2>
-                Our Team
-            </h2>
+            <h2>Advocates & Legal Counsel</h2>
 
             <p>
-                Advocates working across litigation, legal advisory,
-                drafting and tribunal proceedings.
+                LegalDecode is represented by a team of advocates practising
+                from Lucknow, with professional experience across diverse
+                areas of litigation and legal practice. Our team approaches
+                each matter with careful legal analysis, thorough preparation
+                and focused advocacy.
             </p>
 
         </div>
 
 
+        <!-- PARTNERS -->
+
         <div class="team-group">
 
-            <div class="group-heading reveal">
-
-                <h3>Partners</h3>
-
-                <span></span>
-
-                <small>Leadership & Legal Counsel</small>
-
+            <div class="group-title reveal">
+                <span>Partners</span>
             </div>
 
             <div class="team-grid" id="partnersGrid"></div>
@@ -2084,16 +2305,12 @@ footer{
         </div>
 
 
+        <!-- ASSOCIATES -->
+
         <div class="team-group">
 
-            <div class="group-heading reveal">
-
-                <h3>Associates</h3>
-
-                <span></span>
-
-                <small>Advocates & Litigation Support</small>
-
+            <div class="group-title reveal">
+                <span>Associates</span>
             </div>
 
             <div class="team-grid associates" id="associatesGrid"></div>
@@ -2105,28 +2322,25 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
      PRACTICE AREAS
      ======================================================= -->
 
-<section class="section practice" id="practice">
+<section class="practice" id="practice">
 
     <div class="container">
 
         <div class="section-heading reveal">
 
             <div class="eyebrow">
-                Legal Practice
+                Practice Areas
             </div>
 
-            <h2>
-                Practice Areas
-            </h2>
+            <h2>Areas of Legal Practice</h2>
 
             <p>
-                Legal services structured around the factual,
-                procedural and substantive requirements of each matter.
+                Our practice covers a range of litigation and legal matters
+                before courts and specialised tribunals.
             </p>
 
         </div>
@@ -2141,9 +2355,13 @@ footer{
                 <h3>Criminal Law</h3>
 
                 <p>
-                    Representation and legal assistance in criminal
-                    proceedings, including matters requiring careful
-                    procedural strategy and focused advocacy.
+                    Our criminal law practice encompasses criminal litigation
+                    and proceedings before the High Court and District Courts,
+                    including matters arising at different stages of the
+                    criminal process. We undertake careful examination of the
+                    factual matrix, statutory provisions, evidentiary aspects
+                    and applicable procedural law, followed by appropriate
+                    legal strategy and preparation.
                 </p>
 
             </article>
@@ -2156,10 +2374,12 @@ footer{
                 <h3>SARFAESI Matters</h3>
 
                 <p>
-                    Legal assistance in matters arising under the
-                    SARFAESI framework, including issues relating to
-                    secured assets, recovery proceedings and remedies
-                    available in law.
+                    Our SARFAESI practice focuses on legal proceedings arising
+                    under the Securitisation and Reconstruction of Financial
+                    Assets and Enforcement of Security Interest Act, 2002.
+                    We undertake careful examination of financial transactions,
+                    security documents, statutory notices and procedural
+                    compliance, and advise on appropriate legal remedies.
                 </p>
 
             </article>
@@ -2172,9 +2392,11 @@ footer{
                 <h3>Banking & Financial Laws</h3>
 
                 <p>
-                    Legal assistance concerning banking, financial
-                    recovery, secured transactions and related
-                    proceedings before appropriate forums.
+                    Our banking and financial law practice encompasses legal
+                    matters arising from banking transactions, financial
+                    arrangements, lending and recovery proceedings and
+                    related disputes. Each matter is examined through its
+                    contractual, statutory and regulatory dimensions.
                 </p>
 
             </article>
@@ -2187,9 +2409,12 @@ footer{
                 <h3>Property Disputes</h3>
 
                 <p>
-                    Assistance in property-related disputes,
-                    documentation, possession issues, civil claims
-                    and associated legal proceedings.
+                    Our property dispute practice encompasses legal matters
+                    relating to ownership, title, possession, transfer and
+                    other disputes concerning immovable property. We examine
+                    title documents, relevant records, contractual arrangements
+                    and applicable statutory provisions to assess available
+                    remedies.
                 </p>
 
             </article>
@@ -2202,9 +2427,11 @@ footer{
                 <h3>Family Court Matters</h3>
 
                 <p>
-                    Legal representation and assistance in family
-                    disputes and proceedings requiring sensitive,
-                    structured and legally informed handling.
+                    Our Family Court practice encompasses legal proceedings
+                    arising from matrimonial and family disputes, including
+                    matters concerning marital rights, matrimonial reliefs,
+                    maintenance, custody and other allied family-law
+                    proceedings.
                 </p>
 
             </article>
@@ -2217,9 +2444,12 @@ footer{
                 <h3>Civil Matters</h3>
 
                 <p>
-                    Our civil litigation practice encompasses civil
-                    suits, disputes, interim relief, procedural
-                    applications and other civil proceedings.
+                    Our civil litigation practice encompasses a broad range
+                    of civil proceedings involving contractual, property,
+                    recovery, injunction and other civil disputes. We
+                    undertake careful examination of pleadings, documentary
+                    evidence, contractual arrangements, statutory provisions
+                    and relevant judicial precedents.
                 </p>
 
             </article>
@@ -2232,9 +2462,11 @@ footer{
                 <h3>Service Matters</h3>
 
                 <p>
-                    Legal assistance in service-related disputes,
-                    administrative proceedings and matters arising
-                    before appropriate judicial and tribunal forums.
+                    Our service law practice encompasses legal matters arising
+                    from public employment and service-related disputes before
+                    competent courts and tribunals. We examine service records,
+                    applicable service rules, statutory provisions, administrative
+                    decisions and relevant judicial precedents.
                 </p>
 
             </article>
@@ -2246,29 +2478,25 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
      COURTS & FORUMS
      ======================================================= -->
 
-<section class="section section-dark forums" id="forums">
+<section class="forums" id="forums">
 
     <div class="container">
 
-        <div class="section-heading reveal">
+        <div class="section-heading light reveal">
 
             <div class="eyebrow">
-                Jurisdiction
+                Courts & Forums
             </div>
 
-            <h2>
-                Courts & Forums
-            </h2>
+            <h2>Representation Before Various Forums</h2>
 
             <p>
-                Representation and legal assistance before the
-                following courts and tribunals, subject to the
-                nature and jurisdiction of the matter.
+                Our advocates appear before courts and specialised tribunals
+                depending upon the nature of the matter.
             </p>
 
         </div>
@@ -2276,9 +2504,9 @@ footer{
 
         <div class="forum-grid">
 
-            <article class="forum-card reveal">
+            <div class="forum-card reveal">
 
-                <div class="forum-no">01</div>
+                <div class="forum-code">01</div>
 
                 <h3>
                     High Court of Judicature at Allahabad
@@ -2288,12 +2516,12 @@ footer{
                     Lucknow Bench
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="forum-card reveal">
+            <div class="forum-card reveal">
 
-                <div class="forum-no">02</div>
+                <div class="forum-code">02</div>
 
                 <h3>
                     District & Session Courts
@@ -2303,67 +2531,59 @@ footer{
                     Lucknow & relevant jurisdictions
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="forum-card reveal">
+            <div class="forum-card reveal">
 
-                <div class="forum-no">03</div>
+                <div class="forum-code">03</div>
 
-                <h3>
-                    DRT
-                </h3>
+                <h3>DRT</h3>
 
                 <p>
                     Debt Recovery Tribunal
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="forum-card reveal">
+            <div class="forum-card reveal">
 
-                <div class="forum-no">04</div>
+                <div class="forum-code">04</div>
 
-                <h3>
-                    CAT
-                </h3>
+                <h3>CAT</h3>
 
                 <p>
                     Central Administrative Tribunal
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="forum-card reveal">
+            <div class="forum-card reveal">
 
-                <div class="forum-no">05</div>
+                <div class="forum-code">05</div>
 
-                <h3>
-                    SPST
-                </h3>
+                <h3>SPST</h3>
 
                 <p>
                     State Public Services Tribunal
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="forum-card reveal">
+            <div class="forum-card reveal">
 
-                <div class="forum-no">06</div>
+                <div class="forum-code">06</div>
 
-                <h3>
-                    AFT
-                </h3>
+                <h3>AFT</h3>
 
                 <p>
                     Armed Forces Tribunal
                 </p>
 
-            </article>
+            </div>
 
         </div>
 
@@ -2372,48 +2592,49 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
-     PHILOSOPHY
+     VISION
      ======================================================= -->
 
-<section class="section philosophy">
+<section class="vision">
 
-    <div class="container philosophy-inner reveal">
+    <div class="container vision-box">
 
-        <div class="eyebrow">
-            Jurisprudence
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Our Vision
+            </div>
+
+            <h2>Justice at the Centre of Our Practice</h2>
+
         </div>
 
-        <div class="maxim">
-            “Audi Alteram Partem”
+        <div class="vision-quote reveal">
+
+            Our objective is to provide practical, strategic and
+            result-oriented legal assistance while keeping justice at
+            the heart of every matter we undertake. We are committed
+            to delivering dedicated legal representation to our clients
+            and working towards making justice accessible to every
+            individual.
+
         </div>
 
-        <div class="meaning">
-            Hear the other side.
+        <div class="vision-maxim reveal">
+            “Fiat Justitia Ruat Caelum” — Let justice be done though the heavens fall.
         </div>
-
-        <div class="philosophy-rule"></div>
-
-        <p>
-            Legal reasoning requires attention to facts, law,
-            procedure and the position of each side. LegalDecode
-            seeks to approach every matter through disciplined
-            preparation, clear legal reasoning and appropriate
-            representation.
-        </p>
 
     </div>
 
 </section>
 
 
-
 <!-- =======================================================
-     OUR PROCESS
+     PROCESS
      ======================================================= -->
 
-<section class="section process" id="process">
+<section class="process" id="process">
 
     <div class="container">
 
@@ -2423,71 +2644,70 @@ footer{
                 Methodology
             </div>
 
-            <h2>
-                Our Process
-            </h2>
+            <h2>Our Process</h2>
 
             <p>
-                A structured approach from the first consultation
-                to representation before the appropriate forum.
+                A structured approach from the first consultation to
+                representation before the appropriate forum.
             </p>
 
         </div>
 
 
-        <div class="process-line">
+        <div class="process-timeline">
 
-            <div class="process-card reveal">
+            <div class="process-item reveal">
 
-                <div class="process-icon">01</div>
+                <div class="process-number">01</div>
 
                 <h3>Consultation</h3>
 
                 <p>
-                    Understanding the client's concerns,
-                    factual background and immediate requirements.
+                    Understanding the client's concerns, factual
+                    background, legal objectives and immediate
+                    requirements.
                 </p>
 
             </div>
 
 
-            <div class="process-card reveal">
+            <div class="process-item reveal">
 
-                <div class="process-icon">02</div>
+                <div class="process-number">02</div>
 
                 <h3>Case Assessment</h3>
 
                 <p>
                     Examination of documents, facts, legal issues,
-                    jurisdiction and applicable procedure.
+                    applicable provisions and available remedies.
                 </p>
 
             </div>
 
 
-            <div class="process-card reveal">
+            <div class="process-item reveal">
 
-                <div class="process-icon">03</div>
+                <div class="process-number">03</div>
 
                 <h3>Legal Strategy</h3>
 
                 <p>
-                    Identifying legally available remedies,
-                    procedural steps and appropriate representation.
+                    Identifying appropriate remedies, procedural steps
+                    and the legal course suited to the matter.
                 </p>
 
             </div>
 
 
-            <div class="process-card reveal">
+            <div class="process-item reveal">
 
-                <div class="process-icon">04</div>
+                <div class="process-number">04</div>
 
-                <h3>Advocacy</h3>
+                <h3>Advocacy & Representation</h3>
 
                 <p>
-                    Preparation, drafting and representation before
-                    the appropriate court or tribunal.
+                    Thorough preparation, legal submissions and
+                    representation before the appropriate court or forum.
                 </p>
 
             </div>
@@ -2499,12 +2719,11 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
      LEGAL KNOWLEDGE CENTRE
      ======================================================= -->
 
-<section class="section knowledge" id="knowledge">
+<section class="knowledge" id="knowledge">
 
     <div class="container">
 
@@ -2514,48 +2733,46 @@ footer{
                 Legal Knowledge Centre
             </div>
 
-            <h2>
-                Research. Read. Understand.
-            </h2>
+            <h2>Research. Read. Understand.</h2>
 
             <p>
                 A structured section for legal articles, updates,
-                judgments, bare acts, FAQs and legal resources.
+                judgments, bare Acts, FAQs and legal resources.
             </p>
 
         </div>
 
 
-        <div class="knowledge-tabs">
+        <div class="knowledge-toolbar reveal">
 
-            <button class="knowledge-tab active" data-filter="all">
-                All
-            </button>
+            <div class="knowledge-filters">
 
-            <button class="knowledge-tab" data-filter="article">
-                Articles
-            </button>
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
 
-            <button class="knowledge-tab" data-filter="judgment">
-                Judgments
-            </button>
+                <button class="filter-btn" data-filter="articles">
+                    Articles
+                </button>
 
-            <button class="knowledge-tab" data-filter="bareact">
-                Bare Acts
-            </button>
+                <button class="filter-btn" data-filter="judgments">
+                    Judgments
+                </button>
 
-            <button class="knowledge-tab" data-filter="faq">
-                FAQs
-            </button>
+                <button class="filter-btn" data-filter="acts">
+                    Bare Acts
+                </button>
 
-        </div>
+                <button class="filter-btn" data-filter="faqs">
+                    FAQs
+                </button>
 
-
-        <div class="knowledge-search">
+            </div>
 
             <input
                 type="search"
                 id="knowledgeSearch"
+                class="knowledge-search"
                 placeholder="Search Legal Knowledge..."
                 aria-label="Search Legal Knowledge"
             >
@@ -2565,29 +2782,33 @@ footer{
 
         <div class="knowledge-grid" id="knowledgeGrid">
 
-            <article class="knowledge-card" data-type="article">
+            <article class="knowledge-card reveal" data-type="articles">
 
-                <span class="tag">Article</span>
+                <div class="knowledge-type">
+                    Articles
+                </div>
 
                 <h3>
                     Understanding Legal Remedies
                 </h3>
 
                 <p>
-                    A knowledge section for explanatory legal content,
-                    procedural guidance and jurisprudential discussions.
+                    A knowledge section for explaining legal concepts,
+                    procedural principles and practical legal considerations.
                 </p>
 
-                <a href="#contact" class="text-link">
+                <span class="knowledge-link">
                     Explore
-                </a>
+                </span>
 
             </article>
 
 
-            <article class="knowledge-card" data-type="judgment">
+            <article class="knowledge-card reveal" data-type="judgments">
 
-                <span class="tag">Judgments</span>
+                <div class="knowledge-type">
+                    Judgments
+                </div>
 
                 <h3>
                     Important Judgments
@@ -2595,64 +2816,65 @@ footer{
 
                 <p>
                     A dedicated structure for important judgments,
-                    case summaries and legal principles.
+                    legal principles and case references.
                 </p>
 
-                <a href="#contact" class="text-link">
-                    View Section
-                </a>
+                <span class="knowledge-link">
+                    View Research
+                </span>
 
             </article>
 
 
-            <article class="knowledge-card" data-type="bareact">
+            <article class="knowledge-card reveal" data-type="acts">
 
-                <span class="tag">Bare Acts</span>
+                <div class="knowledge-type">
+                    Bare Acts
+                </div>
 
                 <h3>
                     Bare Acts & Statutes
                 </h3>
 
                 <p>
-                    A resource section intended for statutory texts
-                    and links to authoritative legal sources.
+                    A resource section intended for statutory provisions,
+                    legislative materials and related legal references.
                 </p>
 
-                <a
-                    href="https://www.indiacode.nic.in/"
-                    target="_blank"
-                    rel="noopener"
-                    class="text-link"
-                >
-                    India Code
-                </a>
+                <span class="knowledge-link">
+                    View Acts
+                </span>
 
             </article>
 
 
-            <article class="knowledge-card" data-type="faq">
+            <article class="knowledge-card reveal" data-type="faqs">
 
-                <span class="tag">FAQ</span>
+                <div class="knowledge-type">
+                    FAQ
+                </div>
 
                 <h3>
                     Legal FAQs
                 </h3>
 
                 <p>
-                    Common legal questions can be organised here
-                    for easier public understanding.
+                    Common legal questions can be organised here for
+                    easier public understanding.
                 </p>
 
-                <a href="#faq" class="text-link">
+                <a href="#faq" class="knowledge-link">
                     Read FAQs
                 </a>
 
             </article>
 
 
-            <article class="knowledge-card" data-type="article">
+            <article class="knowledge-card reveal" data-type="articles">
 
-                <span class="tag">Legal Updates</span>
+                <div class="knowledge-type">
+                    Legal Updates
+                </div>
 
                 <h3>
                     Legal Updates
@@ -2663,29 +2885,31 @@ footer{
                     procedural updates and important notifications.
                 </p>
 
-                <a href="#contact" class="text-link">
+                <span class="knowledge-link">
                     Explore
-                </a>
+                </span>
 
             </article>
 
 
-            <article class="knowledge-card" data-type="judgment">
+            <article class="knowledge-card reveal" data-type="judgments">
 
-                <span class="tag">Research</span>
+                <div class="knowledge-type">
+                    Research
+                </div>
 
                 <h3>
                     Case Law Research
                 </h3>
 
                 <p>
-                    Future searchable database structure for judgments,
+                    A future searchable database structure for judgments,
                     legal propositions and case references.
                 </p>
 
-                <a href="#contact" class="text-link">
+                <span class="knowledge-link">
                     Research
-                </a>
+                </span>
 
             </article>
 
@@ -2696,12 +2920,11 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
      FAQ
      ======================================================= -->
 
-<section class="section" id="faq" style="background:#fff;">
+<section class="faq" id="faq">
 
     <div class="container">
 
@@ -2711,76 +2934,110 @@ footer{
                 Frequently Asked Questions
             </div>
 
-            <h2>
-                Legal FAQs
-            </h2>
+            <h2>Legal FAQs</h2>
 
         </div>
 
 
-        <div style="max-width:850px;margin:auto;" id="faqList">
+        <div class="faq-list">
 
-
-            <div class="faq-item" style="border-top:1px solid #ddd6c9;">
+            <div class="faq-item reveal">
 
                 <button class="faq-question">
-                    How can I request a legal consultation?
-                    <span>+</span>
+                    <span>
+                        How can I request a legal consultation?
+                    </span>
+
+                    <span class="faq-icon">+</span>
                 </button>
 
                 <div class="faq-answer">
-                    You may use the consultation form on this website.
-                    After submission, the available consultation
-                    information can be communicated through WhatsApp.
+
+                    <p>
+                        You may use the consultation form on this website
+                        or contact LegalDecode by phone, WhatsApp or email.
+                        The initial communication is intended to understand
+                        the nature of the matter and the assistance required.
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="faq-item" style="border-top:1px solid #ddd6c9;">
+            <div class="faq-item reveal">
 
                 <button class="faq-question">
-                    What documents should I bring for a consultation?
-                    <span>+</span>
+
+                    <span>
+                        What documents should I bring for a consultation?
+                    </span>
+
+                    <span class="faq-icon">+</span>
+
                 </button>
 
                 <div class="faq-answer">
-                    Relevant notices, agreements, orders, pleadings,
-                    correspondence and other documents connected with
-                    the matter should ordinarily be kept available.
+
+                    <p>
+                        Relevant agreements, notices, orders, pleadings,
+                        correspondence, identity documents and other records
+                        connected with the matter may be useful. The documents
+                        required will depend upon the nature of the matter.
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="faq-item" style="border-top:1px solid #ddd6c9;">
+            <div class="faq-item reveal">
 
                 <button class="faq-question">
-                    Does submitting the online form create an advocate-client relationship?
-                    <span>+</span>
+
+                    <span>
+                        Does submitting the online form create an advocate-client relationship?
+                    </span>
+
+                    <span class="faq-icon">+</span>
+
                 </button>
 
                 <div class="faq-answer">
-                    No. Submission of an online inquiry does not by
-                    itself establish an advocate-client relationship.
-                    Formal engagement is subject to consultation and
-                    acceptance of the matter.
+
+                    <p>
+                        Submission of an online enquiry does not by itself
+                        create an advocate-client relationship. Professional
+                        engagement is subject to appropriate communication,
+                        acceptance and applicable professional requirements.
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="faq-item" style="border-top:1px solid #ddd6c9;border-bottom:1px solid #ddd6c9;">
+            <div class="faq-item reveal">
 
                 <button class="faq-question">
-                    Can LegalDecode advise on matters outside the listed practice areas?
-                    <span>+</span>
+
+                    <span>
+                        Can LegalDecode advise on matters outside the listed practice areas?
+                    </span>
+
+                    <span class="faq-icon">+</span>
+
                 </button>
 
                 <div class="faq-answer">
-                    The suitability of any matter depends on its facts,
-                    jurisdiction and professional requirements.
-                    You may submit an inquiry for an initial assessment.
+
+                    <p>
+                        The listed practice areas indicate the principal areas
+                        covered on this website. The nature of any matter and
+                        the appropriate forum can be considered before determining
+                        whether LegalDecode can assist.
+                    </p>
+
                 </div>
 
             </div>
@@ -2792,24 +3049,21 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
-     AI
+     ASK LEGALDECODE AI
      ======================================================= -->
 
-<section class="section ai-section">
+<section class="ai-section">
 
     <div class="container">
 
-        <div class="section-heading reveal">
+        <div class="section-heading light reveal">
 
             <div class="eyebrow">
                 Legal Technology
             </div>
 
-            <h2 style="color:#fff;">
-                Ask LegalDecode AI
-            </h2>
+            <h2>Ask LegalDecode AI</h2>
 
             <p>
                 A preliminary practice-area identification assistant
@@ -2821,61 +3075,74 @@ footer{
 
         <div class="ai-box reveal">
 
-            <div class="ai-title">
-
-                <span class="ai-badge">
-                    AI Assistant
-                </span>
-
-                <h3>
-                    What kind of legal matter do you have?
-                </h3>
-
+            <div class="ai-label">
+                AI Assistant
             </div>
 
+            <h3>
+                What kind of legal matter do you have?
+            </h3>
 
             <p>
-                Select the option closest to your concern. This
-                assistant provides general information only and does
-                not constitute legal advice.
+                Select the option closest to your concern.
+                This assistant provides general information only
+                and does not constitute legal advice.
             </p>
 
 
             <div class="ai-options">
 
-                <button class="ai-option" data-ai="criminal">
+                <button class="ai-option" data-ai="Criminal Matter">
                     Criminal Matter
                 </button>
 
-                <button class="ai-option" data-ai="property">
+                <button class="ai-option" data-ai="Property Dispute">
                     Property Dispute
                 </button>
 
-                <button class="ai-option" data-ai="banking">
+                <button class="ai-option" data-ai="Banking / SARFAESI">
                     Banking / SARFAESI
                 </button>
 
-                <button class="ai-option" data-ai="civil">
+                <button class="ai-option" data-ai="Civil Matter">
                     Civil Matter
                 </button>
 
-                <button class="ai-option" data-ai="family">
+                <button class="ai-option" data-ai="Family Court Matter">
                     Family Court Matter
                 </button>
 
-                <button class="ai-option" data-ai="service">
+                <button class="ai-option" data-ai="Service Matter">
                     Service Matter
                 </button>
 
             </div>
 
 
-            <div class="ai-response" id="aiResponse"></div>
+            <div class="ai-result" id="aiResult">
 
-            <div class="ai-disclaimer">
-                Preliminary information only. No automated response
-                on this website should be treated as a substitute for
-                professional legal advice or representation.
+                <strong id="aiResultTitle">
+                    Legal Matter
+                </strong>
+
+                <p id="aiResultText"></p>
+
+                <br>
+
+                <a
+                    href="#contact"
+                    class="btn btn-gold"
+                >
+                    Request Consultation
+                </a>
+
+            </div>
+
+
+            <div class="ai-note">
+                Preliminary information only. No automated response on this
+                website should be treated as a substitute for professional
+                legal advice or representation.
             </div>
 
         </div>
@@ -2885,79 +3152,58 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
-     REVIEWS
+     CLIENT PERSPECTIVES
      ======================================================= -->
 
-<section class="section reviews">
+<section class="reviews">
 
     <div class="container">
 
         <div class="section-heading reveal">
 
             <div class="eyebrow">
-                Client Feedback
+                Client Perspectives
             </div>
 
-            <h2>
-                Client Perspectives
-            </h2>
+            <h2>Your Feedback Matters</h2>
 
             <p>
-                Feedback displayed here is subject to review before
-                publication.
+                Feedback submitted through this section is subject
+                to review before publication.
             </p>
 
         </div>
 
 
-        <div class="review-layout">
+        <div class="review-grid">
 
             <div class="review-intro reveal">
 
                 <h3>
-                    Your feedback
-                    matters.
+                    Your feedback matters.
                 </h3>
 
                 <p>
-                    Clients may submit feedback regarding their
-                    professional experience. Submitted reviews are
-                    not published automatically.
+                    Clients may submit feedback regarding their professional
+                    experience. Submitted reviews are not published
+                    automatically.
                 </p>
 
                 <div class="maxim">
                     “Fiat Justitia Ruat Caelum”
                 </div>
 
-                <p style="margin-top:5px;">
+                <p style="margin-top:8px;color:#9eacbc;">
                     Let justice be done though the heavens fall.
                 </p>
 
             </div>
 
 
-            <div>
+            <div class="review-form reveal">
 
-                <div class="review-list" id="reviewList">
-
-                    <div class="review-card">
-                        <strong>Client Feedback</strong>
-                        <span>LegalDecode</span>
-                        <p>
-                            Verified feedback will appear in this
-                            section after review and approval.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <form
-                    id="reviewForm"
-                    style="margin-top:25px;padding:25px;border:1px solid #ddd6c9;background:#faf8f3;"
-                >
+                <form id="reviewForm">
 
                     <div class="form-grid">
 
@@ -2970,6 +3216,7 @@ footer{
                             <input
                                 id="reviewName"
                                 type="text"
+                                placeholder="Your name"
                                 required
                             >
 
@@ -2978,12 +3225,12 @@ footer{
 
                         <div class="form-group">
 
-                            <label for="reviewRole">
+                            <label for="reviewMatter">
                                 Matter / Category
                             </label>
 
                             <input
-                                id="reviewRole"
+                                id="reviewMatter"
                                 type="text"
                                 placeholder="Optional"
                             >
@@ -2999,6 +3246,7 @@ footer{
 
                             <textarea
                                 id="reviewText"
+                                placeholder="Share your professional experience..."
                                 required
                             ></textarea>
 
@@ -3007,15 +3255,17 @@ footer{
                     </div>
 
 
-                    <button class="btn btn-gold" type="submit">
+                    <button
+                        type="submit"
+                        class="btn btn-gold"
+                    >
                         Submit Feedback
                     </button>
 
-                    <p class="form-note">
-                        Submission does not guarantee publication.
-                        Feedback is stored locally in this browser
-                        until a secure backend approval system is connected.
-                    </p>
+                    <div class="form-note">
+                        Submitted feedback will remain pending for review
+                        before any publication.
+                    </div>
 
                 </form>
 
@@ -3028,12 +3278,11 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
      CONTACT
      ======================================================= -->
 
-<section class="section contact" id="contact">
+<section class="contact" id="contact">
 
     <div class="container">
 
@@ -3043,13 +3292,11 @@ footer{
                 Contact LegalDecode
             </div>
 
-            <h2>
-                Begin with a Consultation
-            </h2>
+            <h2>Begin With a Consultation</h2>
 
             <p>
-                Share the basic details of your matter and the
-                team can review the information for the next step.
+                Share the basic details of your matter and the team
+                can consider the information provided.
             </p>
 
         </div>
@@ -3060,19 +3307,21 @@ footer{
             <div class="contact-info reveal">
 
                 <h3>
-                    Legal counsel,
+                    Legal counsel,<br>
                     when it matters.
                 </h3>
 
 
                 <div class="contact-item">
 
-                    <small>Office</small>
+                    <strong>
+                        Office
+                    </strong>
 
                     <span>
-                        E3/243 Vinay Khand -3,
-                        Gomti Nagar, Lucknow,
-                        Uttar Pradesh - 226010
+                        E3/243, Vinay Khand-3,<br>
+                        Gomti Nagar,<br>
+                        Lucknow, Uttar Pradesh - 226010
                     </span>
 
                 </div>
@@ -3080,10 +3329,12 @@ footer{
 
                 <div class="contact-item">
 
-                    <small>Phone</small>
+                    <strong>
+                        Phone
+                    </strong>
 
-                    <a href="tel:+917007724581">
-                        +91 7007724581
+                    <a href="tel:+917007725481">
+                        +91 70077 25481
                     </a>
 
                 </div>
@@ -3091,7 +3342,26 @@ footer{
 
                 <div class="contact-item">
 
-                    <small>Email</small>
+                    <strong>
+                        WhatsApp
+                    </strong>
+
+                    <a
+                        href="https://wa.me/917007725481"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Chat on WhatsApp
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Email
+                    </strong>
 
                     <a href="mailto:avlegalaxis@gmail.com">
                         avlegalaxis@gmail.com
@@ -3102,11 +3372,12 @@ footer{
 
                 <div class="contact-item">
 
-                    <small>Office Hours</small>
+                    <strong>
+                        Office Hours
+                    </strong>
 
                     <span>
-                        Monday – Saturday
-                        <br>
+                        Monday – Saturday<br>
                         10:00 AM – 6:00 PM
                     </span>
 
@@ -3115,19 +3386,13 @@ footer{
 
                 <div class="social-links">
 
-                    <!-- Replace #contact with the firm's actual
-                         Facebook URL when confirmed -->
+                    <!-- Replace # with actual social URLs when confirmed -->
 
-                    <a href="#contact"
-                       onclick="alert('Official Facebook page link will be added here.');return false;">
+                    <a href="#contact">
                         Facebook
                     </a>
 
-                    <!-- Replace #contact with the firm's actual
-                         Instagram URL when confirmed -->
-
-                    <a href="#contact"
-                       onclick="alert('Official Instagram page link will be added here.');return false;">
+                    <a href="#contact">
                         Instagram
                     </a>
 
@@ -3143,24 +3408,28 @@ footer{
                 </h3>
 
                 <p>
-                    Complete the form below. The information will be
-                    prepared as a WhatsApp consultation message.
+                    Submit the basic details of your matter.
+                    The form will prepare a WhatsApp enquiry.
                 </p>
 
 
-                <form id="consultationForm">
+                <form
+                    id="consultationForm"
+                    onsubmit="sendWhatsApp(); return false;"
+                >
 
                     <div class="form-grid">
 
                         <div class="form-group">
 
                             <label for="clientName">
-                                Full Name
+                                Your Name
                             </label>
 
                             <input
-                                id="clientName"
                                 type="text"
+                                id="clientName"
+                                placeholder="Enter your name"
                                 required
                             >
 
@@ -3170,12 +3439,13 @@ footer{
                         <div class="form-group">
 
                             <label for="clientPhone">
-                                Mobile Number
+                                Phone Number
                             </label>
 
                             <input
-                                id="clientPhone"
                                 type="tel"
+                                id="clientPhone"
+                                placeholder="Enter your phone number"
                                 required
                             >
 
@@ -3189,8 +3459,9 @@ footer{
                             </label>
 
                             <input
-                                id="clientEmail"
                                 type="email"
+                                id="clientEmail"
+                                placeholder="Enter your email"
                             >
 
                         </div>
@@ -3198,14 +3469,14 @@ footer{
 
                         <div class="form-group">
 
-                            <label for="matterType">
-                                Matter Type
+                            <label for="matterCategory">
+                                Matter Category
                             </label>
 
-                            <select id="matterType" required>
+                            <select id="matterCategory">
 
                                 <option value="">
-                                    Select Matter
+                                    Select category
                                 </option>
 
                                 <option>
@@ -3213,15 +3484,15 @@ footer{
                                 </option>
 
                                 <option>
-                                    SARFAESI Matters
-                                </option>
-
-                                <option>
-                                    Banking & Financial Laws
-                                </option>
-
-                                <option>
                                     Property Dispute
+                                </option>
+
+                                <option>
+                                    Banking / SARFAESI
+                                </option>
+
+                                <option>
+                                    Civil Matters
                                 </option>
 
                                 <option>
@@ -3229,15 +3500,11 @@ footer{
                                 </option>
 
                                 <option>
-                                    Civil Matter
-                                </option>
-
-                                <option>
                                     Service Matter
                                 </option>
 
                                 <option>
-                                    Other
+                                    Other Legal Matter
                                 </option>
 
                             </select>
@@ -3247,14 +3514,14 @@ footer{
 
                         <div class="form-group full">
 
-                            <label for="clientMessage">
-                                Brief Description
+                            <label for="clientMatter">
+                                Briefly Describe Your Matter
                             </label>
 
                             <textarea
-                                id="clientMessage"
+                                id="clientMatter"
+                                placeholder="Briefly describe your legal matter..."
                                 required
-                                placeholder="Briefly describe the matter..."
                             ></textarea>
 
                         </div>
@@ -3265,17 +3532,15 @@ footer{
                     <button
                         type="submit"
                         class="btn btn-gold"
+                        style="width:100%;border:0;"
                     >
-                        Send Consultation via WhatsApp
+                        Request Consultation
                     </button>
 
-
-                    <p class="form-note">
-                        Please do not share highly confidential
-                        information through this preliminary inquiry.
-                        A consultation does not itself create an
+                    <div class="form-note">
+                        This enquiry does not by itself create an
                         advocate-client relationship.
-                    </p>
+                    </div>
 
                 </form>
 
@@ -3288,164 +3553,198 @@ footer{
 </section>
 
 
-
 <!-- =======================================================
-     FINAL CTA
+     CTA
      ======================================================= -->
 
-<section class="final-cta">
+<section class="cta">
 
     <div class="container reveal">
 
-        <div class="eyebrow">
-            LegalDecode
-        </div>
-
         <h2>
-            Every matter begins
-            with understanding.
+            Need Legal Assistance?
         </h2>
 
         <p>
-            Discuss the facts. Identify the legal issue.
-            Understand the available course of action.
+            Speak with LegalDecode regarding your legal matter.
         </p>
 
-        <a href="#contact" class="btn btn-gold">
-            Request Consultation
+        <a
+            href="https://wa.me/917007725481"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-gold"
+        >
+            Chat on WhatsApp
         </a>
+
+        <div class="maxim">
+            “Salus Populi Suprema Lex” — The welfare of the people is the supreme law.
+        </div>
 
     </div>
 
 </section>
-
-</main>
-
 
 
 <!-- =======================================================
      FOOTER
      ======================================================= -->
 
-<footer>
+<footer class="footer">
 
-    <div class="container footer-main">
+    <div class="container">
 
-        <div class="footer-brand">
+        <div class="footer-grid">
 
-            <a href="#home" class="brand">
 
-                <div class="brand-mark">LD</div>
+            <div>
 
-                <div class="brand-text">
-                    <strong>LegalDecode</strong>
-                    <span>Advocates & Legal Counsel</span>
+                <div class="footer-brand">
+
+                    <div class="brand-mark">
+                        LD
+                    </div>
+
+                    <div class="brand-text">
+
+                        <strong>
+                            LegalDecode
+                        </strong>
+
+                        <small>
+                            Advocates & Legal Counsel
+                        </small>
+
+                    </div>
+
                 </div>
 
-            </a>
+                <p>
+                    A Lucknow-based legal practice engaged in litigation,
+                    legal advisory, drafting and representation before
+                    appropriate courts and tribunals.
+                </p>
 
-            <p>
-                A Lucknow-based legal practice engaged in litigation,
-                legal advisory, drafting and representation before
-                appropriate courts and tribunals.
-            </p>
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#team">
+                    Our Team
+                </a>
+
+                <a href="#practice">
+                    Practice Areas
+                </a>
+
+                <a href="#forums">
+                    Courts & Forums
+                </a>
+
+                <a href="#process">
+                    Our Process
+                </a>
+
+                <a href="#knowledge">
+                    Legal Knowledge
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    E3/243, Vinay Khand-3,<br>
+                    Gomti Nagar,<br>
+                    Lucknow, Uttar Pradesh - 226010
+                </p>
+
+                <br>
+
+                <a href="tel:+917007725481">
+                    +91 70077 25481
+                </a>
+
+                <a href="mailto:avlegalaxis@gmail.com">
+                    avlegalaxis@gmail.com
+                </a>
+
+            </div>
 
         </div>
 
 
-        <div class="footer-col">
-
-            <h4>Navigation</h4>
-
-            <a href="#about">About</a>
-
-            <a href="#team">Our Team</a>
-
-            <a href="#practice">Practice Areas</a>
-
-            <a href="#forums">Courts & Forums</a>
-
-            <a href="#knowledge">Legal Knowledge</a>
-
-            <a href="#contact">Contact</a>
-
-        </div>
-
-
-        <div class="footer-col">
-
-            <h4>Contact</h4>
-
-            <a href="tel:+917007724581">
-                +91 7007724581
-            </a>
-
-            <a href="mailto:avlegalaxis@gmail.com">
-                avlegalaxis@gmail.com
-            </a>
+        <div class="footer-bottom">
 
             <span>
-                Gomti Nagar, Lucknow
+                © <span id="currentYear"></span> LegalDecode.
+                All Rights Reserved.
+            </span>
+
+            <span>
+                Advocates & Legal Counsel
             </span>
 
         </div>
 
     </div>
 
-
-    <div class="container footer-bottom">
-
-        <span>
-            © <span id="footerYear"></span> LegalDecode. All rights reserved.
-        </span>
-
-        <span>
-            Legal information on this website is for general
-            informational purposes only.
-        </span>
-
-    </div>
-
 </footer>
 
 
-
 <!-- =======================================================
-     PROFILE MODAL
+     ADVOCATE PROFILE MODAL
      ======================================================= -->
 
-<div class="modal" id="profileModal">
+<div
+    class="modal"
+    id="profileModal"
+    aria-hidden="true"
+>
 
     <div class="modal-box">
 
-        <button class="modal-close" id="modalClose">
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Close profile"
+        >
             ×
         </button>
 
-        <div class="modal-grid">
+        <h3 id="modalName">
+            Advocate
+        </h3>
 
-            <img id="modalImage" src="" alt="">
+        <div
+            class="modal-designation"
+            id="modalDesignation"
+        ></div>
 
-            <div>
-
-                <h2 id="modalName"></h2>
-
-                <div class="modal-role" id="modalRole"></div>
-
-                <p id="modalProfile"></p>
-
-                <ul id="modalPoints"></ul>
-
-                <div id="modalContact" style="margin-top:20px;"></div>
-
-            </div>
-
-        </div>
+        <p id="modalProfile"></p>
 
     </div>
 
 </div>
-
 
 
 <!-- =======================================================
@@ -3461,17 +3760,15 @@ footer{
 </button>
 
 
-
 <!-- =======================================================
      JAVASCRIPT
      ======================================================= -->
 
 <script>
 
-
 /* =========================================================
    TEAM DATA
-   Future associates / advocates can be added here.
+   Future advocate addition/change can be done here.
    ========================================================= */
 
 const TEAM_DATA = {
@@ -3479,41 +3776,43 @@ const TEAM_DATA = {
     partners: [
 
         {
-            name:"Adv. Aadesh Pandey",
+            name: "Adv. Aadesh Pandey",
 
-            image:"aadesh-pandey.jpeg",
+            image: "aadesh-pandey.jpeg",
 
-            designation:"Partner | Advocate | Legal Counsel",
+            designation: "Partner | Advocate | Legal Counsel",
 
             profile:
-            "Adv. Aadesh Pandey is a Lucknow-based advocate engaged in legal practice before the High Court and District Courts, with practice extending to criminal matters, SARFAESI matters, banking and financial matters, property disputes and family court matters. His approach centres on careful legal analysis, precise drafting, procedural preparation and focused representation before the appropriate forum.",
+            "Adv. Aadesh Pandey is a Lucknow-based advocate engaged in litigation and legal advisory practice before the High Court and District Courts. His practice encompasses criminal litigation, SARFAESI proceedings, banking and financial matters, property disputes and family court matters. He approaches each matter through careful legal analysis, procedural diligence and focused advocacy, with due regard to the factual and legal dimensions of the case.",
 
-            points:[
-                "Criminal Matters",
-                "SARFAESI Matters",
-                "Banking & Financial Matters",
+            points: [
+                "Criminal Litigation",
+                "SARFAESI & Banking Matters",
                 "Property Disputes",
                 "Family Court Matters",
-                "High Court & District Court Practice"
+                "District Court Litigation"
             ],
 
-            email:"avlegalaxis@gmail.com",
+            maxim:
+            "Ubi Jus Ibi Remedium — Where there is a right, there is a remedy.",
 
-            phone:"7007724581"
+            email: "avlegalaxis@gmail.com",
+
+            phone: "7007724581"
         },
 
 
         {
-            name:"Adv. Vartika Pandey",
+            name: "Adv. Vartika Pandey",
 
-            image:"vartika-.jpeg",
+            image: "vartika-.jpeg",
 
-            designation:"Partner | Advocate | Legal Counsel",
+            designation: "Partner | Advocate | Legal Counsel",
 
             profile:
             "Adv. Vartika Pandey is a Lucknow-based advocate engaged in civil litigation and legal advisory practice before the High Court and District Courts. Her practice encompasses civil litigation, civil suits, service matters and related proceedings, with a focus on careful legal analysis, precise drafting and diligent representation. She approaches each matter with close attention to the factual matrix, applicable legal provisions and procedural requirements.",
 
-            points:[
+            points: [
                 "Civil Litigation",
                 "Service Matters",
                 "High Court Litigation",
@@ -3521,9 +3820,12 @@ const TEAM_DATA = {
                 "Civil Suits"
             ],
 
-            email:"avlegalaxis@gmail.com",
+            maxim:
+            "Audi Alteram Partem — Hear the other side.",
 
-            phone:"7905759058"
+            email: "avlegalaxis@gmail.com",
+
+            phone: "7905759058"
         }
 
     ],
@@ -3532,73 +3834,84 @@ const TEAM_DATA = {
     associates: [
 
         {
-            name:"Adv. Shubham Pandey",
+            name: "Adv. Shubham Pandey",
 
-            image:"Shubham.jpeg",
+            image: "Shubham.jpeg",
 
-            designation:"Associate | Advocate",
+            designation: "Associate | Advocate",
 
             profile:
             "Adv. Shubham Pandey completed his legal education at the University of Allahabad and primarily practises before the High Court of Judicature at Allahabad. His practice also extends to the Central Administrative Tribunal (CAT), Allahabad, and the District Courts. He approaches matters with careful legal research, precise drafting, procedural preparation and focused representation before the appropriate forum.",
 
-            points:[
-                "High Court Litigation",
-                "Central Administrative Tribunal (CAT) Matters",
+            points: [
+                "Allahabad High Court Litigation",
+                "Central Administrative Tribunal (CAT)",
                 "District Court Litigation"
             ],
 
-            email:"avlegalaxis@gmail.com",
+            maxim:
+            "Careful research precedes considered legal strategy.",
 
-            phone:""
+            email: "avlegalaxis@gmail.com",
+
+            phone: ""
         },
 
 
         {
-            name:"Adv. Satyam Pandey",
+            name: "Adv. Satyam Pandey",
 
-            image:"Satyam.jpeg",
+            image: "Satyam.jpeg",
 
-            designation:"Associate | Advocate",
+            designation: "Associate | Advocate",
 
             profile:
             "Adv. Satyam Pandey practises before the Lucknow Bench of the High Court of Judicature at Allahabad, with a focused practice in criminal litigation and trial matters before the District Courts. His work involves careful assessment of the factual and legal issues arising in each matter, thorough procedural preparation and focused advocacy across the relevant stages of criminal proceedings.",
 
-            points:[
+            points: [
                 "Criminal Litigation",
-                "Criminal Trial Matters",
                 "High Court Litigation",
-                "District Court Trial Matters"
+                "District Court Trials"
             ],
 
-            email:"avlegalaxis@gmail.com",
+            maxim:
+            "Audi Alteram Partem — Hear the other side.",
 
-            phone:""
+            email: "avlegalaxis@gmail.com",
+
+            phone: ""
         },
 
 
         {
-            name:"Adv. Piyush Singh",
+            name: "Adv. Piyush Singh",
 
-            image:"piyush.jpeg",
+            image: "piyush.jpeg",
 
-            designation:"Associate | Advocate",
+            designation: "Associate | Advocate",
 
             profile:
-            "Professional profile to be updated. This section has been intentionally structured so that the advocate's profile, practice areas and professional details can be added later without changing the website layout.",
+            "Adv. Piyush Singh has completed his LL.M. and LL.B. from Amity University. He practises before the High Court, Lucknow Bench, District Courts and Tribunals. His professional work involves legal research, preparation, drafting and representation in matters before the appropriate court or tribunal, with due attention to the factual and legal issues arising in each matter.",
 
-            points:[
-                "Profile to be updated"
+            points: [
+                "LL.M. — Amity University",
+                "LL.B. — Amity University",
+                "High Court — Lucknow Bench",
+                "District Court Litigation",
+                "Tribunal Matters"
             ],
 
-            email:"",
+            maxim:
+            "Lex Supremus — The law stands at the centre of legal practice.",
 
-            phone:""
+            email: "avlegalaxis@gmail.com",
+
+            phone: ""
         }
 
     ]
 
 };
-
 
 
 /* =========================================================
@@ -3614,87 +3927,96 @@ function renderTeam(){
         document.getElementById("associatesGrid");
 
 
-    function createCard(person){
+    function createCard(member, role){
 
         const card =
             document.createElement("article");
 
         card.className =
-            "team-card reveal";
+            "profile-card reveal";
 
 
-        const points =
-            person.points
-            .map(item => `<li>${item}</li>`)
+        const pointsHTML =
+            member.points
+            .map(point => `<li>${point}</li>`)
             .join("");
 
 
-        let contactHTML = "";
-
-
-        if(person.email){
-
-            contactHTML +=
-            `<a href="mailto:${person.email}">
-                ${person.email}
-            </a>`;
-
-        }
-
-
-        if(person.phone){
-
-            contactHTML +=
-            `<a href="tel:+91${person.phone}">
-                +91 ${person.phone}
-            </a>`;
-
-        }
+        const phoneButton =
+            member.phone
+            ?
+            `<a href="tel:+91${member.phone}">
+                Call
+            </a>`
+            :
+            "";
 
 
         card.innerHTML = `
 
-            <div class="team-card-top">
+            <div class="profile-photo-wrap">
 
-                <div class="team-photo">
+                <img
+                    src="${member.image}"
+                    alt="${member.name}"
+                    class="profile-photo"
+                    loading="lazy"
+                >
 
-                    <img
-                        src="${person.image}"
-                        alt="${person.name}"
-                        loading="lazy"
-                    >
-
+                <div class="profile-role-tag">
+                    ${role}
                 </div>
 
+            </div>
 
-                <div class="team-content">
 
-                    <div class="team-role">
-                        ${person.designation}
-                    </div>
+            <div class="profile-content">
 
-                    <h4>
-                        ${person.name}
-                    </h4>
+                <div class="mini-rule"></div>
 
-                    <p>
-                        ${person.profile}
-                    </p>
+                <h3>
+                    ${member.name}
+                </h3>
 
-                    <ul>
-                        ${points}
-                    </ul>
+                <div class="profile-designation">
+                    ${member.designation}
+                </div>
 
-                    <div class="team-contact">
-                        ${contactHTML}
-                    </div>
+                <p>
+                    ${member.profile}
+                </p>
+
+                <ul>
+                    ${pointsHTML}
+                </ul>
+
+                <div class="profile-maxim">
+                    ${member.maxim}
+                </div>
+
+                <div class="profile-actions">
 
                     <button
-                        class="profile-link"
-                        data-profile="${person.name}"
+                        type="button"
+                        class="profile-view"
+                        data-name="${member.name}"
+                        data-designation="${member.designation}"
+                        data-profile="${member.profile}"
                     >
-                        View Professional Profile →
+                        View Profile
                     </button>
+
+                    ${phoneButton}
+
+                    ${
+                        member.email
+                        ?
+                        `<a href="mailto:${member.email}">
+                            Email
+                        </a>`
+                        :
+                        ""
+                    }
 
                 </div>
 
@@ -3702,25 +4024,23 @@ function renderTeam(){
 
         `;
 
-
         return card;
-
     }
 
 
-    TEAM_DATA.partners.forEach(person => {
+    TEAM_DATA.partners.forEach(member => {
 
         partnersGrid.appendChild(
-            createCard(person)
+            createCard(member,"Partner")
         );
 
     });
 
 
-    TEAM_DATA.associates.forEach(person => {
+    TEAM_DATA.associates.forEach(member => {
 
         associatesGrid.appendChild(
-            createCard(person)
+            createCard(member,"Associate")
         );
 
     });
@@ -3731,7 +4051,6 @@ function renderTeam(){
 renderTeam();
 
 
-
 /* =========================================================
    MOBILE MENU
    ========================================================= */
@@ -3739,29 +4058,380 @@ renderTeam();
 const menuToggle =
     document.getElementById("menuToggle");
 
-const navLinks =
-    document.getElementById("navLinks");
+const mobileMenu =
+    document.getElementById("mobileMenu");
 
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click",function(){
 
-    navLinks.classList.toggle("open");
+    const open =
+        mobileMenu.classList.toggle("open");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        open ? "true" : "false"
+    );
 
 });
 
 
-document
-.querySelectorAll(".nav-links a")
-.forEach(link => {
+document.querySelectorAll(
+    ".mobile-menu a"
+).forEach(link => {
 
-    link.addEventListener("click", () => {
+    link.addEventListener("click",function(){
 
-        navLinks.classList.remove("open");
+        mobileMenu.classList.remove("open");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
 
     });
 
 });
 
+
+/* =========================================================
+   FAQ ACCORDION
+   ========================================================= */
+
+document.querySelectorAll(
+    ".faq-question"
+).forEach(button => {
+
+    button.addEventListener("click",function(){
+
+        const answer =
+            this.nextElementSibling;
+
+        const icon =
+            this.querySelector(".faq-icon");
+
+        const isOpen =
+            answer.style.maxHeight;
+
+
+        document.querySelectorAll(
+            ".faq-answer"
+        ).forEach(item => {
+
+            item.style.maxHeight = null;
+
+        });
+
+
+        document.querySelectorAll(
+            ".faq-icon"
+        ).forEach(item => {
+
+            item.textContent = "+";
+
+        });
+
+
+        if(!isOpen){
+
+            answer.style.maxHeight =
+                answer.scrollHeight + "px";
+
+            icon.textContent = "−";
+
+        }
+
+    });
+
+});
+
+
+/* =========================================================
+   LEGAL KNOWLEDGE SEARCH
+   ========================================================= */
+
+const knowledgeSearch =
+    document.getElementById("knowledgeSearch");
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const knowledgeCards =
+    document.querySelectorAll(".knowledge-card");
+
+
+let activeFilter = "all";
+
+
+function filterKnowledge(){
+
+    const query =
+        knowledgeSearch.value
+        .toLowerCase()
+        .trim();
+
+
+    knowledgeCards.forEach(card => {
+
+        const type =
+            card.dataset.type;
+
+        const text =
+            card.textContent.toLowerCase();
+
+
+        const matchesFilter =
+            activeFilter === "all"
+            ||
+            type === activeFilter;
+
+
+        const matchesSearch =
+            !query
+            ||
+            text.includes(query);
+
+
+        card.style.display =
+            matchesFilter && matchesSearch
+            ? ""
+            : "none";
+
+    });
+
+}
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click",function(){
+
+        filterButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        this.classList.add("active");
+
+        activeFilter =
+            this.dataset.filter;
+
+        filterKnowledge();
+
+    });
+
+});
+
+
+knowledgeSearch.addEventListener(
+    "input",
+    filterKnowledge
+);
+
+
+/* =========================================================
+   AI PRACTICE IDENTIFICATION
+   ========================================================= */
+
+const aiResult =
+    document.getElementById("aiResult");
+
+const aiResultTitle =
+    document.getElementById("aiResultTitle");
+
+const aiResultText =
+    document.getElementById("aiResultText");
+
+
+const aiResponses = {
+
+    "Criminal Matter":
+        "Your concern appears closest to Criminal Law. The appropriate legal remedy depends upon the facts, stage of proceedings, documents and applicable provisions.",
+
+    "Property Dispute":
+        "Your concern appears closest to Property Disputes. Title, possession, documents, contractual arrangements and the nature of the dispute would ordinarily require examination.",
+
+    "Banking / SARFAESI":
+        "Your concern appears closest to Banking & SARFAESI matters. Financial documents, statutory notices, security interests and applicable procedural remedies may require consideration.",
+
+    "Civil Matter":
+        "Your concern appears closest to Civil Matters. The pleadings, documents, cause of action, limitation and applicable procedural provisions would ordinarily require assessment.",
+
+    "Family Court Matter":
+        "Your concern appears closest to Family Court Matters. The factual circumstances and applicable matrimonial or family-law provisions would need to be considered.",
+
+    "Service Matter":
+        "Your concern appears closest to Service Matters. Service records, applicable rules, administrative decisions and the appropriate court or tribunal may require examination."
+
+};
+
+
+document.querySelectorAll(
+    ".ai-option"
+).forEach(button => {
+
+    button.addEventListener("click",function(){
+
+        const matter =
+            this.dataset.ai;
+
+        aiResultTitle.textContent =
+            matter;
+
+        aiResultText.textContent =
+            aiResponses[matter];
+
+        aiResult.classList.add("show");
+
+        aiResult.scrollIntoView({
+            behavior:"smooth",
+            block:"nearest"
+        });
+
+    });
+
+});
+
+
+/* =========================================================
+   CONSULTATION → WHATSAPP
+   ========================================================= */
+
+function sendWhatsApp(){
+
+    const name =
+        document.getElementById(
+            "clientName"
+        ).value.trim();
+
+
+    const phone =
+        document.getElementById(
+            "clientPhone"
+        ).value.trim();
+
+
+    const email =
+        document.getElementById(
+            "clientEmail"
+        ).value.trim();
+
+
+    const category =
+        document.getElementById(
+            "matterCategory"
+        ).value.trim();
+
+
+    const matter =
+        document.getElementById(
+            "clientMatter"
+        ).value.trim();
+
+
+    const message =
+        "LegalDecode Consultation Request\n\n" +
+
+        "Name: " + name + "\n" +
+
+        "Phone: " + phone + "\n" +
+
+        "Email: " + email + "\n" +
+
+        "Matter Category: " + category + "\n" +
+
+        "Matter: " + matter;
+
+
+    const whatsappURL =
+        "https://wa.me/917007725481?text=" +
+        encodeURIComponent(message);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* =========================================================
+   REVIEW FORM
+   ========================================================= */
+
+const reviewForm =
+    document.getElementById("reviewForm");
+
+
+reviewForm.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        const name =
+            document.getElementById(
+                "reviewName"
+            ).value.trim();
+
+
+        const matter =
+            document.getElementById(
+                "reviewMatter"
+            ).value.trim();
+
+
+        const feedback =
+            document.getElementById(
+                "reviewText"
+            ).value.trim();
+
+
+        const review = {
+
+            name:name,
+
+            matter:matter,
+
+            feedback:feedback,
+
+            status:"pending",
+
+            submittedAt:
+                new Date().toISOString()
+
+        };
+
+
+        const existing =
+            JSON.parse(
+                localStorage.getItem(
+                    "legaldecodePendingReviews"
+                ) || "[]"
+            );
+
+
+        existing.push(review);
+
+
+        localStorage.setItem(
+            "legaldecodePendingReviews",
+            JSON.stringify(existing)
+        );
+
+
+        alert(
+            "Thank you. Your feedback has been submitted for review."
+        );
+
+
+        reviewForm.reset();
+
+    }
+);
 
 
 /* =========================================================
@@ -3774,573 +4444,106 @@ const profileModal =
 const modalClose =
     document.getElementById("modalClose");
 
-const modalImage =
-    document.getElementById("modalImage");
-
 const modalName =
     document.getElementById("modalName");
 
-const modalRole =
-    document.getElementById("modalRole");
+const modalDesignation =
+    document.getElementById("modalDesignation");
 
 const modalProfile =
     document.getElementById("modalProfile");
 
-const modalPoints =
-    document.getElementById("modalPoints");
 
-const modalContact =
-    document.getElementById("modalContact");
-
-
-function allTeamMembers(){
-
-    return [
-        ...TEAM_DATA.partners,
-        ...TEAM_DATA.associates
-    ];
-
-}
-
-
-document.addEventListener("click", event => {
-
-    const button =
-        event.target.closest(".profile-link");
-
-    if(!button) return;
-
-
-    const person =
-        allTeamMembers()
-        .find(
-            item =>
-            item.name === button.dataset.profile
-        );
-
-
-    if(!person) return;
-
-
-    modalImage.src =
-        person.image;
-
-    modalImage.alt =
-        person.name;
-
-    modalName.textContent =
-        person.name;
-
-    modalRole.textContent =
-        person.designation;
-
-    modalProfile.textContent =
-        person.profile;
-
-
-    modalPoints.innerHTML =
-        person.points
-        .map(item => `<li>${item}</li>`)
-        .join("");
-
-
-    let contact = "";
-
-
-    if(person.email){
-
-        contact +=
-        `<a href="mailto:${person.email}"
-            style="display:block;color:#101d31;font-size:12px;margin-bottom:5px;">
-            ${person.email}
-        </a>`;
-
-    }
-
-
-    if(person.phone){
-
-        contact +=
-        `<a href="tel:+91${person.phone}"
-            style="display:block;color:#101d31;font-size:12px;">
-            +91 ${person.phone}
-        </a>`;
-
-    }
-
-
-    modalContact.innerHTML =
-        contact;
-
-
-    profileModal.classList.add("open");
-
-});
-
-
-modalClose.addEventListener("click", () => {
-
-    profileModal.classList.remove("open");
-
-});
-
-
-profileModal.addEventListener("click", event => {
-
-    if(event.target === profileModal){
-
-        profileModal.classList.remove("open");
-
-    }
-
-});
-
-
-document.addEventListener("keydown", event => {
-
-    if(event.key === "Escape"){
-
-        profileModal.classList.remove("open");
-
-    }
-
-});
-
-
-
-/* =========================================================
-   FAQ ACCORDION
-   ========================================================= */
-
-document
-.querySelectorAll(".faq-question")
-.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        const answer =
-            button.nextElementSibling;
-
-        const isOpen =
-            answer.style.display === "block";
-
-
-        document
-        .querySelectorAll(".faq-answer")
-        .forEach(item => {
-
-            item.style.display = "none";
-
-        });
-
-
-        document
-        .querySelectorAll(".faq-question span")
-        .forEach(item => {
-
-            item.textContent = "+";
-
-        });
-
-
-        if(!isOpen){
-
-            answer.style.display = "block";
-
-            button
-            .querySelector("span")
-            .textContent = "−";
-
-        }
-
-    });
-
-});
-
-
-document
-.querySelectorAll(".faq-answer")
-.forEach(answer => {
-
-    answer.style.display = "none";
-
-    answer.style.padding =
-        "0 0 18px";
-
-    answer.style.color =
-        "#68717d";
-
-    answer.style.fontSize =
-        "12px";
-
-});
-
-document
-.querySelectorAll(".faq-question")
-.forEach(button => {
-
-    button.style.width = "100%";
-    button.style.border = "0";
-    button.style.background = "transparent";
-    button.style.padding = "19px 0";
-    button.style.display = "flex";
-    button.style.justifyContent = "space-between";
-    button.style.textAlign = "left";
-    button.style.color = "#101d31";
-    button.style.fontSize = "13px";
-    button.style.fontWeight = "600";
-
-});
-
-
-
-/* =========================================================
-   KNOWLEDGE SEARCH + FILTER
-   ========================================================= */
-
-const searchInput =
-    document.getElementById("knowledgeSearch");
-
-const knowledgeCards =
-    [...document.querySelectorAll(".knowledge-card")];
-
-const knowledgeTabs =
-    [...document.querySelectorAll(".knowledge-tab")];
-
-let activeFilter = "all";
-
-
-function filterKnowledge(){
-
-    const query =
-        searchInput.value
-        .trim()
-        .toLowerCase();
-
-
-    knowledgeCards.forEach(card => {
-
-        const matchesFilter =
-            activeFilter === "all" ||
-            card.dataset.type === activeFilter;
-
-
-        const matchesSearch =
-            card.innerText
-            .toLowerCase()
-            .includes(query);
-
-
-        card.style.display =
-            matchesFilter && matchesSearch
-            ? "block"
-            : "none";
-
-    });
-
-}
-
-
-knowledgeTabs.forEach(tab => {
-
-    tab.addEventListener("click", () => {
-
-        knowledgeTabs.forEach(item => {
-
-            item.classList.remove("active");
-
-        });
-
-
-        tab.classList.add("active");
-
-        activeFilter =
-            tab.dataset.filter;
-
-        filterKnowledge();
-
-    });
-
-});
-
-
-searchInput.addEventListener(
-    "input",
-    filterKnowledge
-);
-
-
-
-/* =========================================================
-   LEGALDECODE AI
-   ========================================================= */
-
-const aiResponse =
-    document.getElementById("aiResponse");
-
-
-const AI_RESPONSES = {
-
-    criminal:
-    "Your selection indicates a possible criminal-law matter. The relevant facts, stage of proceedings, documents and jurisdiction would need to be examined before identifying the appropriate legal remedy. You may request a consultation for a preliminary assessment.",
-
-    property:
-    "Property disputes can involve title, possession, agreements, inheritance, injunctions and other civil issues. The documents and factual history are important for determining the appropriate course of action.",
-
-    banking:
-    "Banking and SARFAESI matters may involve recovery proceedings, secured assets, notices, possession and statutory remedies. The applicable forum and remedy depend on the facts and procedural stage.",
-
-    civil:
-    "Civil matters may involve suits, interim relief, contractual disputes, property issues and other civil remedies. A proper assessment requires examination of the facts and relevant documents.",
-
-    family:
-    "Family Court matters can involve matrimonial, maintenance, custody and other family-related proceedings. The appropriate legal course depends on the specific facts and applicable law.",
-
-    service:
-    "Service matters may involve employment conditions, disciplinary proceedings, administrative orders and related disputes. Jurisdiction and the nature of the challenged action are important for identifying the appropriate remedy."
-
-};
-
-
-document
-.querySelectorAll(".ai-option")
-.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        const type =
-            button.dataset.ai;
-
-
-        aiResponse.textContent =
-            AI_RESPONSES[type];
-
-
-        aiResponse.style.display =
-            "block";
-
-    });
-
-});
-
-
-
-/* =========================================================
-   WHATSAPP CONSULTATION
-   ========================================================= */
-
-const consultationForm =
-    document.getElementById("consultationForm");
-
-
-consultationForm.addEventListener(
-    "submit",
+document.addEventListener(
+    "click",
     function(event){
 
-        event.preventDefault();
-
-
-        const name =
-            document.getElementById("clientName")
-            .value.trim();
-
-
-        const phone =
-            document.getElementById("clientPhone")
-            .value.trim();
-
-
-        const email =
-            document.getElementById("clientEmail")
-            .value.trim();
-
-
-        const matter =
-            document.getElementById("matterType")
-            .value;
-
-
-        const message =
-            document.getElementById("clientMessage")
-            .value.trim();
-
-
-        const whatsappText =
-
-`LegalDecode Consultation Request
-
-Name: ${name}
-
-Mobile: ${phone}
-
-Email: ${email || "Not provided"}
-
-Matter Type: ${matter}
-
-Brief Description:
-${message}
-
-I understand that this is a preliminary consultation inquiry and that submission of this form does not itself create an advocate-client relationship.`;
-
-
-        const whatsappURL =
-            "https://wa.me/917007724581?text="
-            +
-            encodeURIComponent(
-                whatsappText
+        const button =
+            event.target.closest(
+                ".profile-view"
             );
 
 
-        window.open(
-            whatsappURL,
-            "_blank"
-        );
-
-    }
-);
-
-
-
-/* =========================================================
-   REVIEW SUBMISSION
-   ========================================================= */
-
-const reviewForm =
-    document.getElementById("reviewForm");
-
-const reviewList =
-    document.getElementById("reviewList");
-
-
-function loadReviews(){
-
-    const reviews =
-        JSON.parse(
-            localStorage.getItem(
-                "legaldecode_reviews"
-            ) || "[]"
-        );
-
-
-    reviews.forEach(review => {
-
-        addReviewToPage(review);
-
-    });
-
-}
-
-
-function addReviewToPage(review){
-
-    const card =
-        document.createElement("div");
-
-    card.className =
-        "review-card";
-
-
-    card.innerHTML = `
-
-        <strong>
-            ${escapeHTML(review.name)}
-        </strong>
-
-        <span>
-            ${escapeHTML(review.role || "Client Feedback")}
-        </span>
-
-        <p>
-            ${escapeHTML(review.text)}
-        </p>
-
-    `;
-
-
-    reviewList.prepend(card);
-
-}
-
-
-function escapeHTML(value){
-
-    return String(value)
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
-
-}
-
-
-reviewForm.addEventListener(
-    "submit",
-    event => {
-
-        event.preventDefault();
-
-
-        const review = {
-
-            name:
-            document
-            .getElementById("reviewName")
-            .value.trim(),
-
-            role:
-            document
-            .getElementById("reviewRole")
-            .value.trim(),
-
-            text:
-            document
-            .getElementById("reviewText")
-            .value.trim()
-
-        };
-
-
-        if(!review.name || !review.text){
-
+        if(!button){
             return;
-
         }
 
 
-        const reviews =
-            JSON.parse(
-                localStorage.getItem(
-                    "legaldecode_reviews"
-                ) || "[]"
-            );
+        modalName.textContent =
+            button.dataset.name;
 
 
-        reviews.push(review);
+        modalDesignation.textContent =
+            button.dataset.designation;
 
 
-        localStorage.setItem(
-            "legaldecode_reviews",
-            JSON.stringify(reviews)
+        modalProfile.textContent =
+            button.dataset.profile;
+
+
+        profileModal.classList.add(
+            "show"
         );
 
 
-        addReviewToPage(review);
-
-
-        reviewForm.reset();
-
-
-        alert(
-            "Thank you. Your feedback has been received for review."
+        profileModal.setAttribute(
+            "aria-hidden",
+            "false"
         );
 
     }
 );
 
 
-loadReviews();
+function closeProfileModal(){
 
+    profileModal.classList.remove(
+        "show"
+    );
+
+    profileModal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+}
+
+
+modalClose.addEventListener(
+    "click",
+    closeProfileModal
+);
+
+
+profileModal.addEventListener(
+    "click",
+    function(event){
+
+        if(
+            event.target ===
+            profileModal
+        ){
+
+            closeProfileModal();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            closeProfileModal();
+
+        }
+
+    }
+);
 
 
 /* =========================================================
@@ -4355,12 +4558,11 @@ const revealObserver =
 
                 if(entry.isIntersecting){
 
-                    entry.target
-                    .classList
-                    .add("visible");
+                    entry.target.classList.add(
+                        "visible"
+                    );
 
-                    revealObserver
-                    .unobserve(
+                    revealObserver.unobserve(
                         entry.target
                     );
 
@@ -4370,71 +4572,20 @@ const revealObserver =
 
         },
         {
-            threshold:.12
+            threshold:.08
         }
     );
 
 
-document
-.querySelectorAll(".reveal")
-.forEach(element => {
+document.querySelectorAll(
+    ".reveal"
+).forEach(element => {
 
-    revealObserver.observe(element);
-
-});
-
-
-
-/* =========================================================
-   ACTIVE NAV
-   ========================================================= */
-
-const sections =
-    document.querySelectorAll("main section[id]");
-
-const navAnchors =
-    document.querySelectorAll(".nav-links a");
-
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-
-    sections.forEach(section => {
-
-        const top =
-            section.offsetTop - 130;
-
-
-        if(window.scrollY >= top){
-
-            current =
-                section.getAttribute("id");
-
-        }
-
-    });
-
-
-    navAnchors.forEach(anchor => {
-
-        anchor.classList.remove("active");
-
-
-        if(
-            anchor.getAttribute("href")
-            === "#" + current
-        ){
-
-            anchor.classList.add("active");
-
-        }
-
-    });
+    revealObserver.observe(
+        element
+    );
 
 });
-
 
 
 /* =========================================================
@@ -4445,24 +4596,27 @@ const backTop =
     document.getElementById("backTop");
 
 
-window.addEventListener("scroll", () => {
+window.addEventListener(
+    "scroll",
+    function(){
 
-    if(window.scrollY > 600){
+        if(window.scrollY > 500){
 
-        backTop.classList.add("show");
+            backTop.classList.add("show");
 
-    }else{
+        }else{
 
-        backTop.classList.remove("show");
+            backTop.classList.remove("show");
+
+        }
 
     }
-
-});
+);
 
 
 backTop.addEventListener(
     "click",
-    () => {
+    function(){
 
         window.scrollTo({
             top:0,
@@ -4473,24 +4627,36 @@ backTop.addEventListener(
 );
 
 
-
 /* =========================================================
-   FOOTER YEAR
+   CURRENT YEAR
    ========================================================= */
 
 document.getElementById(
-    "footerYear"
+    "currentYear"
 ).textContent =
     new Date().getFullYear();
 
 
-
 /* =========================================================
-   CONSOLE CHECK
+   IMAGE ERROR HANDLING
    ========================================================= */
 
-console.log(
-    "LegalDecode website loaded successfully."
+document.addEventListener(
+    "error",
+    function(event){
+
+        if(
+            event.target.tagName ===
+            "IMG"
+        ){
+
+            event.target.style.background =
+                "#e9e6de";
+
+        }
+
+    },
+    true
 );
 
 </script>
