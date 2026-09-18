@@ -1847,55 +1847,355 @@ const LEGALDECODE_API =
     </div>
 
   </div>
-
+  
   <div class="knowledge-panel" style="margin-top:24px">
+
     <h3>Bare Acts & Statutory Resources</h3>
+
     <p>
-      Links below lead to official India Code resources.
+        Search Central Acts by name, abbreviation or common keyword.
+        Results link directly to the official India Code source.
     </p>
 
-    <div class="acts-grid">
+    <div class="bare-act-search">
 
-      <div class="resource-card">
-        <h4>SARFAESI Act, 2002</h4>
-        <p>Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002.</p>
-        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/2006?view_type=browse" target="_blank" rel="noopener">India Code →</a>
-      </div>
+        <div class="bare-act-search-box">
+            <input
+                type="search"
+                id="bareActSearch"
+                placeholder="Search Bare Act — e.g. SARFAESI, CPC, Contract Act..."
+                autocomplete="off"
+                oninput="searchBareActs()"
+            >
 
-      <div class="resource-card">
-        <h4>Code of Civil Procedure, 1908</h4>
-        <p>Primary procedural statute for civil court proceedings.</p>
-        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/2191?view_type=browse" target="_blank" rel="noopener">India Code →</a>
-      </div>
+            <button type="button" onclick="searchBareActs()">
+                Search
+            </button>
+        </div>
 
-      <div class="resource-card">
-        <h4>Family Courts Act, 1984</h4>
-        <p>Statutory framework concerning Family Courts.</p>
-        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/1844?view_type=browse" target="_blank" rel="noopener">India Code →</a>
-      </div>
+        <div class="popular-acts">
+            <span>Popular Acts:</span>
 
-      <div class="resource-card">
-        <h4>Arbitration and Conciliation Act, 1996</h4>
-        <p>Statutory framework for arbitration and conciliation.</p>
-        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/1978?view_type=browse" target="_blank" rel="noopener">India Code →</a>
-      </div>
+            <button type="button" onclick="selectBareAct('SARFAESI')">
+                SARFAESI
+            </button>
 
-      <div class="resource-card">
-        <h4>Specific Relief Act, 1963</h4>
-        <p>Important statutory framework for specified civil remedies.</p>
-        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/1583?view_type=browse" target="_blank" rel="noopener">India Code →</a>
-      </div>
+            <button type="button" onclick="selectBareAct('CPC')">
+                CPC
+            </button>
 
-      <div class="resource-card">
-        <h4>Indian Contract Act, 1872</h4>
-        <p>Central legislation concerning contractual obligations.</p>
-        <a href="https://www.indiacode.nic.in/indiacode/handle/123456789/2187" target="_blank" rel="noopener">India Code →</a>
-      </div>
+            <button type="button" onclick="selectBareAct('Contract Act')">
+                Contract Act
+            </button>
+
+            <button type="button" onclick="selectBareAct('Specific Relief')">
+                Specific Relief
+            </button>
+
+            <button type="button" onclick="selectBareAct('Family Courts')">
+                Family Courts
+            </button>
+
+            <button type="button" onclick="selectBareAct('Arbitration')">
+                Arbitration
+            </button>
+        </div>
+
+        <div id="bareActResults" class="bare-act-results">
+
+            <div class="bare-act-result-info">
+                Search an Act to access its official India Code page.
+            </div>
+
+        </div>
 
     </div>
-  </div>
 
 </div>
+
+<style>
+.bare-act-search {
+    margin-top: 20px;
+}
+
+.bare-act-search-box {
+    display: flex;
+    gap: 10px;
+    max-width: 850px;
+}
+
+.bare-act-search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    border: 1px solid rgba(20, 36, 61, 0.18);
+    border-radius: 6px;
+    background: #fff;
+    color: #18263b;
+    font-size: 15px;
+    outline: none;
+}
+
+.bare-act-search-box input:focus {
+    border-color: #a88945;
+    box-shadow: 0 0 0 2px rgba(168, 137, 69, 0.10);
+}
+
+.bare-act-search-box button {
+    border: 0;
+    border-radius: 6px;
+    padding: 0 24px;
+    background: #18263b;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bare-act-search-box button:hover {
+    opacity: 0.92;
+}
+
+.popular-acts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.popular-acts span {
+    font-size: 13px;
+    color: #666;
+    margin-right: 4px;
+}
+
+.popular-acts button {
+    border: 1px solid rgba(168, 137, 69, 0.45);
+    background: transparent;
+    color: #18263b;
+    border-radius: 20px;
+    padding: 7px 13px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.popular-acts button:hover {
+    background: rgba(168, 137, 69, 0.08);
+}
+
+.bare-act-results {
+    margin-top: 20px;
+}
+
+.bare-act-card {
+    border: 1px solid rgba(20, 36, 61, 0.12);
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.72);
+}
+
+.bare-act-card h4 {
+    margin: 0 0 7px;
+    color: #18263b;
+    font-size: 17px;
+}
+
+.bare-act-card p {
+    margin: 0 0 12px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.bare-act-open {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: #18263b;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bare-act-open:hover {
+    opacity: 0.9;
+}
+
+.bare-act-result-info {
+    padding: 15px;
+    border: 1px dashed rgba(20, 36, 61, 0.18);
+    border-radius: 7px;
+    color: #666;
+    font-size: 13px;
+}
+
+.bare-act-no-result {
+    padding: 15px;
+    border-radius: 7px;
+    background: rgba(20, 36, 61, 0.04);
+    color: #555;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+
+    .bare-act-search-box {
+        flex-direction: column;
+    }
+
+    .bare-act-search-box button {
+        min-height: 44px;
+    }
+
+    .popular-acts {
+        align-items: flex-start;
+    }
+
+}
+</style>
+
+<script>
+const LEGALDECODE_BARE_ACTS = [
+
+    {
+        name: "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002",
+        short: "SARFAESI Act, 2002",
+        keywords: "sarfaesi securitisation reconstruction financial assets security interest bank recovery",
+        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/2006?view_type=browse"
+    },
+
+    {
+        name: "The Code of Civil Procedure, 1908",
+        short: "CPC, 1908",
+        keywords: "cpc civil procedure code civil suit procedure",
+        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/2191?view_type=browse"
+    },
+
+    {
+        name: "The Family Courts Act, 1984",
+        short: "Family Courts Act, 1984",
+        keywords: "family court family courts matrimonial maintenance custody",
+        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/1844?view_type=browse"
+    },
+
+    {
+        name: "The Arbitration and Conciliation Act, 1996",
+        short: "Arbitration and Conciliation Act, 1996",
+        keywords: "arbitration conciliation arbitral tribunal dispute resolution",
+        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/1978?view_type=browse"
+    },
+
+    {
+        name: "The Specific Relief Act, 1963",
+        short: "Specific Relief Act, 1963",
+        keywords: "specific relief injunction specific performance possession civil remedy",
+        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/1583?view_type=browse"
+    },
+
+    {
+        name: "The Indian Contract Act, 1872",
+        short: "Indian Contract Act, 1872",
+        keywords: "contract agreement indemnity guarantee contract law",
+        url: "https://www.indiacode.nic.in/handle/123456789/2187?col=123456789%2F1362"
+    }
+
+];
+
+function searchBareActs() {
+
+    const input = document.getElementById("bareActSearch");
+
+    if (!input) return;
+
+    const query = input.value.trim().toLowerCase();
+
+    const results = document.getElementById("bareActResults");
+
+    if (!results) return;
+
+    if (!query) {
+
+        results.innerHTML = `
+            <div class="bare-act-result-info">
+                Search an Act to access its official India Code page.
+            </div>
+        `;
+
+        return;
+    }
+
+    const matches = LEGALDECODE_BARE_ACTS.filter(act => {
+
+        const searchableText =
+            `${act.name} ${act.short} ${act.keywords}`.toLowerCase();
+
+        return searchableText.includes(query);
+
+    });
+
+    if (!matches.length) {
+
+        results.innerHTML = `
+            <div class="bare-act-no-result">
+                No matching Act found in the LegalDecode quick-reference
+                list. Try CPC, SARFAESI, Contract, Arbitration,
+                Family Courts or Specific Relief.
+            </div>
+        `;
+
+        return;
+    }
+
+    results.innerHTML = matches.map(act => `
+
+        <div class="bare-act-card">
+
+            <h4>${act.name}</h4>
+
+            <p>
+                ${act.short}<br>
+                Official India Code source.
+            </p>
+
+            <a
+                class="bare-act-open"
+                href="${act.url}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open Official India Code →
+            </a>
+
+        </div>
+
+    `).join("");
+}
+
+function selectBareAct(keyword) {
+
+    const input = document.getElementById("bareActSearch");
+
+    if (!input) return;
+
+    input.value = keyword;
+
+    searchBareActs();
+
+    const results = document.getElementById("bareActResults");
+
+    if (results) {
+
+        results.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+
+    }
+}
+</script>
+  </div>
 </section>
 
 <section class="section faq" id="faq">
