@@ -7,33 +7,1274 @@
 
 <title>LegalDecode | Law Firm in Lucknow | Civil, Criminal, SARFAESI & Legal Matters</title>
 
-<meta name="description" content="LegalDecode is a Lucknow-based legal practice engaged in civil matters, criminal law, SARFAESI matters, banking and financial laws, property disputes, family court matters and service matters before the Lucknow Bench, District Courts and relevant tribunals.">
+<meta name="description"
+content="LegalDecode is a law firm in Lucknow providing legal assistance in criminal law, SARFAESI matters, banking and financial laws, property disputes, family court matters, civil matters and service matters.">
 
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://advaadeshpandey-glitch.github.io/LegalDecode/">
+<link rel="canonical"
+href="https://advaadeshpandey-glitch.github.io/LegalDecode/">
 
-<meta property="og:title" content="LegalDecode | Law Firm in Lucknow">
-<meta property="og:description" content="Modern legal practice in Lucknow covering civil, criminal, SARFAESI, banking, property, family court and service matters.">
+<meta property="og:title"
+content="LegalDecode | Law Firm in Lucknow">
+
+<meta property="og:description"
+content="LegalDecode — legal assistance in Lucknow across criminal, civil, SARFAESI, banking, property, family and service matters.">
+
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://advaadeshpandey-glitch.github.io/LegalDecode/">
-<meta property="og:image" content="https://advaadeshpandey-glitch.github.io/LegalDecode/partner.jpeg">
 
-<meta name="theme-color" content="#101c35">
+<meta property="og:url"
+content="https://advaadeshpandey-glitch.github.io/LegalDecode/">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<meta property="og:image" content="partner.jpeg">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root{
+    --navy:#101d35;
+    --navy2:#182944;
+    --ivory:#f7f3eb;
+    --cream:#eee8dc;
+    --gold:#b28a43;
+    --gold2:#d0ae68;
+    --black:#151515;
+    --grey:#676767;
+    --light:#faf9f6;
+    --border:rgba(16,29,53,.14);
+    --white:#ffffff;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--black);
+    background:var(--ivory);
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1,
+h2,
+h3,
+h4{
+    font-family:Georgia, "Times New Roman", serif;
+    color:var(--navy);
+    line-height:1.15;
+}
+
+h1{
+    font-size:clamp(42px,6vw,78px);
+}
+
+h2{
+    font-size:clamp(32px,4vw,52px);
+}
+
+h3{
+    font-size:25px;
+}
+
+p{
+    color:#4d4d4d;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(247,243,235,.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-mark{
+    width:46px;
+    height:46px;
+    border:1px solid var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold);
+    font-family:Georgia,serif;
+    font-weight:bold;
+    font-size:20px;
+    position:relative;
+}
+
+.logo-mark:after{
+    content:"";
+    position:absolute;
+    width:26px;
+    height:26px;
+    border:1px solid rgba(178,138,67,.35);
+}
+
+.logo-text{
+    font-family:Georgia,serif;
+    font-size:25px;
+    letter-spacing:.4px;
+    color:var(--navy);
+}
+
+.logo-text span{
+    color:var(--gold);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.nav-links a{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--navy);
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:1px solid var(--border);
+    width:45px;
+    height:42px;
+    color:var(--navy);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:700px;
+    padding:90px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:70px;
+    align-items:center;
+}
+
+.hero-copy{
+    position:relative;
+    z-index:2;
+}
+
+.eyebrow{
+    color:var(--gold);
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2.5px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero-description{
+    max-width:650px;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    border:1px solid var(--navy);
+    padding:13px 22px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:12px;
+    transition:.25s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.btn-primary{
+    background:var(--navy);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--gold);
+    border-color:var(--gold);
+}
+
+.btn-outline{
+    background:transparent;
+    color:var(--navy);
+}
+
+.btn-outline:hover{
+    background:var(--navy);
+    color:white;
+}
+
+.hero-justice{
+    position:absolute;
+    left:-80px;
+    bottom:-80px;
+    width:420px;
+    opacity:.055;
+    pointer-events:none;
+}
+
+.hero-photo{
+    min-height:560px;
+    border:1px solid rgba(178,138,67,.55);
+    background:#eee9df;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.hero-photo img{
+    width:100%;
+    height:520px;
+    object-fit:contain;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+section{
+    padding:100px 0;
+}
+
+.section-head{
+    max-width:760px;
+    margin-bottom:55px;
+}
+
+.section-head p{
+    margin-top:18px;
+    font-size:17px;
+}
+
+.section-label{
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin-bottom:14px;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+}
+
+.about-copy p{
+    margin-bottom:20px;
+}
+
+.about-note{
+    border-left:3px solid var(--gold);
+    padding:22px 25px;
+    background:var(--ivory);
+    margin-top:30px;
+    font-family:Georgia,serif;
+    font-size:19px;
+    color:var(--navy);
+}
+
+.about-points{
+    display:grid;
+    gap:18px;
+}
+
+.about-point{
+    border-top:1px solid var(--border);
+    padding-top:18px;
+}
+
+.about-point strong{
+    color:var(--navy);
+    font-family:Georgia,serif;
+    font-size:20px;
+}
+
+/* =========================================================
+   PRACTICE AREAS
+========================================================= */
+
+.practice{
+    background:var(--ivory);
+}
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--border);
+    border:1px solid var(--border);
+}
+
+.practice-card{
+    background:var(--ivory);
+    padding:34px;
+    min-height:240px;
+    transition:.25s;
+    cursor:pointer;
+}
+
+.practice-card:hover{
+    background:white;
+}
+
+.practice-number{
+    color:var(--gold);
+    font-family:Georgia,serif;
+    font-size:15px;
+    margin-bottom:25px;
+}
+
+.practice-card h3{
+    margin-bottom:14px;
+}
+
+.practice-card p{
+    font-size:14px;
+}
+
+/* =========================================================
+   FORUMS
+========================================================= */
+
+.forums{
+    background:var(--navy);
+}
+
+.forums h2,
+.forums h3,
+.forums p{
+    color:white;
+}
+
+.forum-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.forum{
+    border:1px solid rgba(255,255,255,.18);
+    padding:30px;
+    min-height:170px;
+}
+
+.forum span{
+    color:var(--gold2);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.forum h3{
+    margin-top:15px;
+    font-size:21px;
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process{
+    background:white;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process-item{
+    padding:28px;
+    border-top:2px solid var(--gold);
+    background:var(--light);
+}
+
+.process-item .num{
+    color:var(--gold);
+    font-family:Georgia,serif;
+    font-size:26px;
+}
+
+.process-item h3{
+    margin:14px 0 10px;
+    font-size:20px;
+}
+
+/* =========================================================
+   TEAM
+========================================================= */
+
+.team{
+    background:var(--ivory);
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
+}
+
+.person-card{
+    background:white;
+    border:1px solid var(--border);
+    display:grid;
+    grid-template-columns:220px 1fr;
+    min-height:300px;
+}
+
+.person-photo{
+    background:#ece7dd;
+    padding:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.person-photo img{
+    width:100%;
+    height:275px;
+    object-fit:contain;
+}
+
+.person-content{
+    padding:30px;
+}
+
+.person-content .designation{
+    color:var(--gold);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    margin:7px 0 15px;
+}
+
+.person-content p{
+    font-size:14px;
+}
+
+.person-content ul{
+    margin:18px 0;
+    padding-left:18px;
+    color:#555;
+    font-size:13px;
+}
+
+.person-content li{
+    margin-bottom:5px;
+}
+
+.small-btn{
+    border:1px solid var(--navy);
+    background:transparent;
+    color:var(--navy);
+    padding:9px 14px;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.small-btn:hover{
+    background:var(--navy);
+    color:white;
+}
+
+.associates{
+    margin-top:55px;
+}
+
+.associate-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.associate-card{
+    background:white;
+    border:1px solid var(--border);
+    padding:25px;
+}
+
+.associate-photo{
+    height:220px;
+    background:#ece7dd;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.associate-photo img{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+}
+
+.associate-card h3{
+    font-size:21px;
+}
+
+.associate-card .designation{
+    color:var(--gold);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:5px 0 12px;
+}
+
+.associate-card p{
+    font-size:13px;
+}
+
+/* =========================================================
+   KNOWLEDGE CENTER
+========================================================= */
+
+.knowledge{
+    background:white;
+}
+
+.knowledge-tabs{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.tab-btn{
+    border:1px solid var(--border);
+    background:white;
+    color:var(--navy);
+    padding:12px 18px;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.tab-btn.active,
+.tab-btn:hover{
+    background:var(--navy);
+    color:white;
+}
+
+.knowledge-panel{
+    display:none;
+}
+
+.knowledge-panel.active{
+    display:block;
+}
+
+/* =========================================================
+   ARTICLES
+========================================================= */
+
+.article-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.article-card{
+    border:1px solid var(--border);
+    padding:28px;
+    background:var(--ivory);
+}
+
+.article-card h4{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.article-meta{
+    color:var(--gold);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:15px;
+}
+
+.article-card p{
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.empty-state{
+    padding:40px;
+    border:1px dashed var(--border);
+    text-align:center;
+    color:var(--grey);
+}
+
+/* =========================================================
+   JUDGMENTS
+========================================================= */
+
+.judgment-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.judgment-card{
+    border:1px solid var(--border);
+    padding:28px;
+    background:var(--ivory);
+}
+
+.judgment-card h3{
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.judgment-card p{
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.judgment-link{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:11px;
+}
+
+/* =========================================================
+   BARE ACTS
+========================================================= */
+
+.bareacts{
+    background:var(--ivory);
+}
+
+.bare-search{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.bare-search input{
+    flex:1;
+    border:1px solid var(--border);
+    background:white;
+    padding:15px 17px;
+    outline:none;
+}
+
+.bare-search input:focus{
+    border-color:var(--gold);
+}
+
+.bare-results{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.act-result{
+    background:white;
+    border:1px solid var(--border);
+    padding:22px;
+}
+
+.act-result h3{
+    font-size:19px;
+    margin-bottom:7px;
+}
+
+.act-result p{
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.popular-acts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:20px 0 30px;
+}
+
+.act-chip{
+    border:1px solid var(--border);
+    background:white;
+    padding:8px 12px;
+    font-size:12px;
+    cursor:pointer;
+}
+
+.act-chip:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+    background:white;
+}
+
+.faq-list{
+    max-width:900px;
+}
+
+.faq-item{
+    border-top:1px solid var(--border);
+}
+
+.faq-question{
+    width:100%;
+    padding:22px 0;
+    background:none;
+    border:0;
+    text-align:left;
+    display:flex;
+    justify-content:space-between;
+    color:var(--navy);
+    font-family:Georgia,serif;
+    font-size:20px;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 0 22px;
+    max-width:800px;
+}
+
+.faq-item.open .faq-answer{
+    display:block;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+    background:var(--navy);
+}
+
+.contact h2,
+.contact h3,
+.contact p{
+    color:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.contact-details{
+    display:grid;
+    gap:20px;
+    margin-top:30px;
+}
+
+.contact-item{
+    border-top:1px solid rgba(255,255,255,.18);
+    padding-top:16px;
+}
+
+.contact-item span{
+    color:var(--gold2);
+    display:block;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.contact-form{
+    background:white;
+    padding:32px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    color:var(--navy);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    border:1px solid var(--border);
+    padding:12px;
+    outline:none;
+    background:white;
+}
+
+.form-group textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#0b1425;
+    color:white;
+    padding:45px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:50px;
+}
+
+footer h3{
+    color:white;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+footer p,
+footer a{
+    color:#b9bec7;
+    font-size:13px;
+}
+
+.footer-links{
+    display:grid;
+    gap:7px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    margin-top:35px;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#168c45;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1200;
+    font-size:23px;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* =========================================================
+   AI
+========================================================= */
+
+.ai-button{
+    position:fixed;
+    right:22px;
+    bottom:92px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:var(--navy);
+    color:white;
+    border:1px solid var(--gold);
+    z-index:1200;
+    font-family:Georgia,serif;
+    font-size:13px;
+}
+
+.ai-drawer{
+    position:fixed;
+    top:0;
+    right:-430px;
+    width:420px;
+    height:100vh;
+    background:white;
+    z-index:1300;
+    box-shadow:-10px 0 40px rgba(0,0,0,.2);
+    transition:.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+.ai-drawer.open{
+    right:0;
+}
+
+.ai-head{
+    background:var(--navy);
+    color:white;
+    padding:22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.ai-head strong{
+    font-family:Georgia,serif;
+}
+
+.ai-close{
+    border:0;
+    background:none;
+    color:white;
+    font-size:22px;
+}
+
+.ai-body{
+    flex:1;
+    overflow:auto;
+    padding:20px;
+    background:var(--ivory);
+}
+
+.ai-msg{
+    background:white;
+    border:1px solid var(--border);
+    padding:14px;
+    margin-bottom:12px;
+    font-size:13px;
+}
+
+.ai-input{
+    padding:15px;
+    border-top:1px solid var(--border);
+    display:flex;
+    gap:8px;
+}
+
+.ai-input input{
+    flex:1;
+    border:1px solid var(--border);
+    padding:11px;
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.62);
+    z-index:1500;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    background:white;
+    max-width:850px;
+    width:100%;
+    max-height:90vh;
+    overflow:auto;
+    padding:40px;
+    position:relative;
+}
+
+.modal-close{
+    position:absolute;
+    right:18px;
+    top:15px;
+    border:0;
+    background:none;
+    font-size:25px;
+    color:var(--navy);
+}
+
+.modal-box h2{
+    margin-bottom:20px;
+}
+
+.modal-box p{
+    margin-bottom:15px;
+}
+
+.notice{
+    border-left:3px solid var(--gold);
+    background:var(--ivory);
+    padding:15px 18px;
+    margin-top:25px;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        position:absolute;
+        top:82px;
+        left:0;
+        right:0;
+        background:var(--ivory);
+        border-bottom:1px solid var(--border);
+        display:none;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:25px 4%;
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero{
+        padding:65px 0;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-photo{
+        min-height:auto;
+    }
+
+    .hero-photo img{
+        height:440px;
+    }
+
+    .practice-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .forum-grid,
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .associate-grid,
+    .article-grid,
+    .judgment-grid,
+    .bare-results{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:650px){
+
+    section{
+        padding:70px 0;
+    }
+
+    h1{
+        font-size:43px;
+    }
+
+    .hero-grid{
+        gap:40px;
+    }
+
+    .practice-grid,
+    .forum-grid,
+    .process-grid,
+    .associate-grid,
+    .article-grid,
+    .judgment-grid,
+    .bare-results,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .person-card{
+        grid-template-columns:1fr;
+    }
+
+    .person-photo{
+        min-height:320px;
+    }
+
+    .person-photo img{
+        height:310px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .bare-search{
+        flex-direction:column;
+    }
+
+    .ai-drawer{
+        width:100%;
+        right:-100%;
+    }
+
+    .contact-form{
+        padding:22px;
+    }
+
+    .modal-box{
+        padding:25px;
+    }
+}
+
+</style>
+
+<script>
+
+const LEGALDECODE_API =
+"https://script.google.com/macros/s/AKfycbyTb_6zTAv3zI3Lr9jBhTtczma69Y2jR6qHafZUlnY1s8tvpn8kSrTwiwVH11RdVD0/exec";
+
+</script>
 
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Organization",
+  "@type":"LegalService",
   "name":"LegalDecode",
   "url":"https://advaadeshpandey-glitch.github.io/LegalDecode/",
+  "telephone":"+917007724581",
   "email":"avlegalaxis@gmail.com",
-  "telephone":"+91-7007724581",
-  "description":"Lucknow-based legal practice engaged in civil, criminal, SARFAESI, banking and financial, property, family court and service matters.",
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"E3/243, Vinay Khand-3, Gomti Nagar",
@@ -42,20 +1283,7 @@
     "postalCode":"226010",
     "addressCountry":"IN"
   },
-  "areaServed":{
-    "@type":"City",
-    "name":"Lucknow"
-  },
-  "founder":[
-    {
-      "@type":"Person",
-      "name":"Adv. Aadesh Pandey"
-    },
-    {
-      "@type":"Person",
-      "name":"Adv. Vartika Pandey"
-    }
-  ],
+  "areaServed":"Lucknow, Uttar Pradesh, India",
   "serviceType":[
     "Criminal Law",
     "SARFAESI Matters",
@@ -68,2918 +1296,3168 @@
 }
 </script>
 
-<style>
-:root{
-  --navy:#101c35;
-  --navy2:#172542;
-  --cream:#f6f2e9;
-  --paper:#fbfaf6;
-  --gold:#b79a61;
-  --gold2:#d3bb83;
-  --ink:#18202c;
-  --muted:#697180;
-  --line:#ddd8ca;
-  --white:#ffffff;
-  --shadow:0 18px 55px rgba(16,28,53,.10);
-  --radius:22px;
-  --max:1180px;
-}
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:"DM Sans",Arial,sans-serif;
-  color:var(--ink);
-  background:var(--paper);
-  line-height:1.7;
-  overflow-x:hidden;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-button,
-input,
-textarea,
-select{
-  font:inherit;
-}
-
-button{
-  cursor:pointer;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-.container{
-  width:min(var(--max),calc(100% - 40px));
-  margin:auto;
-}
-
-.section{
-  padding:100px 0;
-}
-
-.eyebrow{
-  text-transform:uppercase;
-  letter-spacing:.18em;
-  font-size:11px;
-  font-weight:700;
-  color:var(--gold);
-  margin-bottom:12px;
-}
-
-.section-head{
-  max-width:760px;
-  margin-bottom:48px;
-}
-
-.section-head h2{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(34px,5vw,58px);
-  line-height:1.08;
-  color:var(--navy);
-  margin-bottom:18px;
-}
-
-.section-head p{
-  color:var(--muted);
-  font-size:16px;
-}
-
-.topbar{
-  background:var(--navy);
-  color:#fff;
-  font-size:12px;
-  letter-spacing:.02em;
-}
-
-.topbar-inner{
-  min-height:36px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-}
-
-.topbar a{
-  color:#fff;
-}
-
-.nav{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(251,250,246,.94);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(221,216,202,.8);
-}
-
-.nav-inner{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  flex-shrink:0;
-}
-
-.brand-mark{
-  width:44px;
-  height:44px;
-  border:1px solid var(--gold);
-  display:grid;
-  place-items:center;
-  color:var(--navy);
-  font-family:"Playfair Display",serif;
-  font-weight:700;
-  font-size:20px;
-  position:relative;
-}
-
-.brand-mark:after{
-  content:"";
-  position:absolute;
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:var(--gold);
-  right:5px;
-  bottom:5px;
-}
-
-.brand-text strong{
-  display:block;
-  font-family:"Playfair Display",serif;
-  font-size:22px;
-  color:var(--navy);
-  line-height:1;
-}
-
-.brand-text span{
-  font-size:9px;
-  text-transform:uppercase;
-  letter-spacing:.18em;
-  color:var(--muted);
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:22px;
-}
-
-.nav-links a{
-  font-size:12px;
-  font-weight:600;
-  color:#354052;
-}
-
-.nav-links a:hover{
-  color:var(--gold);
-}
-
-.nav-cta{
-  background:var(--navy);
-  color:#fff !important;
-  padding:11px 17px;
-  border-radius:30px;
-}
-
-.menu-btn{
-  display:none;
-  border:0;
-  background:transparent;
-  font-size:28px;
-  color:var(--navy);
-}
-
-.mobile-menu{
-  display:none;
-  padding:10px 0 20px;
-}
-
-.mobile-menu.open{
-  display:block;
-}
-
-.mobile-menu a{
-  display:block;
-  padding:12px 0;
-  border-bottom:1px solid var(--line);
-  font-weight:600;
-}
-
-.hero{
-  position:relative;
-  min-height:720px;
-  display:flex;
-  align-items:center;
-  background:
-    radial-gradient(circle at 10% 20%,rgba(183,154,97,.10),transparent 30%),
-    linear-gradient(135deg,#fbfaf6,#f2eee5);
-  overflow:hidden;
-}
-
-.hero-watermark{
-  position:absolute;
-  left:2%;
-  top:50%;
-  transform:translateY(-50%);
-  width:470px;
-  height:570px;
-  opacity:.055;
-  pointer-events:none;
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:70px;
-  align-items:center;
-}
-
-.hero-copy{
-  position:relative;
-  z-index:2;
-}
-
-.hero-copy h1{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(48px,6vw,78px);
-  line-height:.98;
-  color:var(--navy);
-  margin-bottom:28px;
-}
-
-.hero-copy h1 span{
-  color:var(--gold);
-}
-
-.hero-copy p{
-  color:#596171;
-  font-size:17px;
-  max-width:650px;
-  margin-bottom:32px;
-}
-
-.hero-actions{
-  display:flex;
-  gap:13px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:50px;
-  padding:0 22px;
-  border-radius:30px;
-  border:1px solid var(--navy);
-  font-weight:700;
-  font-size:13px;
-  transition:.2s;
-}
-
-.btn-primary{
-  background:var(--navy);
-  color:#fff;
-}
-
-.btn-primary:hover{
-  transform:translateY(-2px);
-  box-shadow:0 12px 30px rgba(16,28,53,.18);
-}
-
-.btn-outline{
-  color:var(--navy);
-}
-
-.btn-outline:hover{
-  background:var(--navy);
-  color:#fff;
-}
-
-.hero-note{
-  margin-top:38px;
-  border-left:2px solid var(--gold);
-  padding-left:17px;
-  max-width:570px;
-  color:#6d7481;
-  font-size:13px;
-}
-
-.hero-photo{
-  min-height:590px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-}
-
-.hero-photo-frame{
-  width:min(100%,500px);
-  height:590px;
-  background:#e9e4d9;
-  border:1px solid var(--line);
-  padding:12px;
-  position:relative;
-  box-shadow:var(--shadow);
-}
-
-.hero-photo-frame:before{
-  content:"";
-  position:absolute;
-  inset:6px;
-  border:1px solid rgba(183,154,97,.65);
-  pointer-events:none;
-  z-index:2;
-}
-
-.hero-photo img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  background:#ebe6dc;
-}
-
-.hero-caption{
-  position:absolute;
-  left:30px;
-  bottom:28px;
-  background:rgba(16,28,53,.94);
-  color:#fff;
-  padding:13px 17px;
-  z-index:3;
-}
-
-.hero-caption strong{
-  display:block;
-  font-family:"Playfair Display",serif;
-  font-size:18px;
-}
-
-.hero-caption span{
-  font-size:11px;
-  color:#d7c89f;
-}
-
-.band{
-  background:var(--navy);
-  color:#fff;
-  padding:30px 0;
-}
-
-.band-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.band-item{
-  padding:8px 20px;
-  border-left:1px solid rgba(255,255,255,.18);
-}
-
-.band-item:first-child{
-  border-left:0;
-}
-
-.band-item strong{
-  display:block;
-  color:#fff;
-  font-family:"Playfair Display",serif;
-  font-size:20px;
-}
-
-.band-item span{
-  color:#c8ced9;
-  font-size:12px;
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:70px;
-  align-items:start;
-}
-
-.about-lead{
-  font-family:"Playfair Display",serif;
-  font-size:31px;
-  line-height:1.3;
-  color:var(--navy);
-}
-
-.about-copy p{
-  color:var(--muted);
-  margin-bottom:18px;
-}
-
-.practice{
-  background:var(--cream);
-}
-
-.practice-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.practice-card{
-  background:var(--paper);
-  border:1px solid var(--line);
-  min-height:230px;
-  padding:26px;
-  position:relative;
-  transition:.25s;
-}
-
-.practice-card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow);
-  border-color:var(--gold2);
-}
-
-.practice-no{
-  color:var(--gold);
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:.14em;
-}
-
-.practice-card h3{
-  font-family:"Playfair Display",serif;
-  color:var(--navy);
-  font-size:23px;
-  line-height:1.2;
-  margin:30px 0 12px;
-}
-
-.practice-card p{
-  font-size:13px;
-  color:var(--muted);
-}
-
-.practice-card button{
-  margin-top:18px;
-  border:0;
-  background:none;
-  color:var(--navy);
-  font-weight:700;
-  font-size:12px;
-}
-
-.two-col{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px;
-}
-
-.info-panel{
-  border-top:1px solid var(--navy);
-  padding-top:24px;
-}
-
-.info-panel h3{
-  font-family:"Playfair Display",serif;
-  font-size:30px;
-  color:var(--navy);
-  margin-bottom:15px;
-}
-
-.info-panel p{
-  color:var(--muted);
-}
-
-.list{
-  list-style:none;
-  margin-top:22px;
-}
-
-.list li{
-  padding:12px 0;
-  border-bottom:1px solid var(--line);
-  color:#4d5666;
-  font-size:14px;
-}
-
-.list li:before{
-  content:"";
-  display:inline-block;
-  width:7px;
-  height:7px;
-  border:1px solid var(--gold);
-  margin-right:10px;
-  transform:rotate(45deg);
-}
-
-.dark-section{
-  background:var(--navy);
-  color:#fff;
-}
-
-.dark-section .section-head h2{
-  color:#fff;
-}
-
-.dark-section .section-head p{
-  color:#cbd0d9;
-}
-
-.courts-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.court-card{
-  border:1px solid rgba(255,255,255,.15);
-  padding:28px;
-  min-height:190px;
-}
-
-.court-card h3{
-  font-family:"Playfair Display",serif;
-  color:#fff;
-  font-size:22px;
-  margin-bottom:12px;
-}
-
-.court-card p{
-  color:#c8ced8;
-  font-size:13px;
-}
-
-.process-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.process-card{
-  border-top:2px solid var(--gold);
-  padding-top:20px;
-}
-
-.process-card b{
-  color:var(--gold);
-  font-size:12px;
-}
-
-.process-card h3{
-  font-family:"Playfair Display",serif;
-  font-size:24px;
-  color:var(--navy);
-  margin:12px 0;
-}
-
-.process-card p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.team{
-  background:#f0ece2;
-}
-
-.team-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.team-card{
-  background:var(--paper);
-  border:1px solid var(--line);
-  overflow:hidden;
-}
-
-.team-photo{
-  height:370px;
-  background:#e6e0d4;
-  padding:14px;
-}
-
-.team-photo img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  background:#e9e5dc;
-}
-
-.team-content{
-  padding:25px;
-}
-
-.team-content .role{
-  color:var(--gold);
-  text-transform:uppercase;
-  font-size:10px;
-  letter-spacing:.15em;
-  font-weight:700;
-}
-
-.team-content h3{
-  font-family:"Playfair Display",serif;
-  color:var(--navy);
-  font-size:27px;
-  margin:8px 0 10px;
-}
-
-.team-content p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.team-content ul{
-  margin-top:15px;
-  padding-left:17px;
-  color:#586171;
-  font-size:12px;
-}
-
-.team-actions{
-  margin-top:18px;
-  display:flex;
-  gap:10px;
-}
-
-.small-btn{
-  border:1px solid var(--navy);
-  background:transparent;
-  padding:8px 13px;
-  border-radius:20px;
-  font-size:11px;
-  font-weight:700;
-  color:var(--navy);
-}
-
-.small-btn:hover{
-  background:var(--navy);
-  color:#fff;
-}
-
-.knowledge{
-  background:var(--paper);
-}
-
-.knowledge-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px;
-}
-
-.knowledge-panel{
-  border:1px solid var(--line);
-  padding:32px;
-  background:#fff;
-}
-
-.knowledge-panel h3{
-  font-family:"Playfair Display",serif;
-  color:var(--navy);
-  font-size:29px;
-  margin-bottom:10px;
-}
-
-.knowledge-panel p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.article-list{
-  margin-top:25px;
-}
-
-.article-card{
-  padding:18px 0;
-  border-top:1px solid var(--line);
-}
-
-.article-card h4{
-  color:var(--navy);
-  font-family:"Playfair Display",serif;
-  font-size:21px;
-}
-
-.article-meta{
-  font-size:11px;
-  color:var(--gold);
-  margin:4px 0 7px;
-}
-
-.article-card p{
-  font-size:13px;
-}
-
-.empty-state{
-  padding:28px 0;
-  color:var(--muted);
-  font-size:13px;
-}
-
-.judgment-grid,
-.acts-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-  margin-top:22px;
-}
-
-.resource-card{
-  border:1px solid var(--line);
-  padding:18px;
-  background:#fbfaf6;
-}
-
-.resource-card h4{
-  color:var(--navy);
-  font-family:"Playfair Display",serif;
-  font-size:18px;
-  line-height:1.3;
-}
-
-.resource-card p{
-  font-size:12px;
-  margin-top:7px;
-}
-
-.resource-card a{
-  display:inline-block;
-  margin-top:10px;
-  color:var(--navy);
-  font-weight:700;
-  font-size:11px;
-}
-
-.faq{
-  background:var(--cream);
-}
-
-.faq-list{
-  max-width:900px;
-}
-
-.faq-item{
-  border-top:1px solid var(--line);
-}
-
-.faq-q{
-  width:100%;
-  border:0;
-  background:none;
-  text-align:left;
-  padding:21px 0;
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  color:var(--navy);
-  font-weight:700;
-}
-
-.faq-a{
-  display:none;
-  padding:0 0 22px;
-  color:var(--muted);
-  font-size:14px;
-}
-
-.faq-item.open .faq-a{
-  display:block;
-}
-
-.contact{
-  background:#ebe7dd;
-}
-
-.contact-grid{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:55px;
-}
-
-.contact-box h3{
-  font-family:"Playfair Display",serif;
-  color:var(--navy);
-  font-size:38px;
-  margin-bottom:16px;
-}
-
-.contact-box p{
-  color:var(--muted);
-  margin-bottom:20px;
-}
-
-.contact-detail{
-  padding:15px 0;
-  border-bottom:1px solid var(--line);
-}
-
-.contact-detail strong{
-  display:block;
-  color:var(--navy);
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:.1em;
-}
-
-.contact-detail a,
-.contact-detail span{
-  color:#4f5969;
-  font-size:14px;
-}
-
-.form{
-  background:#fff;
-  padding:30px;
-  border:1px solid var(--line);
-}
-
-.form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-
-.field{
-  margin-bottom:15px;
-}
-
-.field.full{
-  grid-column:1/-1;
-}
-
-.field label{
-  display:block;
-  font-size:11px;
-  font-weight:700;
-  color:var(--navy);
-  margin-bottom:6px;
-}
-
-.field input,
-.field textarea,
-.field select{
-  width:100%;
-  border:1px solid var(--line);
-  background:#fbfaf6;
-  padding:12px 13px;
-  outline:none;
-  color:var(--ink);
-}
-
-.field textarea{
-  min-height:130px;
-  resize:vertical;
-}
-
-.field input:focus,
-.field textarea:focus,
-.field select:focus{
-  border-color:var(--gold);
-}
-
-.form-note{
-  margin-top:12px;
-  font-size:11px;
-  color:var(--muted);
-}
-
-.footer{
-  background:#0c1528;
-  color:#fff;
-  padding:55px 0 25px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.2fr .8fr .8fr;
-  gap:50px;
-}
-
-.footer h3{
-  font-family:"Playfair Display",serif;
-  font-size:27px;
-  margin-bottom:14px;
-}
-
-.footer p{
-  color:#aeb6c4;
-  font-size:13px;
-}
-
-.footer-links a{
-  display:block;
-  color:#cbd1dc;
-  font-size:12px;
-  margin:7px 0;
-}
-
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.12);
-  margin-top:35px;
-  padding-top:20px;
-  color:#929baa;
-  font-size:10px;
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.whatsapp{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:900;
-  width:54px;
-  height:54px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:#168c4b;
-  color:#fff;
-  box-shadow:0 10px 30px rgba(0,0,0,.2);
-  font-weight:800;
-  font-size:13px;
-}
-
-.ai-btn{
-  position:fixed;
-  right:22px;
-  bottom:88px;
-  z-index:900;
-  border:1px solid var(--gold);
-  background:var(--navy);
-  color:#fff;
-  border-radius:30px;
-  padding:12px 17px;
-  font-size:11px;
-  font-weight:700;
-  box-shadow:0 12px 30px rgba(0,0,0,.15);
-}
-
-.ai-drawer{
-  position:fixed;
-  right:-430px;
-  top:0;
-  height:100vh;
-  width:410px;
-  background:#fff;
-  z-index:2000;
-  box-shadow:-20px 0 50px rgba(0,0,0,.2);
-  transition:.3s;
-  display:flex;
-  flex-direction:column;
-}
-
-.ai-drawer.open{
-  right:0;
-}
-
-.ai-head{
-  background:var(--navy);
-  color:#fff;
-  padding:22px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.ai-head strong{
-  font-family:"Playfair Display",serif;
-  font-size:20px;
-}
-
-.ai-close{
-  background:none;
-  border:0;
-  color:#fff;
-  font-size:25px;
-}
-
-.ai-body{
-  flex:1;
-  overflow:auto;
-  padding:20px;
-}
-
-.ai-msg{
-  margin-bottom:15px;
-  padding:13px;
-  border-radius:12px;
-  background:#f2eee5;
-  font-size:13px;
-  color:#4e5665;
-}
-
-.ai-input{
-  padding:15px;
-  border-top:1px solid var(--line);
-  display:flex;
-  gap:8px;
-}
-
-.ai-input input{
-  flex:1;
-  border:1px solid var(--line);
-  padding:10px;
-}
-
-.ai-input button{
-  border:0;
-  background:var(--navy);
-  color:#fff;
-  padding:0 15px;
-}
-
-.modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(7,13,25,.72);
-  z-index:3000;
-  padding:20px;
-  overflow:auto;
-}
-
-.modal.open{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.modal-box{
-  width:min(760px,100%);
-  background:#fff;
-  max-height:90vh;
-  overflow:auto;
-  padding:35px;
-  position:relative;
-}
-
-.modal-close{
-  position:absolute;
-  right:17px;
-  top:12px;
-  border:0;
-  background:none;
-  font-size:28px;
-  color:var(--navy);
-}
-
-.modal-box h2{
-  font-family:"Playfair Display",serif;
-  color:var(--navy);
-  font-size:35px;
-  line-height:1.15;
-  margin-bottom:15px;
-}
-
-.modal-box p{
-  color:var(--muted);
-  font-size:14px;
-  margin-bottom:15px;
-}
-
-.modal-box ul{
-  padding-left:20px;
-  color:#566071;
-  font-size:13px;
-}
-
-.notice{
-  padding:14px 16px;
-  border-left:3px solid var(--gold);
-  background:#f7f3ea;
-  color:#5e6673;
-  font-size:12px;
-  margin-top:20px;
-}
-
-@media(max-width:1050px){
-  .nav-links{
-    display:none;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .hero-grid{
-    gap:35px;
-  }
-
-  .practice-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .process-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .team-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .band-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:760px){
-  .container{
-    width:min(var(--max),calc(100% - 28px));
-  }
-
-  .section{
-    padding:70px 0;
-  }
-
-  .topbar{
-    display:none;
-  }
-
-  .nav-inner{
-    min-height:70px;
-  }
-
-  .hero{
-    min-height:auto;
-    padding:65px 0 45px;
-  }
-
-  .hero-grid,
-  .about-grid,
-  .two-col,
-  .knowledge-grid,
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
-
-  .hero-grid{
-    gap:38px;
-  }
-
-  .hero-copy h1{
-    font-size:50px;
-  }
-
-  .hero-photo{
-    min-height:auto;
-  }
-
-  .hero-photo-frame{
-    height:470px;
-  }
-
-  .hero-watermark{
-    width:300px;
-    height:400px;
-  }
-
-  .practice-grid,
-  .courts-grid,
-  .team-grid,
-  .process-grid,
-  .judgment-grid,
-  .acts-grid{
-    grid-template-columns:1fr;
-  }
-
-  .band-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .team-photo{
-    height:400px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .form-grid{
-    grid-template-columns:1fr;
-  }
-
-  .field.full{
-    grid-column:auto;
-  }
-
-  .ai-drawer{
-    width:100%;
-    right:-100%;
-  }
-
-  .ai-btn{
-    right:16px;
-    bottom:85px;
-  }
-
-  .whatsapp{
-    right:16px;
-    bottom:20px;
-  }
-}
-
-@media(max-width:430px){
-  .hero-copy h1{
-    font-size:43px;
-  }
-
-  .hero-photo-frame{
-    height:420px;
-  }
-
-  .brand-text strong{
-    font-size:19px;
-  }
-
-  .brand-text span{
-    display:none;
-  }
-}
-</style>
-<script>
-const LEGALDECODE_API =
-"https://script.google.com/macros/s/AKfycbyTb_6zTAv3zI3Lr9jBhTtczma69Y2jR6qHafZUlnY1s8tvpn8kSrTwiwVH11RdVD0/exec";
-</script>
 </head>
 
 <body>
 
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>Lucknow-based legal practice</span>
-    <span>Monday–Saturday · 10:00 AM–6:00 PM</span>
-  </div>
+<!-- =========================================================
+HEADER
+========================================================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+
+<div class="logo-mark">LD</div>
+
+<div class="logo-text">
+Legal<span>Decode</span>
 </div>
 
-<header class="nav">
-  <div class="container nav-inner">
+</a>
 
-    <a class="brand" href="#home">
-      <div class="brand-mark">LD</div>
-      <div class="brand-text">
-        <strong>LegalDecode</strong>
-        <span>Legal Practice</span>
-      </div>
-    </a>
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
 
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#practice">Practice</a>
-      <a href="#courts">Courts</a>
-      <a href="#team">Team</a>
-      <a href="#knowledge">Knowledge</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="nav-cta">Consultation</a>
-    </nav>
+<nav class="nav-links" id="navLinks">
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  </div>
+<a href="#about">About</a>
+<a href="#practice">Practice Areas</a>
+<a href="#team">Team</a>
+<a href="#knowledge">Knowledge</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
 
-  <div class="container mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="toggleMenu()">About</a>
-    <a href="#practice" onclick="toggleMenu()">Practice Areas</a>
-    <a href="#courts" onclick="toggleMenu()">Courts & Forums</a>
-    <a href="#team" onclick="toggleMenu()">Team</a>
-    <a href="#knowledge" onclick="toggleMenu()">Knowledge Center</a>
-    <a href="#faq" onclick="toggleMenu()">FAQs</a>
-    <a href="#contact" onclick="toggleMenu()">Consultation</a>
-  </div>
+</nav>
+
+</div>
+
 </header>
 
-<main>
+
+<!-- =========================================================
+HERO
+========================================================= -->
 
 <section class="hero" id="home">
 
-<svg class="hero-watermark" viewBox="0 0 300 500" fill="none">
-  <path d="M150 50V455" stroke="#101c35" stroke-width="3"/>
-  <path d="M70 105H230" stroke="#101c35" stroke-width="3"/>
-  <path d="M95 105L55 190H135L95 105Z" stroke="#101c35" stroke-width="3"/>
-  <path d="M205 105L165 190H245L205 105Z" stroke="#101c35" stroke-width="3"/>
-  <path d="M55 190C55 215 135 215 135 190" stroke="#101c35" stroke-width="3"/>
-  <path d="M165 190C165 215 245 215 245 190" stroke="#101c35" stroke-width="3"/>
-  <circle cx="150" cy="55" r="25" stroke="#101c35" stroke-width="3"/>
-  <path d="M150 80L118 105H182L150 80Z" stroke="#101c35" stroke-width="3"/>
-  <path d="M105 455H195" stroke="#101c35" stroke-width="3"/>
-</svg>
-
 <div class="container hero-grid">
 
-  <div class="hero-copy">
-    <div class="eyebrow">LegalDecode · Lucknow</div>
+<div class="hero-copy">
 
-    <h1>
-      Law,<br>
-      <span>decoded.</span>
-    </h1>
+<div class="eyebrow">
+LegalDecode — Law Firm in Lucknow
+</div>
 
-    <p>
-      A modern legal practice focused on careful legal analysis,
-      strategic preparation, precise drafting and professional representation
-      across courts and relevant tribunals.
-    </p>
+<h1>
+Law. Strategy.<br>
+<span>Representation.</span>
+</h1>
 
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Request Consultation</a>
-      <a href="#practice" class="btn btn-outline">Explore Practice Areas</a>
-    </div>
+<p class="hero-description">
+LegalDecode provides practical and strategic legal assistance
+across litigation, advisory and proceedings before courts and
+tribunals, with a focus on careful legal analysis, precise
+drafting and diligent representation.
+</p>
 
-    <div class="hero-note">
-      LegalDecode combines traditional principles of advocacy with
-      modern legal research, structured preparation and clear legal communication.
-    </div>
-  </div>
+<div class="hero-buttons">
 
-  <div class="hero-photo">
-    <div class="hero-photo-frame">
-      <img src="partner.jpeg" alt="LegalDecode Partners">
-      <div class="hero-caption">
-        <strong>LegalDecode</strong>
-        <span>Advocacy · Research · Strategy</span>
-      </div>
-    </div>
-  </div>
+<a class="btn btn-primary" href="#contact">
+Request Consultation
+</a>
+
+<a class="btn btn-outline" href="#practice">
+Explore Practice Areas
+</a>
 
 </div>
-</section>
 
-<section class="band">
-<div class="container band-grid">
-  <div class="band-item">
-    <strong>Lucknow</strong>
-    <span>Primary practice location</span>
-  </div>
-  <div class="band-item">
-    <strong>High Court</strong>
-    <span>Lucknow Bench</span>
-  </div>
-  <div class="band-item">
-    <strong>District Courts</strong>
-    <span>Trial and court proceedings</span>
-  </div>
-  <div class="band-item">
-    <strong>Tribunals</strong>
-    <span>Relevant statutory forums</span>
-  </div>
 </div>
+
+
+<div class="hero-photo">
+
+<img src="partner.jpeg"
+alt="LegalDecode Advocate">
+
+</div>
+
+</div>
+
+<svg class="hero-justice"
+viewBox="0 0 300 500"
+xmlns="http://www.w3.org/2000/svg">
+
+<path d="M150 40v350"
+stroke="#101d35"
+stroke-width="5"
+fill="none"/>
+
+<circle cx="150" cy="40" r="18"
+stroke="#101d35"
+stroke-width="4"
+fill="none"/>
+
+<path d="M70 125h160"
+stroke="#101d35"
+stroke-width="4"/>
+
+<path d="M70 125l-35 90h70z"
+stroke="#101d35"
+stroke-width="4"
+fill="none"/>
+
+<path d="M230 125l-35 90h70z"
+stroke="#101d35"
+stroke-width="4"
+fill="none"/>
+
+<path d="M90 390h120"
+stroke="#101d35"
+stroke-width="5"/>
+
+</svg>
+
 </section>
 
-<section class="section" id="about">
+
+<!-- =========================================================
+ABOUT
+========================================================= -->
+
+<section class="about" id="about">
+
 <div class="container">
 
-  <div class="section-head">
-    <div class="eyebrow">About LegalDecode</div>
-    <h2>A contemporary legal practice built around preparation.</h2>
-    <p>
-      LegalDecode is a Lucknow-based legal practice serving individuals,
-      families and businesses across selected areas of civil, criminal,
-      financial, property and service-related law.
-    </p>
-  </div>
+<div class="section-head">
 
-  <div class="about-grid">
-
-    <div class="about-lead">
-      Practical legal assistance should begin with understanding the facts,
-      identifying the legal issue and choosing the appropriate procedural path.
-    </div>
-
-    <div class="about-copy">
-      <p>
-        The practice places emphasis on factual assessment, legal research,
-        drafting, procedural preparation and representation before the
-        appropriate forum.
-      </p>
-
-      <p>
-        Matters are approached with attention to the applicable statutory
-        framework, procedural requirements and the specific circumstances
-        of each client.
-      </p>
-
-      <p>
-        The objective is to provide structured and professionally prepared
-        legal assistance while keeping communication clear and accessible.
-      </p>
-    </div>
-
-  </div>
+<div class="section-label">
+About LegalDecode
 </div>
+
+<h2>
+A contemporary legal practice built around clarity and preparation.
+</h2>
+
+</div>
+
+<div class="about-grid">
+
+<div class="about-copy">
+
+<p>
+LegalDecode is a Lucknow-based legal practice providing
+legal assistance in litigation, advisory work and proceedings
+before courts and tribunals.
+</p>
+
+<p>
+The practice is focused on understanding the factual matrix,
+identifying the applicable legal provisions and preparing
+appropriate legal strategy and documentation for each matter.
+</p>
+
+<p>
+The objective is to provide practical, carefully considered
+legal assistance while keeping the client's interests and
+procedural requirements at the centre of the work.
+</p>
+
+<div class="about-note">
+“Justice becomes accessible when legal issues are understood,
+prepared and presented with clarity.”
+</div>
+
+</div>
+
+<div class="about-points">
+
+<div class="about-point">
+
+<strong>Practical Legal Assistance</strong>
+
+<p>
+Advice and representation based on the facts, documents,
+applicable law and procedural stage of the matter.
+</p>
+
+</div>
+
+<div class="about-point">
+
+<strong>Careful Preparation</strong>
+
+<p>
+Legal research, drafting and procedural preparation form an
+important part of the firm's approach.
+</p>
+
+</div>
+
+<div class="about-point">
+
+<strong>Client-Centred Approach</strong>
+
+<p>
+Each matter is considered according to its individual factual
+and legal circumstances.
+</p>
+
+</div>
+
+<div class="about-point">
+
+<strong>Access to Justice</strong>
+
+<p>
+LegalDecode seeks to make legal information and assistance
+more accessible through responsible legal communication.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section practice" id="practice">
+
+<!-- =========================================================
+PRACTICE AREAS
+========================================================= -->
+
+<section class="practice" id="practice">
+
 <div class="container">
 
-  <div class="section-head">
-    <div class="eyebrow">Practice Areas</div>
-    <h2>Focused areas of legal practice.</h2>
-    <p>
-      LegalDecode's practice is organised around the following principal areas.
-    </p>
-  </div>
+<div class="section-head">
 
-  <div class="practice-grid">
-
-    <article class="practice-card">
-      <span class="practice-no">01</span>
-      <h3>Criminal Law</h3>
-      <p>Criminal proceedings, bail-related matters, trial preparation and connected litigation.</p>
-      <button onclick="openPractice(0)">View scope →</button>
-    </article>
-
-    <article class="practice-card">
-      <span class="practice-no">02</span>
-      <h3>SARFAESI Matters</h3>
-      <p>Legal proceedings arising from enforcement of security interests and related disputes.</p>
-      <button onclick="openPractice(1)">View scope →</button>
-    </article>
-
-    <article class="practice-card">
-      <span class="practice-no">03</span>
-      <h3>Banking & Financial Laws</h3>
-      <p>Legal matters involving banking relationships, financial obligations and related proceedings.</p>
-      <button onclick="openPractice(2)">View scope →</button>
-    </article>
-
-    <article class="practice-card">
-      <span class="practice-no">04</span>
-      <h3>Property Disputes</h3>
-      <p>Property-related civil disputes, possession issues, agreements and connected proceedings.</p>
-      <button onclick="openPractice(3)">View scope →</button>
-    </article>
-
-    <article class="practice-card">
-      <span class="practice-no">05</span>
-      <h3>Family Court Matters</h3>
-      <p>Family-related proceedings requiring careful factual and procedural handling.</p>
-      <button onclick="openPractice(4)">View scope →</button>
-    </article>
-
-    <article class="practice-card">
-      <span class="practice-no">06</span>
-      <h3>Civil Matters</h3>
-      <p>Civil suits, applications, disputes and related litigation before appropriate courts.</p>
-      <button onclick="openPractice(5)">View scope →</button>
-    </article>
-
-    <article class="practice-card">
-      <span class="practice-no">07</span>
-      <h3>Service Matters</h3>
-      <p>Service-related legal proceedings before courts and applicable tribunals.</p>
-      <button onclick="openPractice(6)">View scope →</button>
-    </article>
-
-  </div>
+<div class="section-label">
+Practice Areas
 </div>
+
+<h2>
+Focused legal practice across seven core areas.
+</h2>
+
+<p>
+Click any practice area to understand the nature of matters
+covered within that category.
+</p>
+
+</div>
+
+<div class="practice-grid">
+
+<div class="practice-card"
+onclick="openPractice('Criminal Law')">
+
+<div class="practice-number">01</div>
+
+<h3>Criminal Law</h3>
+
+<p>
+Criminal complaints, investigation-related proceedings,
+bail matters, trial proceedings and appropriate criminal remedies.
+</p>
+
+</div>
+
+
+<div class="practice-card"
+onclick="openPractice('SARFAESI Matters')">
+
+<div class="practice-number">02</div>
+
+<h3>SARFAESI Matters</h3>
+
+<p>
+Legal assistance concerning enforcement measures, notices,
+possession and proceedings arising under the SARFAESI framework.
+</p>
+
+</div>
+
+
+<div class="practice-card"
+onclick="openPractice('Banking & Financial Laws')">
+
+<div class="practice-number">03</div>
+
+<h3>Banking & Financial Laws</h3>
+
+<p>
+Legal matters involving banking transactions, financial
+institutions, recovery proceedings and related disputes.
+</p>
+
+</div>
+
+
+<div class="practice-card"
+onclick="openPractice('Property Disputes')">
+
+<div class="practice-number">04</div>
+
+<h3>Property Disputes</h3>
+
+<p>
+Title, possession, agreements, injunctions, partition,
+specific relief and related property litigation.
+</p>
+
+</div>
+
+
+<div class="practice-card"
+onclick="openPractice('Family Court Matters')">
+
+<div class="practice-number">05</div>
+
+<h3>Family Court Matters</h3>
+
+<p>
+Family disputes and proceedings before the appropriate
+Family Court and related forums.
+</p>
+
+</div>
+
+
+<div class="practice-card"
+onclick="openPractice('Civil Matters')">
+
+<div class="practice-number">06</div>
+
+<h3>Civil Matters</h3>
+
+<p>
+Civil suits, injunctions, contractual disputes and other
+civil proceedings based on the facts and applicable law.
+</p>
+
+</div>
+
+
+<div class="practice-card"
+onclick="openPractice('Service Matters')">
+
+<div class="practice-number">07</div>
+
+<h3>Service Matters</h3>
+
+<p>
+Service-related disputes and proceedings before appropriate
+courts and tribunals, depending on jurisdiction.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
+
+<!-- =========================================================
+FORUMS
+========================================================= -->
+
+<section class="forums">
+
 <div class="container">
 
-  <div class="two-col">
+<div class="section-head">
 
-    <div class="info-panel">
-      <div class="eyebrow">Why LegalDecode</div>
-      <h3>Research before response.</h3>
-      <p>
-        Legal matters often turn on facts, documents, limitation,
-        procedure and the precise statutory framework. LegalDecode's
-        approach is therefore based on structured preparation rather
-        than generic answers.
-      </p>
+<div class="section-label">
+Courts & Forums
+</div>
 
-      <ul class="list">
-        <li>Fact-focused assessment</li>
-        <li>Relevant statutory research</li>
-        <li>Precise legal drafting</li>
-        <li>Procedural preparation</li>
-        <li>Forum-specific strategy</li>
-      </ul>
-    </div>
-
-    <div class="info-panel">
-      <div class="eyebrow">Professional Commitment</div>
-      <h3>Clear communication. Careful preparation.</h3>
-      <p>
-        The practice aims to make legal processes easier to understand
-        while maintaining professional standards of advocacy and drafting.
-      </p>
-
-      <ul class="list">
-        <li>Professional communication</li>
-        <li>Confidential handling of client information</li>
-        <li>Attention to documents and evidence</li>
-        <li>Responsible legal communication</li>
-        <li>Continuous legal research</li>
-      </ul>
-    </div>
-
-  </div>
+<h2>
+Representation across relevant courts and tribunals.
+</h2>
 
 </div>
+
+<div class="forum-grid">
+
+<div class="forum">
+
+<span>High Court</span>
+
+<h3>
+Lucknow Bench of the High Court of Judicature at Allahabad
+</h3>
+
+</div>
+
+<div class="forum">
+
+<span>District Courts</span>
+
+<h3>
+District Courts and trial proceedings
+</h3>
+
+</div>
+
+<div class="forum">
+
+<span>Tribunals</span>
+
+<h3>
+Relevant statutory and administrative tribunals
+</h3>
+
+</div>
+
+<div class="forum">
+
+<span>Other Forums</span>
+
+<h3>
+DRT, CAT, SPST and Armed Forces Tribunal, as applicable
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section dark-section" id="courts">
+
+<!-- =========================================================
+PROCESS
+========================================================= -->
+
+<section class="process">
+
 <div class="container">
 
-  <div class="section-head">
-    <div class="eyebrow">Courts & Forums</div>
-    <h2>Representation before appropriate forums.</h2>
-    <p>
-      The professional profiles below reflect the forums in which
-      the respective members practise.
-    </p>
-  </div>
+<div class="section-head">
 
-  <div class="courts-grid">
-
-    <div class="court-card">
-      <h3>High Court</h3>
-      <p>
-        Practice before the High Court of Judicature at Allahabad,
-        including the Lucknow Bench, according to the respective
-        practice of the advocate.
-      </p>
-    </div>
-
-    <div class="court-card">
-      <h3>District Courts</h3>
-      <p>
-        Trial, civil, criminal and other district court proceedings
-        within the respective professional practice areas.
-      </p>
-    </div>
-
-    <div class="court-card">
-      <h3>Tribunals</h3>
-      <p>
-        Relevant tribunal matters including CAT, DRT, State Public
-        Services Tribunal and Armed Forces Tribunal according to
-        the individual advocate's practice.
-      </p>
-    </div>
-
-  </div>
+<div class="section-label">
+Our Approach
 </div>
+
+<h2>
+From facts to legal strategy.
+</h2>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-item">
+
+<div class="num">01</div>
+
+<h3>Understand</h3>
+
+<p>
+Understand the facts, documents, legal history and immediate concern.
+</p>
+
+</div>
+
+<div class="process-item">
+
+<div class="num">02</div>
+
+<h3>Analyse</h3>
+
+<p>
+Identify the applicable legal provisions, issues and procedural position.
+</p>
+
+</div>
+
+<div class="process-item">
+
+<div class="num">03</div>
+
+<h3>Prepare</h3>
+
+<p>
+Prepare appropriate legal documents, strategy and procedural steps.
+</p>
+
+</div>
+
+<div class="process-item">
+
+<div class="num">04</div>
+
+<h3>Represent</h3>
+
+<p>
+Represent the matter before the appropriate court or forum.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
+
+<!-- =========================================================
+TEAM
+========================================================= -->
+
+<section class="team" id="team">
+
 <div class="container">
 
-  <div class="section-head">
-    <div class="eyebrow">How LegalDecode Works</div>
-    <h2>A structured approach to every matter.</h2>
-  </div>
+<div class="section-head">
 
-  <div class="process-grid">
-
-    <div class="process-card">
-      <b>STEP 01</b>
-      <h3>Understand</h3>
-      <p>Review the facts, documents, timeline and immediate legal concerns.</p>
-    </div>
-
-    <div class="process-card">
-      <b>STEP 02</b>
-      <h3>Research</h3>
-      <p>Identify the applicable statutory provisions, procedural requirements and relevant authorities.</p>
-    </div>
-
-    <div class="process-card">
-      <b>STEP 03</b>
-      <h3>Prepare</h3>
-      <p>Develop the appropriate legal strategy, drafting and procedural preparation.</p>
-    </div>
-
-    <div class="process-card">
-      <b>STEP 04</b>
-      <h3>Represent</h3>
-      <p>Proceed before the appropriate court or forum with focused legal representation.</p>
-    </div>
-
-  </div>
+<div class="section-label">
+Our Team
 </div>
+
+<h2>
+Advocates & Associates
+</h2>
+
+<p>
+LegalDecode works through a team-based approach combining
+litigation, drafting, legal research and procedural preparation.
+</p>
+
+</div>
+
+
+<div class="team-grid">
+
+
+<!-- AADESH -->
+
+<div class="person-card">
+
+<div class="person-photo">
+
+<img src="aadesh-pandey.jpeg"
+alt="Adv. Aadesh Pandey">
+
+</div>
+
+<div class="person-content">
+
+<h3>Adv. Aadesh Pandey</h3>
+
+<div class="designation">
+Advocate | Partner
+</div>
+
+<p>
+Adv. Aadesh Pandey is a Lucknow-based advocate practising
+before the Lucknow Bench of the High Court of Judicature at
+Allahabad, District Courts and relevant tribunals. His practice
+includes criminal matters, SARFAESI matters, banking and
+financial matters, property disputes and family court matters.
+</p>
+
+<ul>
+
+<li>Criminal Law</li>
+<li>SARFAESI Matters</li>
+<li>Banking & Financial Matters</li>
+<li>Property Disputes</li>
+<li>Family Court Matters</li>
+<li>DRT, CAT, SPST & Armed Forces Tribunal</li>
+
+</ul>
+
+<button class="small-btn"
+onclick="openPerson('aadesh')">
+View Profile
+</button>
+
+</div>
+
+</div>
+
+
+<!-- VARTIKA -->
+
+<div class="person-card">
+
+<div class="person-photo">
+
+<img src="vartika-.jpeg"
+alt="Adv. Vartika Pandey">
+
+</div>
+
+<div class="person-content">
+
+<h3>Adv. Vartika Pandey</h3>
+
+<div class="designation">
+Advocate | Partner
+</div>
+
+<p>
+Adv. Vartika Pandey is a Lucknow-based advocate engaged in
+civil litigation and legal advisory practice before the High
+Court and District Courts. Her practice encompasses civil
+litigation, civil suits, service matters and related proceedings.
+</p>
+
+<ul>
+
+<li>Civil Litigation</li>
+<li>Service Matters</li>
+<li>High Court Litigation</li>
+<li>District Court Litigation</li>
+<li>Civil Suits</li>
+
+</ul>
+
+<button class="small-btn"
+onclick="openPerson('vartika')">
+View Profile
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ASSOCIATES -->
+
+<div class="associates">
+
+<div class="section-head">
+
+<div class="section-label">
+Associates
+</div>
+
+<h2>Legal Associates</h2>
+
+</div>
+
+<div class="associate-grid"
+id="associateGrid">
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section team" id="team">
+
+<!-- =========================================================
+KNOWLEDGE CENTER
+========================================================= -->
+
+<section class="knowledge" id="knowledge">
+
 <div class="container">
 
-  <div class="section-head">
-    <div class="eyebrow">Our Team</div>
-    <h2>Partners & Associates</h2>
-    <p>
-      A professional team with practice exposure across courts and tribunals.
-    </p>
-  </div>
+<div class="section-head">
 
-  <div class="team-grid" id="teamGrid">
+<div class="section-label">
+Legal Knowledge Center
+</div>
 
-    <!-- Partners -->
+<h2>
+Legal information, judgments and statutory resources.
+</h2>
 
-    <article class="team-card">
-      <div class="team-photo">
-        <img src="aadesh-pandey.jpeg" alt="Adv. Aadesh Pandey">
-      </div>
-      <div class="team-content">
-        <span class="role">Partner · Advocate</span>
-        <h3>Adv. Aadesh Pandey</h3>
-        <p>
-          Lucknow-based advocate practising before the Lucknow Bench,
-          District Courts and relevant tribunals. His practice includes
-          criminal matters, SARFAESI matters, banking and financial matters,
-          property disputes and family court matters.
-        </p>
-        <ul>
-          <li>Criminal Matters</li>
-          <li>SARFAESI Matters</li>
-          <li>Banking & Financial Matters</li>
-          <li>Property Disputes</li>
-          <li>Family Court Matters</li>
-          <li>DRT · CAT · SPST · AFT</li>
-        </ul>
-        <div class="team-actions">
-          <button class="small-btn" onclick="openPerson('aadesh')">View Profile</button>
-          <a class="small-btn" href="tel:+917007724581">Call</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="team-card">
-      <div class="team-photo">
-        <img src="vartika-.jpeg" alt="Adv. Vartika Pandey">
-      </div>
-      <div class="team-content">
-        <span class="role">Partner · Advocate</span>
-        <h3>Adv. Vartika Pandey</h3>
-        <p>
-          Lucknow-based advocate engaged in civil litigation and legal
-          advisory practice before the High Court and District Courts.
-        </p>
-        <ul>
-          <li>Civil Litigation</li>
-          <li>Service Matters</li>
-          <li>High Court Litigation</li>
-          <li>District Court Litigation</li>
-          <li>Civil Suits</li>
-          <li>CAT · SPST · AFT</li>
-        </ul>
-        <div class="team-actions">
-          <button class="small-btn" onclick="openPerson('vartika')">View Profile</button>
-          <a class="small-btn" href="tel:+917905759058">Call</a>
-        </div>
-      </div>
-    </article>
-
-  </div>
-
-  <div style="margin-top:30px">
-    <div class="eyebrow">Associates</div>
-    <div class="team-grid" id="associateGrid"></div>
-  </div>
+<p>
+Explore published LegalDecode articles, selected judgments
+and official statutory resources.
+</p>
 
 </div>
+
+
+<div class="knowledge-tabs">
+
+<button class="tab-btn active"
+onclick="showKnowledge('articles',this)">
+Articles
+</button>
+
+<button class="tab-btn"
+onclick="showKnowledge('judgments',this)">
+Important Judgments
+</button>
+
+<button class="tab-btn"
+onclick="showKnowledge('bareacts',this)">
+Bare Acts
+</button>
+
+</div>
+
+
+<!-- ARTICLES -->
+
+<div class="knowledge-panel active"
+id="knowledge-articles">
+
+<div class="article-grid"
+id="articleGrid">
+
+<div class="empty-state">
+No articles have been published yet.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- JUDGMENTS -->
+
+<div class="knowledge-panel"
+id="knowledge-judgments">
+
+<div class="judgment-grid">
+
+
+<div class="judgment-card">
+
+<div class="article-meta">
+Constitutional Law
+</div>
+
+<h3>
+Kesavananda Bharati v. State of Kerala
+</h3>
+
+<p>
+A landmark Supreme Court decision concerning constitutional
+amendment power and the basic structure doctrine.
+</p>
+
+<a class="judgment-link"
+href="https://www.sci.gov.in/"
+target="_blank"
+rel="noopener">
+Search on Supreme Court
+</a>
+
+</div>
+
+
+<div class="judgment-card">
+
+<div class="article-meta">
+Constitutional Law
+</div>
+
+<h3>
+Maneka Gandhi v. Union of India
+</h3>
+
+<p>
+A significant decision concerning Article 21 and the relationship
+between fundamental rights and procedural fairness.
+</p>
+
+<a class="judgment-link"
+href="https://www.sci.gov.in/"
+target="_blank"
+rel="noopener">
+Search on Supreme Court
+</a>
+
+</div>
+
+
+<div class="judgment-card">
+
+<div class="article-meta">
+Constitutional Law
+</div>
+
+<h3>
+Vishaka v. State of Rajasthan
+</h3>
+
+<p>
+A leading Supreme Court decision concerning safeguards against
+sexual harassment at the workplace.
+</p>
+
+<a class="judgment-link"
+href="https://www.sci.gov.in/"
+target="_blank"
+rel="noopener">
+Search on Supreme Court
+</a>
+
+</div>
+
+
+<div class="judgment-card">
+
+<div class="article-meta">
+Official Resource
+</div>
+
+<h3>
+Supreme Court Judgment Search
+</h3>
+
+<p>
+Use the official Supreme Court website to locate judgments and
+court-related information.
+</p>
+
+<a class="judgment-link"
+href="https://www.sci.gov.in/"
+target="_blank"
+rel="noopener">
+Open Supreme Court Website
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- BARE ACTS -->
+
+<div class="knowledge-panel"
+id="knowledge-bareacts">
+
+<div class="section-head">
+
+<div class="section-label">
+Official Statutory Resources
+</div>
+
+<h2>
+Bare Acts & Statutory Resources
+</h2>
+
+<p>
+Search the statutory database and use the official India Code
+website for the authoritative text of Central Acts.
+</p>
+
+</div>
+
+
+<div class="bare-search">
+
+<input
+type="text"
+id="bareActSearch"
+placeholder="Search an Act — e.g. SARFAESI, CPC, Contract Act..."
+oninput="searchBareActs()">
+
+<button class="btn btn-primary"
+onclick="searchBareActs()">
+Search
+</button>
+
+</div>
+
+
+<div class="popular-acts">
+
+<button class="act-chip"
+onclick="setBareAct('SARFAESI')">
+SARFAESI
+</button>
+
+<button class="act-chip"
+onclick="setBareAct('Civil Procedure Code')">
+CPC
+</button>
+
+<button class="act-chip"
+onclick="setBareAct('Contract Act')">
+Contract Act
+</button>
+
+<button class="act-chip"
+onclick="setBareAct('Limitation Act')">
+Limitation Act
+</button>
+
+<button class="act-chip"
+onclick="setBareAct('Transfer of Property Act')">
+Transfer of Property Act
+</button>
+
+<button class="act-chip"
+onclick="setBareAct('Companies Act')">
+Companies Act
+</button>
+
+</div>
+
+
+<div id="bareActResults"
+class="bare-results">
+
+<div class="empty-state">
+
+Search for an Act to view available statutory resources.
+
+<br><br>
+
+<a class="judgment-link"
+href="https://www.indiacode.gov.in/"
+target="_blank"
+rel="noopener">
+Open Official India Code
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="section knowledge" id="knowledge">
+
+<!-- =========================================================
+FAQ
+========================================================= -->
+
+<section class="faq" id="faq">
+
 <div class="container">
 
-  <div class="section-head">
-    <div class="eyebrow">Legal Knowledge Center</div>
-    <h2>Research, legal resources & published articles.</h2>
-    <p>
-      The Knowledge Center is designed to provide structured legal information.
-      Published articles are added through the partner administration panel.
-    </p>
-  </div>
+<div class="section-head">
 
-  <div class="knowledge-grid">
+<div class="section-label">
+Frequently Asked Questions
+</div>
 
-    <div class="knowledge-panel">
-      <h3>Articles</h3>
-      <p>Only articles actually published by LegalDecode will appear here.</p>
-      <div class="article-list" id="articleList">
-        <div class="empty-state">
-          No articles have been published yet.
-        </div>
-      </div>
-    </div>
-
-    <div class="knowledge-panel">
-      <h3>Important Judgments</h3>
-      <p>
-        Selected landmark authorities with concise explanatory notes.
-        Always verify the current position of law and original judgment.
-      </p>
-
-      <div class="judgment-grid">
-
-        <div class="resource-card">
-          <h4>Kesavananda Bharati v. State of Kerala</h4>
-          <p>
-            The Supreme Court's landmark decision concerning the
-            constitutional basic structure doctrine.
-          </p>
-          <a href="https://www.sci.gov.in/document/his-holiness-kesavananda-bharati-v-state-of-kerala-1973-supp-scr-1/" target="_blank" rel="noopener">
-            Supreme Court source →
-          </a>
-        </div>
-
-        <div class="resource-card">
-          <h4>Maneka Gandhi v. Union of India</h4>
-          <p>
-            A leading Article 21 decision associated with the requirement
-            that procedure affecting personal liberty satisfy constitutional
-            standards of fairness and reasonableness.
-          </p>
-          <a href="https://www.sci.gov.in/aor-examination/" target="_blank" rel="noopener">
-            Supreme Court case index →
-          </a>
-        </div>
-
-        <div class="resource-card">
-          <h4>Vishaka v. State of Rajasthan</h4>
-          <p>
-            A landmark Supreme Court decision concerning safeguards against
-            sexual harassment at the workplace and constitutional protections.
-          </p>
-          <a href="https://www.sci.gov.in/aor-examination/" target="_blank" rel="noopener">
-            Supreme Court case index →
-          </a>
-        </div>
-
-        <div class="resource-card">
-          <h4>Supreme Court Judgment Search</h4>
-          <p>
-            Use the official Supreme Court judgment search facility for
-            checking case-specific authorities.
-          </p>
-          <a href="https://verdictfinder.sci.gov.in/elk_frontend/index.php" target="_blank" rel="noopener">
-            Official search →
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-  
-  <div class="knowledge-panel" style="margin-top:24px">
-
-    <h3>Bare Acts & Statutory Resources</h3>
-
-    <p>
-        Search Central Acts by name, abbreviation or common keyword.
-        Results link directly to the official India Code source.
-    </p>
-
-    <div class="bare-act-search">
-
-        <div class="bare-act-search-box">
-            <input
-                type="search"
-                id="bareActSearch"
-                placeholder="Search Bare Act — e.g. SARFAESI, CPC, Contract Act..."
-                autocomplete="off"
-                oninput="searchBareActs()"
-            >
-
-            <button type="button" onclick="searchBareActs()">
-                Search
-            </button>
-        </div>
-
-        <div class="popular-acts">
-            <span>Popular Acts:</span>
-
-            <button type="button" onclick="selectBareAct('SARFAESI')">
-                SARFAESI
-            </button>
-
-            <button type="button" onclick="selectBareAct('CPC')">
-                CPC
-            </button>
-
-            <button type="button" onclick="selectBareAct('Contract Act')">
-                Contract Act
-            </button>
-
-            <button type="button" onclick="selectBareAct('Specific Relief')">
-                Specific Relief
-            </button>
-
-            <button type="button" onclick="selectBareAct('Family Courts')">
-                Family Courts
-            </button>
-
-            <button type="button" onclick="selectBareAct('Arbitration')">
-                Arbitration
-            </button>
-        </div>
-
-        <div id="bareActResults" class="bare-act-results">
-
-            <div class="bare-act-result-info">
-                Search an Act to access its official India Code page.
-            </div>
-
-        </div>
-
-    </div>
+<h2>
+Common legal enquiries.
+</h2>
 
 </div>
 
-<style>
-.bare-act-search {
-    margin-top: 20px;
-}
+<div class="faq-list">
 
-.bare-act-search-box {
-    display: flex;
-    gap: 10px;
-    max-width: 850px;
-}
 
-.bare-act-search-box input {
-    flex: 1;
-    min-width: 0;
-    padding: 14px 16px;
-    border: 1px solid rgba(20, 36, 61, 0.18);
-    border-radius: 6px;
-    background: #fff;
-    color: #18263b;
-    font-size: 15px;
-    outline: none;
-}
+<div class="faq-item">
 
-.bare-act-search-box input:focus {
-    border-color: #a88945;
-    box-shadow: 0 0 0 2px rgba(168, 137, 69, 0.10);
-}
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+How can I request a legal consultation?
+<span>+</span>
+</button>
 
-.bare-act-search-box button {
-    border: 0;
-    border-radius: 6px;
-    padding: 0 24px;
-    background: #18263b;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-}
+<div class="faq-answer">
 
-.bare-act-search-box button:hover {
-    opacity: 0.92;
-}
+<p>
+You can submit the consultation form on this website or
+contact LegalDecode directly by phone, WhatsApp or email.
+</p>
 
-.popular-acts {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-}
+</div>
 
-.popular-acts span {
-    font-size: 13px;
-    color: #666;
-    margin-right: 4px;
-}
+</div>
 
-.popular-acts button {
-    border: 1px solid rgba(168, 137, 69, 0.45);
-    background: transparent;
-    color: #18263b;
-    border-radius: 20px;
-    padding: 7px 13px;
-    font-size: 12px;
-    cursor: pointer;
-}
 
-.popular-acts button:hover {
-    background: rgba(168, 137, 69, 0.08);
-}
+<div class="faq-item">
 
-.bare-act-results {
-    margin-top: 20px;
-}
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+Does sending an enquiry create an advocate-client relationship?
+<span>+</span>
+</button>
 
-.bare-act-card {
-    border: 1px solid rgba(20, 36, 61, 0.12);
-    border-radius: 8px;
-    padding: 18px;
-    margin-bottom: 12px;
-    background: rgba(255,255,255,0.72);
-}
+<div class="faq-answer">
 
-.bare-act-card h4 {
-    margin: 0 0 7px;
-    color: #18263b;
-    font-size: 17px;
-}
+<p>
+No. Sending an enquiry or visiting this website does not by
+itself create an advocate-client relationship. The facts and
+professional engagement should be discussed separately.
+</p>
 
-.bare-act-card p {
-    margin: 0 0 12px;
-    color: #666;
-    font-size: 13px;
-    line-height: 1.6;
-}
+</div>
 
-.bare-act-open {
-    display: inline-block;
-    padding: 8px 14px;
-    border-radius: 5px;
-    background: #18263b;
-    color: #fff !important;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-}
+</div>
 
-.bare-act-open:hover {
-    opacity: 0.9;
-}
 
-.bare-act-result-info {
-    padding: 15px;
-    border: 1px dashed rgba(20, 36, 61, 0.18);
-    border-radius: 7px;
-    color: #666;
-    font-size: 13px;
-}
+<div class="faq-item">
 
-.bare-act-no-result {
-    padding: 15px;
-    border-radius: 7px;
-    background: rgba(20, 36, 61, 0.04);
-    color: #555;
-    font-size: 13px;
-}
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+What documents should I bring for a consultation?
+<span>+</span>
+</button>
 
-@media (max-width: 600px) {
+<div class="faq-answer">
 
-    .bare-act-search-box {
-        flex-direction: column;
-    }
+<p>
+Relevant notices, orders, agreements, pleadings, correspondence,
+identity documents and other papers connected with the matter
+may be useful. The documents required depend on the case.
+</p>
 
-    .bare-act-search-box button {
-        min-height: 44px;
-    }
+</div>
 
-    .popular-acts {
-        align-items: flex-start;
-    }
+</div>
 
-}
-</style>
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+Does LegalDecode handle matters before the High Court?
+<span>+</span>
+</button>
+
+<div class="faq-answer">
+
+<p>
+LegalDecode practises before the Lucknow Bench of the High Court
+of Judicature at Allahabad, subject to the nature and jurisdiction
+of the matter.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+Can I send my documents through WhatsApp?
+<span>+</span>
+</button>
+
+<div class="faq-answer">
+
+<p>
+You may contact the firm to determine the appropriate method
+for sharing documents. Avoid sending passwords, OTPs or
+unnecessary confidential credentials through ordinary messaging.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+
+<div>
+
+<div class="section-label">
+Contact LegalDecode
+</div>
+
+<h2>
+Discuss your legal matter.
+</h2>
+
+<p style="margin-top:20px;">
+For a consultation, share a brief description of the matter
+and the relevant procedural stage. The appropriate next step
+can then be discussed.
+</p>
+
+
+<div class="contact-details">
+
+<div class="contact-item">
+
+<span>Office</span>
+
+<p>
+E3/243, Vinay Khand-3, Gomti Nagar,
+Lucknow, Uttar Pradesh - 226010
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>Phone / WhatsApp</span>
+
+<p>
+<a href="tel:+917007724581">
++91 70077 24581
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>Email</span>
+
+<p>
+<a href="mailto:avlegalaxis@gmail.com">
+avlegalaxis@gmail.com
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>Office Hours</span>
+
+<p>
+Monday – Saturday<br>
+10:00 AM – 6:00 PM
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<form onsubmit="sendConsultation(event)">
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Name</label>
+
+<input
+type="text"
+id="cName"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Phone</label>
+
+<input
+type="tel"
+id="cPhone"
+required>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Email</label>
+
+<input
+type="email"
+id="cEmail">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Practice Area</label>
+
+<select id="cArea">
+
+<option>Criminal Law</option>
+<option>SARFAESI Matters</option>
+<option>Banking & Financial Laws</option>
+<option>Property Disputes</option>
+<option>Family Court Matters</option>
+<option>Civil Matters</option>
+<option>Service Matters</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Brief Description</label>
+
+<textarea
+id="cMessage"
+required></textarea>
+
+</div>
+
+
+<button
+class="btn btn-primary"
+type="submit">
+Send via WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>LegalDecode</h3>
+
+<p>
+Law firm and legal practice based in Lucknow, Uttar Pradesh.
+</p>
+
+<p style="margin-top:12px;">
+Practical legal assistance through careful analysis,
+drafting and representation.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Navigation</h3>
+
+<div class="footer-links">
+
+<a href="#about">About</a>
+<a href="#practice">Practice Areas</a>
+<a href="#team">Team</a>
+<a href="#knowledge">Knowledge Center</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>Legal</h3>
+
+<div class="footer-links">
+
+<a href="#" onclick="openLegal('disclaimer');return false;">
+Disclaimer
+</a>
+
+<a href="#" onclick="openLegal('privacy');return false;">
+Privacy Policy
+</a>
+
+<a href="#" onclick="openLegal('terms');return false;">
+Terms of Use
+</a>
+
+<a href="#"
+onclick="openAdmin();return false;">
+Partner Login
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© <span id="year"></span> LegalDecode. All rights reserved.
+</div>
+
+<div>
+Lucknow, Uttar Pradesh
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =========================================================
+FLOATING BUTTONS
+========================================================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/917007724581"
+target="_blank"
+rel="noopener"
+aria-label="WhatsApp">
+WA
+</a>
+
+
+<button
+class="ai-button"
+onclick="toggleAI()"
+aria-label="Open Legal Information Assistant">
+AI
+</button>
+
+
+<!-- =========================================================
+AI DRAWER
+========================================================= -->
+
+<div class="ai-drawer"
+id="aiDrawer">
+
+<div class="ai-head">
+
+<strong>
+Legal Information Assistant
+</strong>
+
+<button
+class="ai-close"
+onclick="toggleAI()">
+×
+</button>
+
+</div>
+
+
+<div class="ai-body"
+id="aiBody">
+
+<div class="ai-msg">
+
+<strong>LegalDecode Assistant</strong>
+
+<br><br>
+
+Ask a general question about areas such as criminal law,
+SARFAESI, property, civil matters, family matters or service
+matters.
+
+<br><br>
+
+This assistant provides general legal information only and
+does not replace case-specific legal advice.
+
+</div>
+
+</div>
+
+
+<div class="ai-input">
+
+<input
+id="aiInput"
+type="text"
+placeholder="Ask a legal information question..."
+onkeydown="if(event.key==='Enter') askAI()">
+
+<button
+class="small-btn"
+onclick="askAI()">
+Send
+</button>
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+MODAL
+========================================================= -->
+
+<div class="modal"
+id="modal">
+
+<div class="modal-box">
+
+<button
+class="modal-close"
+onclick="closeModal()">
+×
+</button>
+
+<div id="modalContent"></div>
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+JAVASCRIPT
+========================================================= -->
 
 <script>
-const LEGALDECODE_BARE_ACTS = [
 
-    {
-        name: "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002",
-        short: "SARFAESI Act, 2002",
-        keywords: "sarfaesi securitisation reconstruction financial assets security interest bank recovery",
-        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/2006?view_type=browse"
-    },
+/* =========================================================
+UTILITY
+========================================================= */
 
-    {
-        name: "The Code of Civil Procedure, 1908",
-        short: "CPC, 1908",
-        keywords: "cpc civil procedure code civil suit procedure",
-        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/2191?view_type=browse"
-    },
+function esc(value){
 
-    {
-        name: "The Family Courts Act, 1984",
-        short: "Family Courts Act, 1984",
-        keywords: "family court family courts matrimonial maintenance custody",
-        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/1844?view_type=browse"
-    },
+    return String(value ?? "")
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
 
-    {
-        name: "The Arbitration and Conciliation Act, 1996",
-        short: "Arbitration and Conciliation Act, 1996",
-        keywords: "arbitration conciliation arbitral tribunal dispute resolution",
-        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/1978?view_type=browse"
-    },
+}
 
-    {
-        name: "The Specific Relief Act, 1963",
-        short: "Specific Relief Act, 1963",
-        keywords: "specific relief injunction specific performance possession civil remedy",
-        url: "https://www.indiacode.nic.in/indiacode/handle/123456789/1583?view_type=browse"
-    },
 
-    {
-        name: "The Indian Contract Act, 1872",
-        short: "Indian Contract Act, 1872",
-        keywords: "contract agreement indemnity guarantee contract law",
-        url: "https://www.indiacode.nic.in/handle/123456789/2187?col=123456789%2F1362"
-    }
+/* =========================================================
+YEAR
+========================================================= */
 
-];
+document.getElementById("year").textContent =
+new Date().getFullYear();
 
-function searchBareActs() {
 
-    const input = document.getElementById("bareActSearch");
+/* =========================================================
+MOBILE MENU
+========================================================= */
 
-    if (!input) return;
+function toggleMenu(){
 
-    const query = input.value.trim().toLowerCase();
+    document
+        .getElementById("navLinks")
+        .classList.toggle("open");
 
-    const results = document.getElementById("bareActResults");
+}
 
-    if (!results) return;
 
-    if (!query) {
+document.querySelectorAll("#navLinks a").forEach(function(link){
 
-        results.innerHTML = `
-            <div class="bare-act-result-info">
-                Search an Act to access its official India Code page.
-            </div>
-        `;
+    link.addEventListener("click",function(){
 
-        return;
-    }
-
-    const matches = LEGALDECODE_BARE_ACTS.filter(act => {
-
-        const searchableText =
-            `${act.name} ${act.short} ${act.keywords}`.toLowerCase();
-
-        return searchableText.includes(query);
+        document
+            .getElementById("navLinks")
+            .classList.remove("open");
 
     });
 
-    if (!matches.length) {
+});
 
-        results.innerHTML = `
-            <div class="bare-act-no-result">
-                No matching Act found in the LegalDecode quick-reference
-                list. Try CPC, SARFAESI, Contract, Arbitration,
-                Family Courts or Specific Relief.
+
+/* =========================================================
+MODAL
+========================================================= */
+
+function openModal(html){
+
+    document.getElementById("modalContent").innerHTML = html;
+
+    document
+        .getElementById("modal")
+        .classList.add("show");
+
+}
+
+function closeModal(){
+
+    document
+        .getElementById("modal")
+        .classList.remove("show");
+
+}
+
+document.getElementById("modal").addEventListener(
+    "click",
+    function(e){
+
+        if(e.target === this){
+            closeModal();
+        }
+
+    }
+);
+
+
+/* =========================================================
+PRACTICE AREA DETAILS
+========================================================= */
+
+const practiceDetails = {
+
+"Criminal Law":{
+
+title:"Criminal Law",
+
+body:`
+<p>
+Legal assistance in criminal matters depends upon the
+allegations, evidence, procedural stage and applicable
+statutory provisions.
+</p>
+
+<p>
+The practice may involve bail-related proceedings,
+criminal complaints, investigation-related proceedings,
+trial matters and appropriate remedies before the competent
+court or forum.
+</p>
+
+<div class="notice">
+The appropriate remedy can only be determined after examining
+the specific facts and documents.
+</div>
+`
+
+},
+
+"SARFAESI Matters":{
+
+title:"SARFAESI Matters",
+
+body:`
+<p>
+SARFAESI matters may involve statutory notices, enforcement
+measures, possession proceedings, recovery action and related
+legal challenges.
+</p>
+
+<p>
+The applicable remedy depends on the nature of the action,
+relevant documents, dates and procedural stage.
+</p>
+`
+
+},
+
+"Banking & Financial Laws":{
+
+title:"Banking & Financial Laws",
+
+body:`
+<p>
+Banking and financial disputes may involve recovery,
+financial transactions, enforcement proceedings and disputes
+concerning rights and obligations of the parties.
+</p>
+
+<p>
+The contractual documents and statutory framework applicable
+to the transaction are important in determining the legal position.
+</p>
+`
+
+},
+
+"Property Disputes":{
+
+title:"Property Disputes",
+
+body:`
+<p>
+Property disputes may concern title, possession, agreements,
+partition, injunctions, specific relief and related civil remedies.
+</p>
+
+<p>
+The documentary chain and factual history of the property are
+important in determining the appropriate course of action.
+</p>
+`
+
+},
+
+"Family Court Matters":{
+
+title:"Family Court Matters",
+
+body:`
+<p>
+Family Court matters depend upon the nature of the dispute,
+applicable personal law, facts and procedural circumstances.
+</p>
+
+<p>
+The appropriate proceeding and relief must be considered
+according to the particular facts of the matter.
+</p>
+`
+
+},
+
+"Civil Matters":{
+
+title:"Civil Matters",
+
+body:`
+<p>
+Civil matters may include suits, injunction proceedings,
+contractual disputes, property-related disputes and other
+civil remedies.
+</p>
+
+<p>
+The nature of the cause of action, limitation, documents and
+jurisdiction are important considerations.
+</p>
+`
+
+},
+
+"Service Matters":{
+
+title:"Service Matters",
+
+body:`
+<p>
+Service matters may concern employment conditions,
+disciplinary proceedings, service benefits and other disputes
+arising from service relationships.
+</p>
+
+<p>
+The appropriate court or tribunal depends upon the applicable
+service framework and jurisdiction.
+</p>
+`
+
+}
+
+};
+
+
+function openPractice(name){
+
+    const item = practiceDetails[name];
+
+    if(!item) return;
+
+    openModal(`
+
+        <div class="eyebrow">
+        LegalDecode Practice Area
+        </div>
+
+        <h2>
+        ${esc(item.title)}
+        </h2>
+
+        ${item.body}
+
+        <br>
+
+        <a
+        class="btn btn-primary"
+        href="#contact"
+        onclick="closeModal()">
+        Request Consultation
+        </a>
+
+    `);
+
+}
+
+
+/* =========================================================
+PERSON PROFILES
+========================================================= */
+
+const personData = {
+
+aadesh:{
+
+name:"Adv. Aadesh Pandey",
+
+designation:"Advocate | Partner",
+
+image:"aadesh-pandey.jpeg",
+
+profile:`
+<p>
+Adv. Aadesh Pandey is a Lucknow-based advocate practising
+before the Lucknow Bench of the High Court of Judicature at
+Allahabad, District Courts and relevant tribunals.
+</p>
+
+<p>
+His practice includes criminal matters, SARFAESI matters,
+banking and financial matters, property disputes and family
+court matters.
+</p>
+
+<ul>
+<li>Criminal Law</li>
+<li>SARFAESI Matters</li>
+<li>Banking & Financial Matters</li>
+<li>Property Disputes</li>
+<li>Family Court Matters</li>
+<li>DRT, CAT, SPST & Armed Forces Tribunal</li>
+</ul>
+`
+
+},
+
+vartika:{
+
+name:"Adv. Vartika Pandey",
+
+designation:"Advocate | Partner",
+
+image:"vartika-.jpeg",
+
+profile:`
+<p>
+Adv. Vartika Pandey is a Lucknow-based advocate engaged in
+civil litigation and legal advisory practice before the High
+Court and District Courts. Her practice encompasses civil
+litigation, civil suits, service matters and related proceedings,
+with a focus on careful legal analysis, precise drafting and
+diligent representation.
+</p>
+
+<ul>
+<li>Civil Litigation</li>
+<li>Service Matters</li>
+<li>High Court Litigation</li>
+<li>District Court Litigation</li>
+<li>Civil Suits</li>
+</ul>
+
+<p>
+Her professional work also extends to matters before CAT,
+SPST and Armed Forces Tribunal, as applicable.
+</p>
+`
+
+}
+
+};
+
+
+function openPerson(id){
+
+    const person = personData[id];
+
+    if(!person) return;
+
+    openModal(`
+
+        <div style="display:flex;gap:25px;align-items:flex-start;flex-wrap:wrap;">
+
+            <div style="width:180px;background:#eee8dc;padding:10px;">
+
+                <img
+                src="${esc(person.image)}"
+                style="width:100%;height:230px;object-fit:contain;"
+                alt="${esc(person.name)}">
+
             </div>
+
+            <div style="flex:1;min-width:250px;">
+
+                <div class="eyebrow">
+                LegalDecode
+                </div>
+
+                <h2>
+                ${esc(person.name)}
+                </h2>
+
+                <div class="article-meta">
+                ${esc(person.designation)}
+                </div>
+
+                ${person.profile}
+
+            </div>
+
+        </div>
+
+    `);
+
+}
+
+
+/* =========================================================
+ASSOCIATES
+========================================================= */
+
+const staticAssociates = [
+
+{
+
+name:"Adv. Shubham Pandey",
+
+image:"Shubham.jpeg",
+
+designation:"Associate | Advocate",
+
+profile:`
+<p>
+Adv. Shubham Pandey completed his legal education at the
+University of Allahabad and primarily practises before the
+High Court of Judicature at Allahabad. His practice also extends
+to the Central Administrative Tribunal (CAT), Allahabad, and
+the District Courts.
+</p>
+
+<ul>
+<li>High Court Litigation</li>
+<li>Central Administrative Tribunal (CAT) Matters</li>
+<li>District Court Litigation</li>
+</ul>
+`
+
+},
+
+{
+
+name:"Adv. Satyam Pandey",
+
+image:"Satyam.jpeg",
+
+designation:"Associate | Advocate",
+
+profile:`
+<p>
+Adv. Satyam Pandey practises before the Lucknow Bench of the
+High Court of Judicature at Allahabad, with a focused practice
+in criminal litigation and trial matters before the District
+Courts.
+</p>
+
+<ul>
+<li>Criminal Litigation</li>
+<li>Criminal Trial Matters</li>
+<li>High Court Litigation</li>
+<li>District Court Trial Matters</li>
+</ul>
+`
+
+},
+
+{
+
+name:"Adv. Piyush Singh",
+
+image:"piyush.jpeg",
+
+designation:"Associate | Advocate",
+
+profile:`
+<p>
+Adv. Piyush Singh has completed his LL.M. and LL.B. from
+Amity University. He practises before the High Court,
+Lucknow Bench, District Courts and Tribunals.
+</p>
+
+<ul>
+<li>LL.M. — Amity University</li>
+<li>LL.B. — Amity University</li>
+<li>High Court — Lucknow Bench</li>
+<li>District Court Litigation</li>
+<li>Tribunal Matters</li>
+</ul>
+`
+
+}
+
+];
+
+
+let publicData = {
+
+associates:staticAssociates,
+
+articles:[]
+
+};
+
+
+function renderAssociates(){
+
+    const box =
+        document.getElementById("associateGrid");
+
+    const associates =
+        Array.isArray(publicData.associates)
+        ? publicData.associates
+        : staticAssociates;
+
+    if(!associates.length){
+
+        box.innerHTML = `
+        <div class="empty-state">
+        No associates are currently listed.
+        </div>
         `;
 
         return;
     }
 
-    results.innerHTML = matches.map(act => `
 
-        <div class="bare-act-card">
+    box.innerHTML =
+    associates.map(function(a){
 
-            <h4>${act.name}</h4>
+        return `
+
+        <div class="associate-card">
+
+            <div class="associate-photo">
+
+                <img
+                src="${esc(a.image || "associate.jpeg")}"
+                alt="${esc(a.name || "LegalDecode Associate")}">
+
+            </div>
+
+            <h3>
+            ${esc(a.name)}
+            </h3>
+
+            <div class="designation">
+            ${esc(a.designation || "Associate | Advocate")}
+            </div>
 
             <p>
-                ${act.short}<br>
-                Official India Code source.
+            ${esc(
+                String(a.profile || "")
+                .replace(/<[^>]*>/g,"")
+                .substring(0,260)
+            )}${String(a.profile || "").length>260 ? "..." : ""}
             </p>
 
-            <a
-                class="bare-act-open"
-                href="${act.url}"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Open Official India Code →
-            </a>
+            <br>
+
+            <button
+            class="small-btn"
+            onclick='openAssociate(${JSON.stringify(a).replace(/'/g,"&#039;")})'>
+            View Profile
+            </button>
 
         </div>
 
-    `).join("");
+        `;
+
+    }).join("");
+
 }
 
-function selectBareAct(keyword) {
 
-    const input = document.getElementById("bareActSearch");
+function openAssociate(a){
 
-    if (!input) return;
+    openModal(`
 
-    input.value = keyword;
+        <div class="eyebrow">
+        LegalDecode Associate
+        </div>
+
+        <h2>
+        ${esc(a.name || "")}
+        </h2>
+
+        <div class="article-meta">
+        ${esc(a.designation || "Associate | Advocate")}
+        </div>
+
+        ${a.profile || ""}
+
+    `);
+
+}
+
+
+/* =========================================================
+KNOWLEDGE TABS
+========================================================= */
+
+function showKnowledge(id,button){
+
+    document
+        .querySelectorAll(".knowledge-panel")
+        .forEach(function(panel){
+
+            panel.classList.remove("active");
+
+        });
+
+
+    document
+        .querySelectorAll(".tab-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+    document
+        .getElementById("knowledge-" + id)
+        .classList.add("active");
+
+
+    if(button){
+        button.classList.add("active");
+    }
+
+}
+
+
+/* =========================================================
+ARTICLES
+========================================================= */
+
+function renderArticles(){
+
+    const box =
+        document.getElementById("articleGrid");
+
+    const articles =
+        Array.isArray(publicData.articles)
+        ? publicData.articles.filter(function(a){
+
+            return (
+                a &&
+                (
+                    a.published === true ||
+                    String(a.published).toLowerCase()==="true" ||
+                    String(a.status).toLowerCase()==="published"
+                )
+            );
+
+        })
+        : [];
+
+
+    if(!articles.length){
+
+        box.innerHTML = `
+
+        <div class="empty-state">
+
+        No articles have been published yet.
+
+        </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    box.innerHTML =
+    articles.map(function(a){
+
+        return `
+
+        <article class="article-card">
+
+            <div class="article-meta">
+            ${esc(a.category || "Legal Update")}
+            ${a.date ? " · " + esc(a.date) : ""}
+            </div>
+
+            <h4>
+            ${esc(a.title)}
+            </h4>
+
+            <p>
+            ${esc(a.excerpt || "")}
+            </p>
+
+            <button
+            class="small-btn"
+            onclick='openArticle(${JSON.stringify(a).replace(/'/g,"&#039;")})'>
+            Read Article
+            </button>
+
+        </article>
+
+        `;
+
+    }).join("");
+
+}
+
+
+function openArticle(a){
+
+    const body =
+        String(a.body || "");
+
+    const paragraphs =
+        body
+        .split(/\n\s*\n/)
+        .map(function(x){
+
+            return `<p>${esc(x).replace(/\n/g,"<br>")}</p>`;
+
+        })
+        .join("");
+
+
+    openModal(`
+
+        <div class="eyebrow">
+        ${esc(a.category || "Legal Article")}
+        </div>
+
+        <h2>
+        ${esc(a.title)}
+        </h2>
+
+        ${
+            a.date
+            ? `<div class="article-meta">${esc(a.date)}</div>`
+            : ""
+        }
+
+        ${paragraphs}
+
+        <div class="notice">
+
+        This article is provided for general legal information
+        and should not be treated as case-specific legal advice.
+
+        </div>
+
+    `);
+
+}
+
+
+/* =========================================================
+BARE ACTS
+========================================================= */
+
+/*
+   IMPORTANT:
+
+   India Code has migrated to:
+   https://www.indiacode.gov.in/
+
+   We do not hard-code unverified old indiacode.nic.in
+   document IDs.
+
+   Search results below therefore use known statutory names
+   and provide the official India Code portal as the authoritative
+   source.
+
+   This avoids sending visitors to the old broken HTTP 500 pages.
+*/
+
+
+const bareActs = [
+
+{
+
+name:"Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002",
+
+short:"SARFAESI Act, 2002",
+
+keywords:"sarfaesi securitisation reconstruction financial assets security interest",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Code of Civil Procedure, 1908",
+
+short:"Code of Civil Procedure, 1908",
+
+keywords:"cpc civil procedure code civil suit procedure",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Indian Contract Act, 1872",
+
+short:"Indian Contract Act, 1872",
+
+keywords:"contract agreement contract act",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Limitation Act, 1963",
+
+short:"Limitation Act, 1963",
+
+keywords:"limitation limitation act time barred",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Transfer of Property Act, 1882",
+
+short:"Transfer of Property Act, 1882",
+
+keywords:"transfer property tpa sale mortgage lease",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Companies Act, 2013",
+
+short:"Companies Act, 2013",
+
+keywords:"companies company corporate",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Specific Relief Act, 1963",
+
+short:"Specific Relief Act, 1963",
+
+keywords:"specific relief injunction specific performance",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Arbitration and Conciliation Act, 1996",
+
+short:"Arbitration and Conciliation Act, 1996",
+
+keywords:"arbitration conciliation arbitral",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Consumer Protection Act, 2019",
+
+short:"Consumer Protection Act, 2019",
+
+keywords:"consumer consumer forum consumer protection",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Information Technology Act, 2000",
+
+short:"Information Technology Act, 2000",
+
+keywords:"it act cyber information technology",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Motor Vehicles Act, 1988",
+
+short:"Motor Vehicles Act, 1988",
+
+keywords:"motor vehicle accident mv act",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Registration Act, 1908",
+
+short:"Registration Act, 1908",
+
+keywords:"registration property document registration",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Indian Stamp Act, 1899",
+
+short:"Indian Stamp Act, 1899",
+
+keywords:"stamp duty stamp act",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Partnership Act, 1932",
+
+short:"Partnership Act, 1932",
+
+keywords:"partnership firm partnership act",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Negotiable Instruments Act, 1881",
+
+short:"Negotiable Instruments Act, 1881",
+
+keywords:"cheque cheque bounce 138 negotiable instrument",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Insolvency and Bankruptcy Code, 2016",
+
+short:"IBC, 2016",
+
+keywords:"ibc insolvency bankruptcy nclt",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Right to Information Act, 2005",
+
+short:"Right to Information Act, 2005",
+
+keywords:"rti right information",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Protection of Women from Domestic Violence Act, 2005",
+
+short:"Domestic Violence Act, 2005",
+
+keywords:"domestic violence women protection",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Hindu Marriage Act, 1955",
+
+short:"Hindu Marriage Act, 1955",
+
+keywords:"hindu marriage divorce matrimonial",
+
+official:"https://www.indiacode.gov.in/"
+
+},
+
+{
+
+name:"The Hindu Succession Act, 1956",
+
+short:"Hindu Succession Act, 1956",
+
+keywords:"succession inheritance property hindu",
+
+official:"https://www.indiacode.gov.in/"
+
+}
+
+];
+
+
+function setBareAct(text){
+
+    const input =
+        document.getElementById("bareActSearch");
+
+    input.value = text;
 
     searchBareActs();
 
-    const results = document.getElementById("bareActResults");
+}
 
-    if (results) {
 
-        results.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest"
-        });
+function searchBareActs(){
+
+    const input =
+        document.getElementById("bareActSearch");
+
+    const box =
+        document.getElementById("bareActResults");
+
+    const q =
+        input.value.trim().toLowerCase();
+
+
+    if(!q){
+
+        box.innerHTML = `
+
+        <div class="empty-state">
+
+        Enter the name or keyword of an Act.
+
+        <br><br>
+
+        <a
+        class="judgment-link"
+        href="https://www.indiacode.gov.in/"
+        target="_blank"
+        rel="noopener">
+        Open Official India Code
+        </a>
+
+        </div>
+
+        `;
+
+        return;
 
     }
-}
-</script>
-  </div>
-</section>
-
-<section class="section faq" id="faq">
-<div class="container">
-
-  <div class="section-head">
-    <div class="eyebrow">Frequently Asked Questions</div>
-    <h2>Common questions.</h2>
-  </div>
-
-  <div class="faq-list">
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Does LegalDecode provide legal consultation?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        Yes. Consultation requests can be submitted through the contact section.
-        The nature and scope of any engagement depends on the facts and documents of the matter.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Which matters does LegalDecode primarily handle?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        The principal practice areas are Criminal Law, SARFAESI Matters,
-        Banking & Financial Laws, Property Disputes, Family Court Matters,
-        Civil Matters and Service Matters.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Does the practice appear before the High Court?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        The professional profiles include practice before the High Court
-        of Judicature at Allahabad, including the Lucknow Bench, according
-        to the respective advocate's practice.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Can documents be reviewed before consultation?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        Relevant documents may be discussed or shared for preliminary
-        assessment subject to the applicable professional and confidentiality
-        considerations.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Is information on this website legal advice?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        No. General information on this website is not a substitute for
-        case-specific legal advice. Legal position depends on facts,
-        documents, applicable law and procedural circumstances.
-      </div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-<section class="section contact" id="contact">
-<div class="container contact-grid">
-
-  <div class="contact-box">
-    <div class="eyebrow">Consultation</div>
-    <h3>Discuss the matter with the right information.</h3>
-
-    <p>
-      Share a brief description of the matter and the preferred contact method.
-      A consultation request does not by itself create an advocate-client relationship.
-    </p>
-
-    <div class="contact-detail">
-      <strong>Office</strong>
-      <span>E3/243, Vinay Khand-3, Gomti Nagar, Lucknow, Uttar Pradesh - 226010</span>
-    </div>
-
-    <div class="contact-detail">
-      <strong>Firm Phone / WhatsApp</strong>
-      <a href="tel:+917007724581">+91 70077 24581</a>
-    </div>
-
-    <div class="contact-detail">
-      <strong>Email</strong>
-      <a href="mailto:avlegalaxis@gmail.com">avlegalaxis@gmail.com</a>
-    </div>
-
-    <div class="contact-detail">
-      <strong>Office Hours</strong>
-      <span>Monday–Saturday · 10:00 AM–6:00 PM</span>
-    </div>
-  </div>
-
-  <form class="form" onsubmit="sendConsultation(event)">
-
-    <div class="form-grid">
-
-      <div class="field">
-        <label>Your Name</label>
-        <input id="cName" required>
-      </div>
-
-      <div class="field">
-        <label>Phone</label>
-        <input id="cPhone" required>
-      </div>
-
-      <div class="field">
-        <label>Email</label>
-        <input id="cEmail" type="email">
-      </div>
-
-      <div class="field">
-        <label>Area of Matter</label>
-        <select id="cArea">
-          <option>Criminal Law</option>
-          <option>SARFAESI Matters</option>
-          <option>Banking & Financial Laws</option>
-          <option>Property Disputes</option>
-          <option>Family Court Matters</option>
-          <option>Civil Matters</option>
-          <option>Service Matters</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="field full">
-        <label>Brief Description</label>
-        <textarea id="cMessage" required></textarea>
-      </div>
-
-    </div>
-
-    <button class="btn btn-primary" type="submit">
-      Continue on WhatsApp
-    </button>
-
-    <div class="form-note">
-      Please do not include passwords, financial account credentials,
-      OTPs or unnecessary sensitive information in the initial message.
-    </div>
-
-  </form>
-
-</div>
-</section>
-
-</main>
-
-<footer class="footer">
-<div class="container">
-
-  <div class="footer-grid">
-
-    <div>
-      <h3>LegalDecode</h3>
-      <p>
-        A modern legal practice in Lucknow focused on research,
-        preparation, drafting and professional representation.
-      </p>
-    </div>
-
-    <div class="footer-links">
-      <h3>Navigate</h3>
-      <a href="#about">About</a>
-      <a href="#practice">Practice Areas</a>
-      <a href="#team">Team</a>
-      <a href="#knowledge">Knowledge Center</a>
-      <a href="#faq">FAQs</a>
-      <a href="#contact">Consultation</a>
-    </div>
-
-    <div class="footer-links">
-      <h3>Information</h3>
-      <a href="javascript:openLegal('disclaimer')">Disclaimer</a>
-      <a href="javascript:openLegal('privacy')">Privacy Policy</a>
-      <a href="javascript:openLegal('terms')">Terms of Use</a>
-      <a href="javascript:openAdmin()">Partner Login</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <span>© <span id="year"></span> LegalDecode. All rights reserved.</span>
-    <span>Legal information · Professional communication · Lucknow</span>
-  </div>
-
-</div>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/917007724581" target="_blank" rel="noopener">WA</a>
-
-<button class="ai-btn" onclick="toggleAI()">Legal Information Assistant</button>
-
-<div class="ai-drawer" id="aiDrawer">
-
-  <div class="ai-head">
-    <strong>Legal Information Assistant</strong>
-    <button class="ai-close" onclick="toggleAI()">×</button>
-  </div>
-
-  <div class="ai-body" id="aiBody">
-    <div class="ai-msg">
-      Namaste. I can provide general information about LegalDecode's
-      practice areas, consultation process and basic legal concepts.
-      I am not a substitute for case-specific legal advice.
-    </div>
-  </div>
-
-  <div class="ai-input">
-    <input id="aiInput" placeholder="Ask a general question..." onkeydown="if(event.key==='Enter') askAI()">
-    <button onclick="askAI()">Send</button>
-  </div>
-
-</div>
-
-<div class="modal" id="modal">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">×</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
-
-<script>
-
-/* =========================================================
-   LEGALDECODE CONFIGURATION
-   ========================================================= */
-
-/*
-  AFTER DEPLOYING GOOGLE APPS SCRIPT:
-  Paste the Web App URL between the quotation marks below.
-*/
-const BACKEND_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
-
-const SITE_URL = "https://advaadeshpandey-glitch.github.io/LegalDecode/";
-
-const staticAssociates = [
-  {
-    id:"shubham",
-    name:"Adv. Shubham Pandey",
-    image:"Shubham.jpeg",
-    designation:"Associate | Advocate",
-    profile:"Adv. Shubham Pandey completed his legal education at the University of Allahabad and primarily practises before the High Court of Judicature at Allahabad. His practice also extends to the Central Administrative Tribunal (CAT), Allahabad, and the District Courts. He approaches matters with careful legal research, precise drafting, procedural preparation and focused representation before the appropriate forum.",
-    points:[
-      "High Court Litigation",
-      "Central Administrative Tribunal (CAT) Matters",
-      "District Court Litigation"
-    ]
-  },
-  {
-    id:"satyam",
-    name:"Adv. Satyam Pandey",
-    image:"Satyam.jpeg",
-    designation:"Associate | Advocate",
-    profile:"Adv. Satyam Pandey practises before the Lucknow Bench of the High Court of Judicature at Allahabad, with a focused practice in criminal litigation and trial matters before the District Courts. His work involves careful assessment of the factual and legal issues arising in each matter, thorough procedural preparation and focused advocacy across the relevant stages of criminal proceedings.",
-    points:[
-      "Criminal Litigation",
-      "Criminal Trial Matters",
-      "High Court Litigation",
-      "District Court Trial Matters"
-    ]
-  },
-  {
-    id:"piyush",
-    name:"Adv. Piyush Singh",
-    image:"piyush.jpeg",
-    designation:"Associate | Advocate",
-    profile:"Adv. Piyush Singh has completed his LL.M. and LL.B. from Amity University. He practises before the High Court, Lucknow Bench, District Courts and Tribunals. His professional work involves legal research, preparation, drafting and representation in matters before the appropriate court or tribunal, with due attention to the factual and legal issues arising in each matter.",
-    points:[
-      "LL.M. — Amity University",
-      "LL.B. — Amity University",
-      "High Court — Lucknow Bench",
-      "District Court Litigation",
-      "Tribunal Matters"
-    ]
-  }
-];
-
-const practiceData = [
-  {
-    title:"Criminal Law",
-    text:"Criminal litigation requires careful assessment of the factual matrix, procedural stage, applicable provisions and available legal remedies. The practice includes preparation and representation in criminal matters according to the nature of the proceedings."
-  },
-  {
-    title:"SARFAESI Matters",
-    text:"SARFAESI-related disputes may involve enforcement measures, notices, possession, recovery proceedings and challenges before the appropriate statutory forum. Each matter requires document-specific and stage-specific assessment."
-  },
-  {
-    title:"Banking & Financial Laws",
-    text:"Banking and financial disputes can involve contractual obligations, recovery processes, security interests and regulatory or procedural issues. Legal strategy depends on the documents and statutory framework involved."
-  },
-  {
-    title:"Property Disputes",
-    text:"Property disputes may involve title, possession, agreements, injunctions, specific relief, partition and related civil proceedings. The factual chain and documentary record are central to assessment."
-  },
-  {
-    title:"Family Court Matters",
-    text:"Family-related proceedings often involve sensitive facts and significant procedural considerations. Legal assistance may include assessment, drafting and representation in appropriate proceedings."
-  },
-  {
-    title:"Civil Matters",
-    text:"Civil practice includes suits, applications, contractual disputes, property-related proceedings and other civil litigation within the relevant professional practice."
-  },
-  {
-    title:"Service Matters",
-    text:"Service matters can involve employment conditions, disciplinary proceedings, service benefits and challenges before the appropriate court or tribunal depending upon jurisdiction and facts."
-  }
-];
-
-const personData = {
-  aadesh:{
-    name:"Adv. Aadesh Pandey",
-    role:"Partner · Advocate",
-    phone:"+91 70077 24581",
-    email:"avlegalaxis@gmail.com",
-    profile:"Adv. Aadesh Pandey is a Lucknow-based advocate practising before the Lucknow Bench, District Courts and relevant tribunals. His practice includes criminal matters, SARFAESI matters, banking and financial matters, property disputes and family court matters. His professional approach emphasises factual assessment, legal research, precise drafting, procedural preparation and focused representation.",
-    points:[
-      "Criminal Matters",
-      "SARFAESI Matters",
-      "Banking & Financial Matters",
-      "Property Disputes",
-      "Family Court Matters",
-      "DRT",
-      "CAT",
-      "State Public Services Tribunal",
-      "Armed Forces Tribunal"
-    ]
-  },
-  vartika:{
-    name:"Adv. Vartika Pandey",
-    role:"Partner · Advocate",
-    phone:"+91 79057 59058",
-    email:"avlegalaxis@gmail.com",
-    profile:"Adv. Vartika Pandey is a Lucknow-based advocate engaged in civil litigation and legal advisory practice before the High Court and District Courts. Her practice encompasses civil litigation, civil suits, service matters and related proceedings, with a focus on careful legal analysis, precise drafting and diligent representation. She approaches each matter with close attention to the factual matrix, applicable legal provisions and procedural requirements.",
-    points:[
-      "Civil Litigation",
-      "Service Matters",
-      "High Court Litigation",
-      "District Court Litigation",
-      "Civil Suits",
-      "CAT",
-      "State Public Services Tribunal",
-      "Armed Forces Tribunal"
-    ]
-  }
-};
-
-let publicData = {
-  associates: staticAssociates,
-  articles:[]
-};
-
-/* =========================================================
-   BASIC UI
-   ========================================================= */
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-function toggleMenu(){
-  document.getElementById("mobileMenu").classList.toggle("open");
-}
-
-function toggleFaq(button){
-  button.parentElement.classList.toggle("open");
-}
-
-function openModal(html){
-  document.getElementById("modalContent").innerHTML = html;
-  document.getElementById("modal").classList.add("open");
-  document.body.style.overflow="hidden";
-}
-
-function closeModal(){
-  document.getElementById("modal").classList.remove("open");
-  document.body.style.overflow="";
-}
-
-document.getElementById("modal").addEventListener("click",function(e){
-  if(e.target===this) closeModal();
-});
-
-function esc(value){
-  return String(value ?? "")
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
-}
-
-function openPractice(index){
-  const p = practiceData[index];
-
-  openModal(`
-    <div class="eyebrow">Practice Area</div>
-    <h2>${esc(p.title)}</h2>
-    <p>${esc(p.text)}</p>
-    <div class="notice">
-      The scope of legal assistance depends on the facts, documents,
-      jurisdiction and procedural stage of the particular matter.
-    </div>
-  `);
-}
-
-function openPerson(id){
-  const p = personData[id];
-
-  openModal(`
-    <div class="eyebrow">${esc(p.role)}</div>
-    <h2>${esc(p.name)}</h2>
-    <p>${esc(p.profile)}</p>
-
-    <ul>
-      ${p.points.map(x=>`<li>${esc(x)}</li>`).join("")}
-    </ul>
-
-    <div class="notice">
-      Professional contact: ${esc(p.phone)} · ${esc(p.email)}
-    </div>
-  `);
-}
-
-function openAssociate(p){
-  openModal(`
-    <div class="eyebrow">${esc(p.designation || "Associate | Advocate")}</div>
-    <h2>${esc(p.name)}</h2>
-    <p>${esc(p.profile || "")}</p>
-    <ul>
-      ${(p.points || []).map(x=>`<li>${esc(x)}</li>`).join("")}
-    </ul>
-  `);
-}
-
-/* =========================================================
-   ASSOCIATES
-   ========================================================= */
-
-function renderAssociates(){
-  const grid = document.getElementById("associateGrid");
-
-  const data = (publicData.associates || []).filter(x=>x.active !== false);
-
-  if(!data.length){
-    grid.innerHTML = `<div class="empty-state">No associate profile is currently published.</div>`;
-    return;
-  }
-
-  grid.innerHTML = data.map(p=>`
-    <article class="team-card">
-      <div class="team-photo">
-        <img src="${esc(p.image || "partner.jpeg")}" alt="${esc(p.name)}">
-      </div>
-
-      <div class="team-content">
-        <span class="role">${esc(p.designation || "Associate | Advocate")}</span>
-        <h3>${esc(p.name)}</h3>
-
-        <p>
-          ${esc(p.profile || "")}
-        </p>
-
-        <ul>
-          ${(p.points || []).map(x=>`<li>${esc(x)}</li>`).join("")}
-        </ul>
-
-        <div class="team-actions">
-          <button class="small-btn" onclick='openAssociate(${JSON.stringify(p).replace(/'/g,"&#39;")})'>
-            View Profile
-          </button>
+
+
+    const results =
+        bareActs.filter(function(act){
+
+            return (
+
+                act.name.toLowerCase().includes(q) ||
+
+                act.short.toLowerCase().includes(q) ||
+
+                act.keywords.toLowerCase().includes(q)
+
+            );
+
+        });
+
+
+    if(!results.length){
+
+        box.innerHTML = `
+
+        <div class="empty-state">
+
+        No matching Act is available in the LegalDecode
+        quick-reference list.
+
+        <br><br>
+
+        For the complete Central Acts database, use the
+        official India Code portal.
+
+        <br><br>
+
+        <a
+        class="btn btn-primary"
+        href="https://www.indiacode.gov.in/"
+        target="_blank"
+        rel="noopener">
+        Open Official India Code
+        </a>
+
         </div>
-      </div>
-    </article>
-  `).join("");
+
+        `;
+
+        return;
+
+    }
+
+
+    box.innerHTML =
+        results.map(function(act){
+
+            return `
+
+            <div class="act-result">
+
+                <div class="article-meta">
+                Central Act
+                </div>
+
+                <h3>
+                ${esc(act.short)}
+                </h3>
+
+                <p>
+                ${esc(act.name)}
+                </p>
+
+                <a
+                class="btn btn-primary"
+                href="${act.official}"
+                target="_blank"
+                rel="noopener">
+                Open Official India Code
+                </a>
+
+            </div>
+
+            `;
+
+        }).join("");
+
 }
+
 
 /* =========================================================
-   ARTICLES
-   ========================================================= */
+FAQ
+========================================================= */
 
-function renderArticles(){
-  const box = document.getElementById("articleList");
-  const articles = (publicData.articles || []).filter(a=>a.published === true);
+function toggleFAQ(button){
 
-  if(!articles.length){
-    box.innerHTML = `
-      <div class="empty-state">
-        No articles have been published yet.
-      </div>
-    `;
-    return;
-  }
+    const item =
+        button.parentElement;
 
-  box.innerHTML = articles.map(a=>`
-    <article class="article-card">
-      <h4>${esc(a.title)}</h4>
-      <div class="article-meta">
-        ${esc(a.category || "Legal Update")}
-        ${a.date ? " · " + esc(a.date) : ""}
-      </div>
-      <p>${esc(a.excerpt || "")}</p>
-      <button class="small-btn" onclick='openArticle(${JSON.stringify(a).replace(/'/g,"&#39;")})'>
-        Read Article
-      </button>
-    </article>
-  `).join("");
+    const wasOpen =
+        item.classList.contains("open");
+
+
+    document
+        .querySelectorAll(".faq-item")
+        .forEach(function(other){
+
+            other.classList.remove("open");
+
+            const span =
+                other.querySelector(".faq-question span");
+
+            if(span){
+                span.textContent="+";
+            }
+
+        });
+
+
+    if(!wasOpen){
+
+        item.classList.add("open");
+
+        const span =
+            button.querySelector("span");
+
+        if(span){
+            span.textContent="−";
+        }
+
+    }
+
 }
 
-function openArticle(a){
-  const body = String(a.body || "");
-
-  const paragraphs = body
-    .split(/\n\s*\n/)
-    .map(x=>`<p>${esc(x).replace(/\n/g,"<br>")}</p>`)
-    .join("");
-
-  openModal(`
-    <div class="eyebrow">${esc(a.category || "Legal Article")}</div>
-    <h2>${esc(a.title)}</h2>
-    ${a.date ? `<div class="article-meta">${esc(a.date)}</div>` : ""}
-    ${paragraphs}
-    <div class="notice">
-      This article is provided for general legal information and should
-      not be treated as case-specific legal advice.
-    </div>
-  `);
-}
 
 /* =========================================================
-   CONSULTATION
-   ========================================================= */
+CONSULTATION
+========================================================= */
 
 function sendConsultation(event){
-  event.preventDefault();
 
-  const name = document.getElementById("cName").value.trim();
-  const phone = document.getElementById("cPhone").value.trim();
-  const email = document.getElementById("cEmail").value.trim();
-  const area = document.getElementById("cArea").value;
-  const message = document.getElementById("cMessage").value.trim();
+    event.preventDefault();
 
-  const text =
+
+    const name =
+        document.getElementById("cName")
+        .value.trim();
+
+
+    const phone =
+        document.getElementById("cPhone")
+        .value.trim();
+
+
+    const email =
+        document.getElementById("cEmail")
+        .value.trim();
+
+
+    const area =
+        document.getElementById("cArea")
+        .value;
+
+
+    const message =
+        document.getElementById("cMessage")
+        .value.trim();
+
+
+    const text =
+
 `LegalDecode Consultation Request
 
 Name: ${name}
+
 Phone: ${phone}
+
 Email: ${email}
+
 Area: ${area}
 
 Brief Description:
 ${message}`;
 
-  const url = "https://wa.me/917007724581?text=" + encodeURIComponent(text);
 
-  window.open(url,"_blank");
+    const url =
+        "https://wa.me/917007724581?text=" +
+        encodeURIComponent(text);
+
+
+    window.open(
+        url,
+        "_blank",
+        "noopener"
+    );
+
 }
 
+
 /* =========================================================
-   AI / INFORMATION ASSISTANT
-   ========================================================= */
+AI / LEGAL INFORMATION ASSISTANT
+========================================================= */
 
 function toggleAI(){
-  document.getElementById("aiDrawer").classList.toggle("open");
+
+    document
+        .getElementById("aiDrawer")
+        .classList.toggle("open");
+
 }
+
 
 function askAI(){
-  const input = document.getElementById("aiInput");
-  const body = document.getElementById("aiBody");
-  const q = input.value.trim();
 
-  if(!q) return;
+    const input =
+        document.getElementById("aiInput");
 
-  body.innerHTML += `<div class="ai-msg"><strong>You:</strong><br>${esc(q)}</div>`;
+    const body =
+        document.getElementById("aiBody");
 
-  let answer =
-    "For a matter-specific legal opinion, the facts, documents, jurisdiction and procedural stage need to be examined. You can request a consultation with LegalDecode.";
 
-  const lower = q.toLowerCase();
+    const q =
+        input.value.trim();
 
-  if(lower.includes("sarfaesi")){
-    answer =
-      "SARFAESI matters can involve notices, enforcement measures, possession, recovery proceedings and proceedings before the appropriate statutory forum. The correct remedy depends on the documents, stage and facts.";
-  }
-  else if(lower.includes("property")){
-    answer =
-      "Property disputes may involve title, possession, agreements, injunctions, partition, specific relief and related civil proceedings. The documentary chain and factual history are particularly important.";
-  }
-  else if(lower.includes("criminal") || lower.includes("bail")){
-    answer =
-      "Criminal matters depend heavily on the procedural stage, allegations, documents and applicable provisions. Bail, trial and other remedies must be assessed on the specific facts.";
-  }
-  else if(lower.includes("family") || lower.includes("divorce")){
-    answer =
-      "Family Court matters depend on the nature of the proceeding, personal law, facts and documents. A case-specific assessment is necessary before selecting the appropriate remedy.";
-  }
-  else if(lower.includes("service")){
-    answer =
-      "Service matters may involve employment conditions, disciplinary proceedings, service benefits and challenges before the appropriate court or tribunal, depending on jurisdiction and facts.";
-  }
-  else if(lower.includes("contact") || lower.includes("phone")){
-    answer =
-      "LegalDecode can be contacted at +91 70077 24581 or avlegalaxis@gmail.com. The office is at E3/243, Vinay Khand-3, Gomti Nagar, Lucknow.";
-  }
 
-  body.innerHTML += `<div class="ai-msg"><strong>LegalDecode Assistant:</strong><br>${esc(answer)}</div>`;
+    if(!q) return;
 
-  input.value="";
-  body.scrollTop=body.scrollHeight;
+
+    body.innerHTML += `
+
+    <div class="ai-msg">
+
+    <strong>You:</strong><br>
+
+    ${esc(q)}
+
+    </div>
+
+    `;
+
+
+    const lower =
+        q.toLowerCase();
+
+
+    let answer =
+
+`For a matter-specific legal opinion, the facts, documents,
+jurisdiction and procedural stage need to be examined.
+LegalDecode can consider the matter through a consultation.`;
+
+
+    if(
+        lower.includes("sarfaesi") ||
+        lower.includes("sarfaesi act")
+    ){
+
+        answer =
+
+`SARFAESI matters may involve statutory notices,
+enforcement measures, possession proceedings and related
+legal remedies. The appropriate remedy depends on the
+documents, dates, action taken and procedural stage.`;
+
+    }
+
+
+    else if(
+        lower.includes("property") ||
+        lower.includes("land") ||
+        lower.includes("plot")
+    ){
+
+        answer =
+
+`Property disputes may involve title, possession, agreements,
+partition, injunction, specific relief and other civil remedies.
+The title documents and factual history should be examined
+before selecting the appropriate legal remedy.`;
+
+    }
+
+
+    else if(
+        lower.includes("criminal") ||
+        lower.includes("bail") ||
+        lower.includes("fir")
+    ){
+
+        answer =
+
+`Criminal matters depend heavily on the allegations, procedural
+stage, documents and applicable statutory provisions. Bail,
+investigation, trial and other remedies should be considered
+according to the specific facts.`;
+
+    }
+
+
+    else if(
+        lower.includes("family") ||
+        lower.includes("divorce") ||
+        lower.includes("maintenance")
+    ){
+
+        answer =
+
+`Family Court matters depend upon the nature of the proceeding,
+applicable personal law, facts and documents. A case-specific
+assessment is necessary before selecting the appropriate remedy.`;
+
+    }
+
+
+    else if(
+        lower.includes("service") ||
+        lower.includes("employee") ||
+        lower.includes("dismiss")
+    ){
+
+        answer =
+
+`Service matters may involve employment conditions,
+disciplinary proceedings, service benefits and challenges
+before the appropriate court or tribunal depending upon
+jurisdiction and the applicable service framework.`;
+
+    }
+
+
+    else if(
+        lower.includes("contract") ||
+        lower.includes("agreement")
+    ){
+
+        answer =
+
+`Contractual disputes generally require examination of the
+agreement, obligations of the parties, breach, applicable
+statutory provisions, limitation and the relief being sought.`;
+
+    }
+
+
+    else if(
+        lower.includes("contact") ||
+        lower.includes("phone") ||
+        lower.includes("address")
+    ){
+
+        answer =
+
+`LegalDecode can be contacted at +91 70077 24581 or
+avlegalaxis@gmail.com.
+
+Office:
+E3/243, Vinay Khand-3, Gomti Nagar,
+Lucknow, Uttar Pradesh - 226010.`;
+
+    }
+
+
+    body.innerHTML += `
+
+    <div class="ai-msg">
+
+    <strong>LegalDecode Assistant:</strong><br>
+
+    ${esc(answer)}
+
+    </div>
+
+    `;
+
+
+    input.value="";
+
+    body.scrollTop =
+        body.scrollHeight;
+
 }
 
+
 /* =========================================================
-   LEGAL / POLICY MODALS
-   ========================================================= */
+LEGAL POLICIES
+========================================================= */
 
 function openLegal(type){
 
-  let html="";
+    let html="";
 
-  if(type==="disclaimer"){
-    html=`
-      <div class="eyebrow">Legal Notice</div>
-      <h2>Disclaimer</h2>
-      <p>
-        The information published on this website is intended for general
-        informational purposes only. It does not constitute legal advice,
-        an opinion on any particular case, solicitation or a guarantee of
-        any result.
-      </p>
-      <p>
-        Legal outcomes depend on the facts, documents, applicable law,
-        procedural circumstances and the orders of the competent court or forum.
-      </p>
-      <p>
-        Visiting this website or sending an enquiry does not by itself create
-        an advocate-client relationship.
-      </p>
-    `;
-  }
 
-  if(type==="privacy"){
-    html=`
-      <div class="eyebrow">Website Information</div>
-      <h2>Privacy Policy</h2>
-      <p>
-        LegalDecode may receive information voluntarily submitted through
-        the consultation form, email, telephone or WhatsApp.
-      </p>
-      <p>
-        Such information is intended to be used for responding to enquiries
-        and considering requested legal services. Visitors should avoid
-        sending passwords, OTPs, financial credentials or unnecessary
-        sensitive information through the website.
-      </p>
-      <p>
-        Information may be retained only as reasonably necessary for the
-        relevant communication, professional requirements and applicable law.
-      </p>
-    `;
-  }
+    if(type==="disclaimer"){
 
-  if(type==="terms"){
-    html=`
-      <div class="eyebrow">Website Use</div>
-      <h2>Terms of Use</h2>
-      <p>
-        By using this website, visitors acknowledge that the information
-        presented is general information and may not reflect every change
-        in law or procedure.
-      </p>
-      <p>
-        No representation is made that every page will always be complete,
-        current or applicable to a particular matter.
-      </p>
-      <p>
-        Visitors should obtain appropriate professional advice before taking
-        legal action based on any information appearing on this website.
-      </p>
-    `;
-  }
+        html=`
 
-  openModal(html);
+        <div class="eyebrow">
+        Legal Notice
+        </div>
+
+        <h2>
+        Disclaimer
+        </h2>
+
+        <p>
+        The information published on this website is intended
+        for general informational purposes only. It does not
+        constitute legal advice, an opinion on any particular
+        case, solicitation or a guarantee of any result.
+        </p>
+
+        <p>
+        Legal outcomes depend on the facts, documents,
+        applicable law, procedural circumstances and orders
+        of the competent court or forum.
+        </p>
+
+        <p>
+        Visiting this website or sending an enquiry does not
+        by itself create an advocate-client relationship.
+        </p>
+
+        `;
+
+    }
+
+
+    if(type==="privacy"){
+
+        html=`
+
+        <div class="eyebrow">
+        Website Information
+        </div>
+
+        <h2>
+        Privacy Policy
+        </h2>
+
+        <p>
+        LegalDecode may receive information voluntarily submitted
+        through the consultation form, email, telephone or WhatsApp.
+        </p>
+
+        <p>
+        Such information is intended to be used for responding
+        to enquiries and considering requested legal services.
+        </p>
+
+        <p>
+        Visitors should avoid sending passwords, OTPs, financial
+        credentials or unnecessary sensitive information through
+        the website.
+        </p>
+
+        `;
+
+    }
+
+
+    if(type==="terms"){
+
+        html=`
+
+        <div class="eyebrow">
+        Website Use
+        </div>
+
+        <h2>
+        Terms of Use
+        </h2>
+
+        <p>
+        By using this website, visitors acknowledge that the
+        information presented is general information and may
+        not reflect every change in law or procedure.
+        </p>
+
+        <p>
+        No representation is made that every page will always
+        be complete, current or applicable to a particular matter.
+        </p>
+
+        <p>
+        Visitors should obtain appropriate professional advice
+        before taking legal action based on information appearing
+        on this website.
+        </p>
+
+        `;
+
+    }
+
+
+    openModal(html);
+
 }
 
+
 /* =========================================================
-   PARTNER ADMIN
-   ========================================================= */
+PARTNER ADMIN
+========================================================= */
 
 function openAdmin(){
 
-  if(
-    BACKEND_URL.includes("PASTE_YOUR") ||
-    BACKEND_URL.trim()===""
-  ){
-    alert(
-      "Partner CMS backend is not connected yet. " +
-      "First deploy the Google Apps Script backend and paste its Web App URL in index.html."
-    );
-    return;
-  }
+    if(
+        !LEGALDECODE_API ||
+        LEGALDECODE_API.trim()===""
+    ){
 
-  window.open(
-    BACKEND_URL + "?page=admin",
-    "_blank",
-    "noopener"
-  );
+        alert(
+            "LegalDecode CMS backend is not configured."
+        );
+
+        return;
+
+    }
+
+
+    window.open(
+        LEGALDECODE_API + "?page=admin",
+        "_blank",
+        "noopener"
+    );
+
 }
 
+
 /* =========================================================
-   PUBLIC BACKEND CONNECTION
-   JSONP avoids CORS problems with GitHub Pages.
-   ========================================================= */
+PUBLIC CMS DATA
+========================================================= */
 
 function loadPublicData(){
 
-  if(
-    BACKEND_URL.includes("PASTE_YOUR") ||
-    BACKEND_URL.trim()===""
-  ){
-    renderAssociates();
-    renderArticles();
-    return;
-  }
+    if(
+        !LEGALDECODE_API ||
+        LEGALDECODE_API.trim()===""
+    ){
 
-  const callbackName =
-    "legalDecodeCallback_" +
-    Date.now() +
-    "_" +
-    Math.floor(Math.random()*10000);
+        renderAssociates();
 
-  window[callbackName] = function(data){
+        renderArticles();
 
-    if(data && data.ok){
+        return;
 
-      publicData = {
-        associates:Array.isArray(data.associates)
-          ? data.associates
-          : staticAssociates,
-
-        articles:Array.isArray(data.articles)
-          ? data.articles
-          : []
-      };
-
-      renderAssociates();
-      renderArticles();
     }
 
-    delete window[callbackName];
-    script.remove();
-  };
 
-  const script = document.createElement("script");
+    const callbackName =
 
-  script.src =
-    BACKEND_URL +
-    "?action=public&callback=" +
-    encodeURIComponent(callbackName);
+        "legalDecodeCallback_" +
+        Date.now() +
+        "_" +
+        Math.floor(Math.random()*10000);
 
-  script.onerror=function(){
-    delete window[callbackName];
-    script.remove();
-    renderAssociates();
-    renderArticles();
-  };
 
-  document.body.appendChild(script);
+    let script;
+
+
+    window[callbackName] = function(data){
+
+        try{
+
+            if(data && data.ok){
+
+                publicData = {
+
+                    associates:
+                        Array.isArray(data.associates)
+                        ? data.associates
+                        : staticAssociates,
+
+                    articles:
+                        Array.isArray(data.articles)
+                        ? data.articles
+                        : []
+
+                };
+
+            }
+
+            else{
+
+                publicData = {
+
+                    associates:staticAssociates,
+
+                    articles:[]
+
+                };
+
+            }
+
+
+            renderAssociates();
+
+            renderArticles();
+
+        }
+
+        finally{
+
+            delete window[callbackName];
+
+            if(script){
+
+                script.remove();
+
+            }
+
+        }
+
+    };
+
+
+    script =
+        document.createElement("script");
+
+
+    script.src =
+
+        LEGALDECODE_API +
+        "?action=public&callback=" +
+        encodeURIComponent(callbackName);
+
+
+    script.onerror = function(){
+
+        delete window[callbackName];
+
+        script.remove();
+
+        publicData = {
+
+            associates:staticAssociates,
+
+            articles:[]
+
+        };
+
+        renderAssociates();
+
+        renderArticles();
+
+    };
+
+
+    document.body.appendChild(script);
+
 }
 
+
+/* =========================================================
+INITIALISE
+========================================================= */
+
+renderAssociates();
+
+renderArticles();
+
 loadPublicData();
+
 
 </script>
 
