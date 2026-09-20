@@ -1444,6 +1444,171 @@ footer{
         padding: 19px;
     }
 }
+  /* ===== LEGALDECODE TEAM — PREMIUM RESPONSIVE LAYOUT ===== */
+
+#partnersGrid,
+#associatesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* Premium vertical profile card */
+#partnersGrid .person-card,
+#associatesGrid .person-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    background: #fffdf8;
+    border: 1px solid #ded5c6;
+    border-radius: 3px;
+    box-shadow: 0 12px 32px rgba(9, 24, 39, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#partnersGrid .person-card:hover,
+#associatesGrid .person-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 42px rgba(9, 24, 39, 0.12);
+}
+
+/* Consistent photo panel */
+#partnersGrid .person-image,
+#associatesGrid .person-image {
+    width: 100%;
+    height: 320px;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #f4efe5, #e9e1d2);
+    border-bottom: 1px solid #ded5c6;
+}
+
+#partnersGrid .person-image img,
+#associatesGrid .person-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+/* Profile text */
+#partnersGrid .person-body,
+#associatesGrid .person-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    padding: 26px;
+}
+
+#partnersGrid .person-body .role,
+#associatesGrid .person-body .role {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+    background: #f4efe5;
+    border: 1px solid #e5dccb;
+    color: #987637;
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+#partnersGrid .person-body h3,
+#associatesGrid .person-body h3 {
+    margin: 0 0 14px;
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+#partnersGrid .person-body p,
+#associatesGrid .person-body p {
+    margin: 0;
+    color: #596675;
+    font-size: 0.91rem;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+}
+
+/* Practice areas / qualifications */
+#partnersGrid .profile-meta,
+#associatesGrid .profile-meta {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e5dccb;
+    color: #987637;
+    font-size: 0.68rem;
+    line-height: 1.8;
+    letter-spacing: 0.055em;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* Tablet and mobile */
+@media (max-width: 700px) {
+    #partnersGrid,
+    #associatesGrid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    #partnersGrid .person-card,
+    #associatesGrid .person-card {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    #partnersGrid .person-image,
+    #associatesGrid .person-image {
+        height: 340px;
+        min-height: 340px;
+        padding: 16px;
+    }
+
+    #partnersGrid .person-body,
+    #associatesGrid .person-body {
+        padding: 22px;
+    }
+
+    #partnersGrid .person-body h3,
+    #associatesGrid .person-body h3 {
+        font-size: 1.55rem;
+    }
+
+    #partnersGrid .person-body p,
+    #associatesGrid .person-body p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 380px) {
+    #partnersGrid .person-image,
+    #associatesGrid .person-image {
+        height: 290px;
+        min-height: 290px;
+    }
+
+    #partnersGrid .person-body,
+    #associatesGrid .person-body {
+        padding: 18px;
+    }
+}
 </style>
 
 <script>
