@@ -2176,245 +2176,79 @@ o ? "−" : "+";
 
 /* BARE ACTS */
 
-function bare(q=""){
+async function bare(q = "") {
+    const query = q.trim();
 
-q = q.toLowerCase().trim().replace(/\s+/g, " ");
+    if (!query) {
+        bareResult.innerHTML =
+            '<p class="muted">Search for a Central Act by its name or a keyword.</p>';
+        return;
+    }
 
-let a = acts.filter(x =>
-  !q || x.join(" ").toLowerCase().replace(/\s+/g, " ").includes(q)
-);
-bareResults.innerHTML = a.length
+    bareResult.innerHTML =
+        '<p class="muted">Searching Central Acts…</p>';
 
-? a.map(x => `
+    try {
+        const apiUrl =
+            "https://indiacode.ecourtsindia.com/api/v1/acts" +
+            "?jurisdiction=central" +
+            "&q=" + encodeURIComponent(query) +
+            "&limit=30";
 
-<article class="card">
+        const response = await fetch(apiUrl);
 
-<h3>
-${esc(x[0])}
-</h3>
+        if (!response.ok) {
+            throw new Error("Unable to fetch Acts.");
+        }
 
-<p>
-${esc(x[1])} · ${esc(x[2])}
-</p>
+        const data = await response.json();
+        const acts = Array.isArray(data.acts) ? data.acts : [];
 
-<a
-class="btn outline"
-target="_blank"
-rel="noopener"
-href="https://www.indiacode.gov.in/"
->
-Browse India Code Portal
-</a>
+        if (acts.length === 0) {
+            bareResult.innerHTML =
+                '<p class="muted">No matching Central Acts found. Try another keyword.</p>';
+            return;
+        }
 
-</article>
+        bareResult.innerHTML = acts.map(act => {
+            const title = esc(act.short_title || "Untitled Act");
+            const year = esc(String(act.act_year || ""));
+            const actUrl = act.url || "";
 
-`).join("")
+            const safeUrl =
+                actUrl.startsWith("https://indiacode.ecourtsindia.com/")
+                    ? actUrl
+                    : "";
 
-: `
+            return `
+                <article class="card">
+                    <h3>${title}</h3>
+                    <p class="muted">Year: ${year}</p>
+                    ${
+                        safeUrl
+                            ? `<a class="btn outline"
+                                  href="${safeUrl}"
+                                  target="_blank"
+                                  rel="noopener noreferrer">
+                                  Open Act Text
+                               </a>`
+                            : `<p class="muted">Act link unavailable.</p>`
+                    }
+                    <p class="muted">
+                        For the Government's India Code portal, use
+                        <a href="https://www.indiacode.gov.in/"
+                           target="_blank"
+                           rel="noopener noreferrer">India Code</a>.
+                    </p>
+                </article>
+            `;
+        }).join("");
 
-<div class="empty">
-
-No matching Act found in the local reference list.
-Try another keyword or open India Code.
-
-</div>
-
-`;
-
+    } catch (error) {
+        bareResult.innerHTML =
+            '<p class="muted">Search could not be completed. Please try again later.</p>';
+    }
 }
-
-[
-"SARFAESI",
-"CPC",
-"Contract Act",
-"Limitation Act",
-"Transfer of Property",
-"Companies Act",
-"Arbitration",
-"Consumer Protection"
-].forEach(x => {
-
-let b = document.createElement("button");
-
-b.className = "chip";
-
-b.textContent = x;
-
-b.onclick = () => {
-
-bareInput.value = x;
-
-bare(x);
-
-};
-
-chips.appendChild(b);
-
-});
-
-bareInput.oninput =
-() => bare(bareInput.value);
-
-bareBtn.onclick =
-() => bare(bareInput.value);
-
-bare();
-
-/* CMS ARTICLES */
-
-function articles(arr){
-
-let a = Array.isArray(arr)
-
-? arr.filter(x =>
-x &&
-(
-x.published === true ||
-String(x.status).toLowerCase() === "published" ||
-String(x.publish).toLowerCase() === "true"
-)
-)
-
-: [];
-
-articleGrid.innerHTML = a.length
-
-? a.map((x,i) => `
-
-<article class="card">
-
-<div class="k">
-${esc(x.category || "LegalDecode")}
-</div>
-
-<h3>
-${esc(x.title || "Untitled Article")}
-</h3>
-
-<p>
-${esc(
-x.excerpt ||
-x.summary ||
-String(x.content || "").slice(0,180)
-)}
-</p>
-
-<button
-class="btn outline art"
-data-i="${i}"
->
-Read Article
-</button>
-
-</article>
-
-`).join("")
-
-: `
-
-<div class="empty">
-No articles have been published yet.
-</div>
-
-`;
-
-document.querySelectorAll(".art").forEach(b => {
-
-b.onclick = () => {
-
-let x = a[+b.dataset.i];
-
-modalContent.innerHTML = `
-
-<div class="k">
-${esc(x.category || "LegalDecode")}
-</div>
-
-<h2>
-${esc(x.title || "Untitled Article")}
-</h2>
-
-<p>
-${esc(x.date || "")}
-</p>
-
-<p>
-${esc(
-x.content ||
-x.body ||
-x.excerpt ||
-""
-)}
-</p>
-
-`;
-
-modal.classList.add("open");
-
-};
-
-});
-
-}
-
-articles([]);
-
-/* CMS LOAD */
-
-function loadCMS(){
-
-let cb = "ldcb" + Date.now();
-
-window[cb] = d => {
-
-try{
-
-d = d && d.data
-? d.data
-: d || {};
-
-articles(
-d.articles ||
-d.publishedArticles ||
-[]
-);
-
-}catch(e){}
-
-cleanup();
-
-};
-
-let s = document.createElement("script");
-
-s.src =
-API +
-"?action=publicData&callback=" +
-cb +
-"&t=" +
-Date.now();
-
-s.onerror = cleanup;
-
-document.head.appendChild(s);
-
-let t = setTimeout(cleanup,9000);
-
-function cleanup(){
-
-clearTimeout(t);
-
-try{
-delete window[cb]
-}catch(e){}
-
-if(s.parentNode)
-s.remove();
-
-}
-
-}
-
 loadCMS();
 
 /* CONSULTATION */
