@@ -1886,58 +1886,6 @@ Send
 const API =
 "https://script.google.com/macros/s/AKfycbyTb_6zTAv3zI3Lr9jBhTtczma69Y2jR6qHafZUlnY1s8tvpn8kSrTwiwVH11RdVD0/exec";
 
-const acts = [
-
-["Constitution of India","Constitution","1950"],
-
-["Code of Civil Procedure, 1908","CPC","1908"],
-
-["Code of Criminal Procedure, 1973","CrPC","1973"],
-
-["Bharatiya Nagarik Suraksha Sanhita, 2023","BNSS","2023"],
-
-["Indian Contract Act, 1872","Contract Act","1872"],
-
-["Transfer of Property Act, 1882","TPA","1882"],
-
-["Specific Relief Act, 1963","Specific Relief","1963"],
-
-["Limitation Act, 1963","Limitation Act","1963"],
-
-["Arbitration and Conciliation Act, 1996","Arbitration","1996"],
-
-["Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002","SARFAESI","2002"],
-
-["Companies Act, 2013","Companies Act","2013"],
-
-["Consumer Protection Act, 2019","Consumer Protection","2019"],
-
-["Right to Information Act, 2005","RTI Act","2005"],
-
-["Registration Act, 1908","Registration Act","1908"],
-
-["Negotiable Instruments Act, 1881","NI Act","1881"],
-
-["Indian Partnership Act, 1932","Partnership Act","1932"],
-
-["Sale of Goods Act, 1930","Sale of Goods","1930"],
-
-["Insolvency and Bankruptcy Code, 2016","IBC","2016"],
-
-["Protection of Women from Domestic Violence Act, 2005","Domestic Violence Act","2005"],
-
-["Hindu Marriage Act, 1955","Hindu Marriage Act","1955"],
-
-["Hindu Succession Act, 1956","Hindu Succession Act","1956"],
-
-["Special Marriage Act, 1954","Special Marriage Act","1954"],
-
-["Indian Evidence Act, 1872","Evidence Act","1872"],
-
-["Bharatiya Sakshya Adhiniyam, 2023","BSA","2023"]
-
-];
-
 const people = [
 
 [
@@ -2174,82 +2122,229 @@ o ? "−" : "+";
 
 });
 
-/* BARE ACTS */
+/* BARE ACTS SEARCH */
 
-async function bare(q = "") {
-    const query = q.trim();
+(() => {
+    const form = document.getElementById("bareSearchForm");
+    const input = document.getElementById("bareInput");
+    const button = document.getElementById("bareBtn");
+    const results = document.getElementById("bareResults");
+    const chips = document.getElementById("chips");
 
-    if (!query) {
-        bareResult.innerHTML =
-            '<p class="muted">Search for a Central Act by its name or a keyword.</p>';
+    if (!form || !input || !button || !results || !chips) {
+        console.error("Bare Acts elements were not found.");
         return;
     }
 
-    bareResult.innerHTML =
-        '<p class="muted">Searching Central Acts…</p>';
+    const API_URL = "https://indiacode.ecourtsindia.com/api/v1/acts";
 
-    try {
-        const apiUrl =
-            "https://indiacode.ecourtsindia.com/api/v1/acts" +
-            "?jurisdiction=central" +
-            "&q=" + encodeURIComponent(query) +
-            "&limit=30";
+  
+    const popularActs = [
+        "SARFAESI",
+        "Code of Civil Procedure",
+        "Indian Contract Act",
+        "Specific Relief Act",
+        "Limitation Act",
+        "Transfer of Property Act",
+        "Arbitration and Conciliation Act",
+        "Companies Act",
+        "Consumer Protection Act",
+        "Constitution of India",
+        "Bharatiya Nyaya Sanhita",
+        "Bharatiya Nagarik Suraksha Sanhita",
+        "Bharatiya Sakshya Adhiniyam",
+        "Negotiable Instruments Act",
+        "Hindu Marriage Act",
+        "Hindu Succession Act"
+    ];
 
-        const response = await fetch(apiUrl);
+    function escapeHTML(value) {
+        const element = document.createElement("div");
+        element.textContent = value == null ? "" : String(value);
+        return element.innerHTML;
+    }
 
-        if (!response.ok) {
-            throw new Error("Unable to fetch Acts.");
-        }
+    function officialSearchLink(title) {
+        return OFFICIAL_SEARCH_URL + encodeURIComponent(title);
+    }
 
-        const data = await response.json();
-        const acts = Array.isArray(data.acts) ? data.acts : [];
+    function setMessage(message) {
+        results.innerHTML = `<p class="muted">${escapeHTML(message)}</p>`;
+    }
 
-        if (acts.length === 0) {
-            bareResult.innerHTML =
-                '<p class="muted">No matching Central Acts found. Try another keyword.</p>';
+    function setLoading(isLoading) {
+        button.disabled = isLoading;
+        button.textContent = isLoading ? "Searching…" : "Search";
+        results.setAttribute("aria-busy", String(isLoading));
+    }
+
+    function renderPopularActs() {
+        chips.innerHTML = popularActs.map(title => `
+            <button
+                type="button"
+                class="chip"
+                data-act-query="${escapeHTML(title)}"
+            >
+                ${escapeHTML(title)}
+            </button>
+        `).join("");
+
+        chips.querySelectorAll("[data-act-query]").forEach(chip => {
+            chip.addEventListener("click", () => {
+                const query = chip.getAttribute("data-act-query") || "";
+                input.value = query;
+                searchActs(query);
+            });
+        });
+    }
+
+    function renderResults(acts) {
+        if (!Array.isArray(acts) || acts.length === 0) {
+            results.innerHTML = `
+                <article class="card">
+                    <h3>No matching Acts found</h3>
+                    <p class="muted">
+                        Try another spelling, abbreviation or keyword.
+                    </p>
+                    <a
+                        class="btn outline"
+                        href="${officialSearchLink(input.value.trim())}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Search on Official India Code
+                    </a>
+                </article>
+            `;
             return;
         }
 
-        bareResult.innerHTML = acts.map(act => {
-            const title = esc(act.short_title || "Untitled Act");
-            const year = esc(String(act.act_year || ""));
-            const actUrl = act.url || "";
+        results.innerHTML = acts.map(act => {
+            const title = String(
+                act.short_title || act.title || "Act title unavailable"
+            );
 
-            const safeUrl =
-                actUrl.startsWith("https://indiacode.ecourtsindia.com/")
-                    ? actUrl
+            const year = act.act_year || act.year || "";
+
+            const recordURL = typeof act.url === "string" ? act.url : "";
+
+            const safeRecordURL =
+                recordURL.startsWith("https://indiacode.ecourtsindia.com/")
+                    ? recordURL
                     : "";
 
             return `
                 <article class="card">
-                    <h3>${title}</h3>
-                    <p class="muted">Year: ${year}</p>
+                    <h3>${escapeHTML(title)}</h3>
+
                     ${
-                        safeUrl
-                            ? `<a class="btn outline"
-                                  href="${safeUrl}"
-                                  target="_blank"
-                                  rel="noopener noreferrer">
-                                  Open Act Text
-                               </a>`
-                            : `<p class="muted">Act link unavailable.</p>`
+                        year
+                            ? `<p class="muted">Year: ${escapeHTML(year)}</p>`
+                            : ""
                     }
-                    <p class="muted">
-                        For the Government's India Code portal, use
-                        <a href="https://www.indiacode.gov.in/"
-                           target="_blank"
-                           rel="noopener noreferrer">India Code</a>.
-                    </p>
+
+                    <div class="actions">
+                        <a
+                            class="btn outline"
+                            href="${officialSearchLink(title)}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Search on Official India Code
+                        </a>
+
+                        ${
+                            safeRecordURL
+                                ? `
+                                    <a
+                                        class="btn primary"
+                                        href="${escapeHTML(safeRecordURL)}"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        View Act Record
+                                    </a>
+                                `
+                                : ""
+                        }
+                    </div>
                 </article>
             `;
         }).join("");
-
-    } catch (error) {
-        bareResult.innerHTML =
-            '<p class="muted">Search could not be completed. Please try again later.</p>';
     }
-}
-loadCMS();
+
+    async function searchActs(rawQuery) {
+        const query = String(rawQuery || "").trim();
+
+        if (!query) {
+            setMessage("Enter an Act name, abbreviation or keyword to search.");
+            input.focus();
+            return;
+        }
+
+        setLoading(true);
+        setMessage("Searching Central Acts…");
+
+        try {
+            const url =
+                API_URL +
+                "?jurisdiction=central" +
+                "&q=" + encodeURIComponent(query) +
+                "&limit=30";
+
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("The Acts service returned an error.");
+            }
+
+            const data = await response.json();
+            const foundActs = Array.isArray(data.acts) ? data.acts : [];
+
+            renderResults(foundActs);
+
+        } catch (error) {
+            console.error("Bare Acts search error:", error);
+
+            results.innerHTML = `
+                <article class="card">
+                    <h3>Online search is temporarily unavailable</h3>
+
+                    <p class="muted">
+                        The Acts database could not be reached from this
+                        browser. You can still search for this Act on the
+                        Government of India's India Code portal.
+                    </p>
+
+                    <a
+                        class="btn outline"
+                        href="${officialSearchLink(query)}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Search on Official India Code
+                    </a>
+                </article>
+            `;
+
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        searchActs(input.value);
+    });
+
+    renderPopularActs();
+})();
+  }loadCMS();
 
 /* CONSULTATION */
 
