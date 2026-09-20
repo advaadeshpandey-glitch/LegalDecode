@@ -492,89 +492,297 @@ header{
   margin:0;
 }
 
-/* TEAM PROFILES */
+/* =====================================================
+   LEGALDECODE — PREMIUM TEAM PROFILES
+   Luxury editorial design | Responsive | Image-safe
+===================================================== */
 
-.team-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:30px;
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
 }
 
-.person-card{
-  display:grid;
-  grid-template-columns:220px minmax(0,1fr);
-  min-height:390px;
-  position:relative;
-  overflow:hidden;
-  background:white;
-  border:1px solid #d8cebd;
-  box-shadow:0 14px 38px #17233009;
+/* Main profile card */
+.person-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    align-items: stretch;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+    background: #fffdf8;
+
+    border: 1px solid #ded5c6;
+    border-radius: 4px;
+    box-shadow: 0 12px 35px rgba(9, 24, 39, 0.055);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
 }
 
-.person-card:before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:0;
-  bottom:0;
-  width:3px;
-  background:var(--gold);
+.person-card:hover {
+    transform: translateY(-4px);
+    border-color: #c8a45d;
+    box-shadow: 0 20px 48px rgba(9, 24, 39, 0.10);
 }
 
-.person-image{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:18px;
-  background:linear-gradient(145deg,#f4efe5,#e9e1d2);
+/* Elegant gold accent */
+.person-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 4px;
+    background: #c8a45d;
+    z-index: 2;
 }
 
-.person-image img{
-  display:block;
-  width:100%;
-  max-height:410px;
-  object-fit:contain;
+/* Photograph panel */
+.person-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    min-height: 320px;
+    padding: 24px;
+
+    background:
+        linear-gradient(145deg, #f7f2e9 0%, #e9e0d1 100%);
+
+    border-right: 1px solid #e3dacb;
 }
 
-.person-body{
-  padding:34px;
+/* Subtle frame behind the portrait */
+.person-image::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+
+    border: 1px solid rgba(200, 164, 93, 0.38);
+    pointer-events: none;
 }
 
-.person-body .role{
-  color:var(--gold2);
-  font-size:.69rem;
-  font-weight:700;
-  letter-spacing:.17em;
-  text-transform:uppercase;
+/* Show the complete photograph without cropping */
+.person-image img {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    height: 340px;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    border: 0;
+    border-radius: 2px;
 }
 
-.person-body h3{
-  margin:12px 0 18px;
-  font-size:1.8rem;
+/* Profile text panel */
+.person-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    min-width: 0;
+    padding: 34px 42px;
 }
 
-.person-body p{
-  color:#596675;
-  font-size:.94rem;
-  line-height:1.9;
-  margin:0;
+/* Role / designation */
+.person-body .role {
+    margin-bottom: 8px;
+
+    color: #987637;
+    font-size: 0.70rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
 }
 
-.profile-meta{
-  margin-top:22px;
-  padding-top:17px;
-  border-top:1px solid var(--line);
-  color:var(--gold2);
-  font-size:.76rem;
-  line-height:1.8;
-  letter-spacing:.07em;
-  text-transform:uppercase;
+/* Advocate name */
+.person-body h3 {
+    margin: 0 0 16px;
+
+    color: #091827;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.65rem, 2.4vw, 2.15rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
 }
 
-.subhead{
-  margin:70px 0 30px;
+/* Short professional description */
+.person-body p {
+    max-width: 760px;
+    margin: 0;
+
+    color: #596675;
+    font-size: 0.96rem;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
 }
 
+/* Practice areas and forums */
+.profile-meta {
+    width: 100%;
+    margin-top: 22px;
+    padding-top: 16px;
+
+    border-top: 1px solid #e5ddcf;
+
+    color: #987637;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.9;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+/* Associate section heading */
+.subhead {
+    margin: 72px 0 30px;
+    padding-top: 28px;
+    border-top: 1px solid #ded5c6;
+}
+
+.subhead .eyebrow {
+    margin-bottom: 12px;
+}
+
+.subhead h2 {
+    margin-bottom: 14px;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .person-card {
+        grid-template-columns: 230px minmax(0, 1fr);
+    }
+
+    .person-image {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .person-image img {
+        height: 310px;
+    }
+
+    .person-body {
+        padding: 28px;
+    }
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .person-card {
+        grid-template-columns: 1fr;
+        border-radius: 3px;
+    }
+
+    .person-image {
+        min-height: 0;
+        padding: 22px;
+
+        border-right: 0;
+        border-bottom: 1px solid #e3dacb;
+    }
+
+    .person-image::before {
+        inset: 14px;
+    }
+
+    .person-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        object-position: center bottom;
+    }
+
+    .person-body {
+        padding: 25px 23px 27px;
+    }
+
+    .person-body .role {
+        font-size: 0.67rem;
+        letter-spacing: 0.14em;
+    }
+
+    .person-body h3 {
+        margin-bottom: 13px;
+        font-size: 1.75rem;
+    }
+
+    .person-body p {
+        font-size: 0.93rem;
+        line-height: 1.8;
+    }
+
+    .profile-meta {
+        margin-top: 18px;
+        padding-top: 14px;
+        font-size: 0.70rem;
+        line-height: 1.85;
+    }
+
+    .subhead {
+        margin-top: 52px;
+    }
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .person-image img {
+        height: 260px;
+    }
+
+    .person-body {
+        padding: 22px 18px 24px;
+    }
+
+    .person-body h3 {
+        font-size: 1.55rem;
+    }
+
+}
 /* KNOWLEDGE CENTER */
 
 .tabs{
@@ -1939,10 +2147,9 @@ const STATIC_PEOPLE = [
     image:"aadesh-pandey.jpeg",
 
     profile:
-    "Adv. Aadesh Pandey is a Lucknow-based advocate practising before the Lucknow Bench of the High Court of Judicature at Allahabad, District Courts and relevant tribunals. His core areas of work include Criminal Law, SARFAESI Matters, Banking & Financial Laws, Property Disputes and Family Court Matters. In approaching a brief, he places emphasis on understanding the factual background, identifying the legal questions that arise, examining the available record and determining the procedural position before considering appropriate remedies. His work also involves legal research, preparation of pleadings and applications, and representation in proceedings where the nature of the matter and forum permit. He is associated with matters before the Debt Recovery Tribunal (DRT), Central Administrative Tribunal (CAT), State Public Services Tribunal (SPST) and Armed Forces Tribunal, as applicable. His professional approach is grounded in careful preparation, clear communication and responsible advocacy, while recognising that every case turns on its own facts, evidence and governing law.",
-
+"Adv. Aadesh Pandey is a Lucknow-based advocate practising before the Lucknow Bench of the Allahabad High Court, District Courts and relevant tribunals. His practice focuses on Criminal Law, SARFAESI Matters, Banking & Financial Laws, Property Disputes and Family Court Matters. He emphasises careful legal research, precise drafting and focused representation.",
     points:[
-      "Criminal Law",
+      "Criminal Matters",
       "SARFAESI Matters",
       "Banking & Financial Laws",
       "Property Disputes",
@@ -1957,14 +2164,11 @@ const STATIC_PEOPLE = [
     image:"vartika-.jpeg",
 
     profile:
-    "Adv. Vartika Pandey is a Lucknow-based advocate engaged in civil litigation and legal advisory work before the Lucknow Bench of the High Court of Judicature at Allahabad and the District Courts. Her practice encompasses Civil Litigation, Civil Suits, Service Matters and related proceedings. Her work includes examining pleadings and supporting documents, identifying the issues requiring determination, researching the applicable statutory and procedural framework, and assisting in the preparation of submissions and other court documents. She approaches each matter with close attention to the factual matrix, limitation and jurisdictional considerations, procedural requirements and the relief sought. Her practice also extends to matters before the Central Administrative Tribunal (CAT), State Public Services Tribunal (SPST) and Armed Forces Tribunal, where relevant to the dispute. She places importance on precise drafting, diligent preparation and a measured, client-focused approach to legal representation.",
-
+"Adv. Vartika Pandey is a Lucknow-based advocate engaged in civil litigation and service matters before the Lucknow Bench of the Allahabad High Court, District Courts and relevant tribunals. Her practice includes civil suits and related proceedings, with an emphasis on precise drafting, diligent preparation and thoughtful legal analysis.",
     points:[
       "Civil Litigation",
       "Service Matters",
-      "High Court Litigation",
-      "District Court Litigation",
-      "Civil Suits",
+      "District Court",
       "CAT · SPST · Armed Forces Tribunal"
     ]
   }
@@ -1981,11 +2185,9 @@ const STATIC_ASSOCIATES = [
     role:"Associate · Advocate",
     image:"Shubham.jpeg",
 
-    profile:
-    "Adv. Shubham Pandey completed his legal education at the University of Allahabad and primarily practises before the High Court of Judicature at Allahabad. His professional work also extends to matters before the Central Administrative Tribunal (CAT), Allahabad, and the District Courts. His work involves legal research, review of case records, preparation of pleadings and supporting documents, and procedural preparation for matters before the appropriate forum. He approaches assignments with attention to the factual and legal issues presented, the applicable procedural framework and the requirements of focused representation. His education at the University of Allahabad forms part of his legal background, while his practice remains directed by the nature of each brief and the jurisdiction of the forum concerned.",
-
+   profile:
+"Adv. Shubham Pandey completed his legal education at the University of Allahabad. He primarily practises before the High Court of Judicature at Allahabad, and also handles matters before CAT, Allahabad and the District Courts. His work emphasises legal research, careful drafting and procedural preparation.",
     points:[
-      "High Court Litigation",
       "Central Administrative Tribunal (CAT) Matters",
       "District Court Litigation"
     ]
@@ -1997,12 +2199,9 @@ const STATIC_ASSOCIATES = [
     image:"Satyam.jpeg",
 
     profile:
-    "Adv. Satyam Pandey practises before the Lucknow Bench of the High Court of Judicature at Allahabad, with a focused practice in criminal litigation and trial matters before the District Courts. His work involves careful assessment of the factual and legal issues arising in criminal proceedings, review of the relevant record, research into applicable law and preparation for the procedural stages of a matter. He is engaged in criminal litigation before the High Court and in trial-related work before the District Courts, according to the nature and stage of the proceedings. His approach centres on organised preparation, attention to procedural requirements and focused advocacy, while taking account of the specific facts and evidence in each case.",
-
+"Adv. Satyam Pandey practises before the Lucknow Bench of the Allahabad High Court and handles criminal trial matters before the District Courts. His practice focuses on criminal litigation, careful assessment of case records, procedural preparation and focused advocacy.",
     points:[
       "Criminal Litigation",
-      "Criminal Trial Matters",
-      "High Court Litigation",
       "District Court Trial Matters"
     ]
   },
@@ -2012,12 +2211,9 @@ const STATIC_ASSOCIATES = [
     role:"Associate · Advocate",
     image:"piyush.jpeg",
 
-    profile:
-    "Adv. Piyush Singh has completed his LL.M. and LL.B. from Amity University. He practises before the High Court, Lucknow Bench, District Courts and Tribunals. His professional work includes legal research, review and organisation of case materials, preparation of drafts and supporting documents, and assistance with representation before the appropriate court or tribunal. He approaches matters with due attention to the factual background, the legal issues involved and the procedural requirements applicable to the forum. His academic qualifications and professional work support his engagement across matters falling within the jurisdiction of the courts and tribunals before which he practises.",
-
+   profile:
+"Adv. Piyush Singh holds LL.B. and LL.M. degrees from Amity University. He practises before the High Court, Lucknow Bench, District Courts and Tribunals, with work involving legal research, drafting, case preparation and representation before the appropriate forum.",
     points:[
-      "LL.M. — Amity University",
-      "LL.B. — Amity University",
       "High Court — Lucknow Bench",
       "District Court Litigation",
       "Tribunal Matters"
