@@ -1403,7 +1403,7 @@ Search
 
 <div class="chips" id="chips"></div>
 
-<div class="bare" id="bareResults"></div>
+<div class="bare" id="bareResults" aria-live="polite"></div>
 
 <p style="margin-top:18px">
 
@@ -1579,17 +1579,17 @@ Monday – Saturday · 10:00 AM – 6:00 PM
 <div class="formgrid">
 
 <div>
-<label>Name</label>
+<label for="fn">Name</label>
 <input class="field" id="fn" required>
 </div>
 
 <div>
-<label>Phone</label>
+<label for="fp">Phone</label>
 <input class="field" id="fp" required>
 </div>
 
 <div>
-<label>Email</label>
+<label for="fa">Practice Area</label>
 <input class="field" id="fe" type="email">
 </div>
 
@@ -1613,7 +1613,7 @@ Monday – Saturday · 10:00 AM – 6:00 PM
 
 <div class="full">
 
-<label>Brief Description</label>
+<label for="fm">Brief Description of Your Legal Issue</label>
 
 <textarea
 class="field"
@@ -2178,12 +2178,11 @@ o ? "−" : "+";
 
 function bare(q=""){
 
-q = q.toLowerCase().trim();
+q = q.toLowerCase().trim().replace(/\s+/g, " ");
 
 let a = acts.filter(x =>
-!q || x.join(" ").toLowerCase().includes(q)
+  !q || x.join(" ").toLowerCase().replace(/\s+/g, " ").includes(q)
 );
-
 bareResults.innerHTML = a.length
 
 ? a.map(x => `
@@ -2204,7 +2203,7 @@ target="_blank"
 rel="noopener"
 href="https://www.indiacode.gov.in/"
 >
-Official India Code
+Browse India Code Portal
 </a>
 
 </article>
