@@ -1,0 +1,31 @@
+name: LegalDecode Review Starter
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  create-review-package:
+    name: Create a non-publishing review package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out automation branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build review template
+        run: python automation/scripts/build_review_package.py
+
+      - name: Upload review template
+        uses: actions/upload-artifact@v4
+        with:
+          name: legaldecode-review-template
+          path: output/
+          if-no-files-found: error
+          retention-days: 7
